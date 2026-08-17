@@ -15,12 +15,12 @@ class PipelineTests(unittest.TestCase):
 
     def test_manifest_records_core_guardrails(self):
         guardrails = self.manifest["guardrails"]
-        self.assertEqual(self.manifest["counts"]["papers"], 4)
-        self.assertEqual(self.manifest["counts"]["rationale_episodes"], 19)
-        self.assertEqual(self.manifest["counts"]["reason_bearing_compounds"], 44)
-        self.assertEqual(self.manifest["counts"]["resolved_structures"], 58)
-        self.assertEqual(self.manifest["counts"]["outcome_comparisons"], 81)
-        self.assertEqual(self.manifest["counts"]["unique_outcome_pairs"], 75)
+        self.assertEqual(self.manifest["counts"]["papers"], 5)
+        self.assertEqual(self.manifest["counts"]["rationale_episodes"], 32)
+        self.assertEqual(self.manifest["counts"]["reason_bearing_compounds"], 65)
+        self.assertEqual(self.manifest["counts"]["resolved_structures"], 81)
+        self.assertEqual(self.manifest["counts"]["outcome_comparisons"], 154)
+        self.assertEqual(self.manifest["counts"]["unique_outcome_pairs"], 141)
         self.assertTrue(guardrails["reason_frozen_before_outcome_join"])
         self.assertTrue(guardrails["inferred_comparator_is_not_lineage"])
         self.assertTrue(guardrails["bounds_preserved"])
@@ -96,6 +96,28 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(antimalarial["rationale_episodes"], 12)
         self.assertEqual(antimalarial["reason_bearing_compounds"], 36)
         self.assertEqual(antimalarial["resolved_structures"], 38)
+
+        biib129 = next(
+            row for row in self.manifest["paper_coverage"] if row["document_id"] == "PMC11129193"
+        )
+        self.assertEqual(biib129["rationale_episodes"], 13)
+        self.assertEqual(biib129["reason_bearing_compounds"], 21)
+        self.assertEqual(biib129["resolved_structures"], 23)
+
+    def test_biib129_keeps_author_links_when_primary_mmp_rule_is_too_strict(self):
+        move = next(
+            move
+            for move in self.moves
+            if move["layer_2_extracted_design_intent"]["reason_id"]
+            == "PMC11129193:26_27:alpha_methyl_transfer"
+        )
+        relation = move["layer_3_inferred_structural_comparison"][
+            "author_explicit_relationship"
+        ]
+        self.assertEqual(relation["parent_chembl_id"], "CHEMBL5550053")
+        self.assertFalse(relation["valid_primary_mmp_rule"])
+        self.assertTrue(relation["valid_single_cut_sensitivity_rule"])
+        self.assertFalse(relation["historical_synthesis_lineage_claim"])
 
     def test_retrospective_reason_has_no_prospective_success_label(self):
         move = next(

@@ -17,10 +17,10 @@ a claim about synthetic or historical lineage**.
 
 ## Current extraction corpus
 
-The four-paper within-document pass now contains **19 evidence episodes**, **44
-reason-bearing compounds**, **58 resolved ChEMBL structures**, and **75 unique
-assay-matched parent/child pairs**. Six pairs support more than one episode, so
-the derived view contains 81 episode-specific outcome links.
+The five-paper within-document pass now contains **32 evidence episodes**, **65
+reason-bearing compounds**, **81 resolved ChEMBL structures**, and **141 unique
+assay-matched parent/child pairs**. Thirteen pairs support more than one
+episode, so the derived view contains 154 episode-specific outcome links.
 
 | Paper | Evidence episodes | Reason-bearing compounds | Resolved structures | What was captured |
 |---|---:|---:|---:|---|
@@ -28,6 +28,7 @@ the derived view contains 81 episode-specific outcome links.
 | PF-06815189 | 1 | 1 | 4 | Late-stage oxidation for CYP/renal-clearance/DDI objectives |
 | DOS antimalarial | 12 | 36 | 38 | Appendage, metabolite-guided core, des-urea, heteroaryl, des-methyl, heteroatom, ring-size, and matched-R1 campaigns |
 | Bosutinib analogue | 3 | 2 | 7 | Prospective bioisostere design, fragment basicity probe, retrospective pKa explanation |
+| BIIB129 | 13 | 21 | 23 | CNS-oriented hit design, linker and metabolic strategies, docking and geometry probes, α-methyl SAR transfer, structural explanations |
 
 A named series is counted once as an evidence episode. Its individual named
 members contribute to the reason-bearing-compound count but are not presented
@@ -139,14 +140,14 @@ The paper-specific queries used for the corpus are preserved in [`queries/`](que
 ChEMBL supplies structures, document linkage, assays, and measurements; it is
 not treated as a source of medicinal-chemistry intent.
 
-Reason extraction is human-reviewed in this first pilot. That is deliberate:
+Reason extraction is human-reviewed in this first curated corpus. That is deliberate:
 an unconstrained model can easily turn retrospective SAR into prospective
 intent, invent individual rationales from a series-level statement, or promote
 the closest structure into a fictional historical parent.
 
 ## Current limits
 
-- Four comprehensively audited papers—not a representative benchmark yet
+- Five comprehensively audited papers—not a representative benchmark yet
 - Series-level evidence is linked to named members, but only the representative
   anchor gets a full inferred-candidate ranking in this version
 - Candidate generation currently stops at the same-paper universe

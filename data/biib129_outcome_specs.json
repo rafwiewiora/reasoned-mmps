@@ -1,0 +1,732 @@
+[
+  {
+    "comparison_id": "biib_7_10_btk_ic50_linker",
+    "reason_id": "PMC11129193:series:sp3_linker_optimization",
+    "parent_measurement_id": "m_biib_7_btk_ic50",
+    "child_measurement_id": "m_biib_10_btk_ic50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_7_10_log_kinact_ki_linker",
+    "reason_id": "PMC11129193:series:sp3_linker_optimization",
+    "parent_measurement_id": "m_biib_7_log_kinact_ki",
+    "child_measurement_id": "m_biib_10_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_7_10_mdr1_ratio_linker",
+    "reason_id": "PMC11129193:series:sp3_linker_optimization",
+    "parent_measurement_id": "m_biib_7_mdr1_ratio",
+    "child_measurement_id": "m_biib_10_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_retention"
+  },
+  {
+    "comparison_id": "biib_10_13_log_kinact_ki_aminoether",
+    "reason_id": "PMC11129193:series:aminoether_metabolic_optimization",
+    "parent_measurement_id": "m_biib_10_log_kinact_ki",
+    "child_measurement_id": "m_biib_13_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "potency_retention"
+  },
+  {
+    "comparison_id": "biib_10_13_wb_cd69_aminoether",
+    "reason_id": "PMC11129193:series:aminoether_metabolic_optimization",
+    "parent_measurement_id": "m_biib_10_wb_cd69",
+    "child_measurement_id": "m_biib_13_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "potency_retention"
+  },
+  {
+    "comparison_id": "biib_10_13_rlm_cl_aminoether",
+    "reason_id": "PMC11129193:series:aminoether_metabolic_optimization",
+    "parent_measurement_id": "m_biib_10_rlm_cl",
+    "child_measurement_id": "m_biib_13_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_13_hlm_cl_aminoether",
+    "reason_id": "PMC11129193:series:aminoether_metabolic_optimization",
+    "parent_measurement_id": "m_biib_10_hlm_cl",
+    "child_measurement_id": "m_biib_13_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_13_mdr1_ratio_aminoether",
+    "reason_id": "PMC11129193:series:aminoether_metabolic_optimization",
+    "parent_measurement_id": "m_biib_10_mdr1_ratio",
+    "child_measurement_id": "m_biib_13_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_10_13_kpuu_aminoether",
+    "reason_id": "PMC11129193:series:aminoether_metabolic_optimization",
+    "parent_measurement_id": "m_biib_10_kpuu",
+    "child_measurement_id": "m_biib_13_kpuu",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_10_13_gsh_t_half_aminoether",
+    "reason_id": "PMC11129193:series:aminoether_metabolic_optimization",
+    "parent_measurement_id": "m_biib_10_gsh_t_half",
+    "child_measurement_id": "m_biib_13_gsh_t_half",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "warhead_stability_context"
+  },
+  {
+    "comparison_id": "biib_10_11_log_kinact_ki_alpha_fluoro",
+    "reason_id": "PMC11129193:11:alpha_fluoro_clearance",
+    "parent_measurement_id": "m_biib_10_log_kinact_ki",
+    "child_measurement_id": "m_biib_11_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_11_wb_cd69_alpha_fluoro",
+    "reason_id": "PMC11129193:11:alpha_fluoro_clearance",
+    "parent_measurement_id": "m_biib_10_wb_cd69",
+    "child_measurement_id": "m_biib_11_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_11_mdr1_ratio_alpha_fluoro",
+    "reason_id": "PMC11129193:11:alpha_fluoro_clearance",
+    "parent_measurement_id": "m_biib_10_mdr1_ratio",
+    "child_measurement_id": "m_biib_11_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_11_rlm_cl_alpha_fluoro",
+    "reason_id": "PMC11129193:11:alpha_fluoro_clearance",
+    "parent_measurement_id": "m_biib_10_rlm_cl",
+    "child_measurement_id": "m_biib_11_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_11_hlm_cl_alpha_fluoro",
+    "reason_id": "PMC11129193:11:alpha_fluoro_clearance",
+    "parent_measurement_id": "m_biib_10_hlm_cl",
+    "child_measurement_id": "m_biib_11_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_11_12_log_kinact_ki_fluoro_relocation",
+    "reason_id": "PMC11129193:12:fluoro_inductive_explanation",
+    "parent_measurement_id": "m_biib_11_log_kinact_ki",
+    "child_measurement_id": "m_biib_12_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_11_12_wb_cd69_fluoro_relocation",
+    "reason_id": "PMC11129193:12:fluoro_inductive_explanation",
+    "parent_measurement_id": "m_biib_11_wb_cd69",
+    "child_measurement_id": "m_biib_12_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_11_12_mdr1_ratio_fluoro_relocation",
+    "reason_id": "PMC11129193:12:fluoro_inductive_explanation",
+    "parent_measurement_id": "m_biib_11_mdr1_ratio",
+    "child_measurement_id": "m_biib_12_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_11_12_rlm_cl_fluoro_relocation",
+    "reason_id": "PMC11129193:12:fluoro_inductive_explanation",
+    "parent_measurement_id": "m_biib_11_rlm_cl",
+    "child_measurement_id": "m_biib_12_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_11_12_hlm_cl_fluoro_relocation",
+    "reason_id": "PMC11129193:12:fluoro_inductive_explanation",
+    "parent_measurement_id": "m_biib_11_hlm_cl",
+    "child_measurement_id": "m_biib_12_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_10_13_log_kinact_ki_bicyclic",
+    "reason_id": "PMC11129193:series:bicyclic_steric_metabolism",
+    "parent_measurement_id": "m_biib_10_log_kinact_ki",
+    "child_measurement_id": "m_biib_13_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "potency_retention"
+  },
+  {
+    "comparison_id": "biib_10_13_wb_cd69_bicyclic",
+    "reason_id": "PMC11129193:series:bicyclic_steric_metabolism",
+    "parent_measurement_id": "m_biib_10_wb_cd69",
+    "child_measurement_id": "m_biib_13_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "potency_retention"
+  },
+  {
+    "comparison_id": "biib_10_13_rlm_cl_bicyclic",
+    "reason_id": "PMC11129193:series:bicyclic_steric_metabolism",
+    "parent_measurement_id": "m_biib_10_rlm_cl",
+    "child_measurement_id": "m_biib_13_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_13_hlm_cl_bicyclic",
+    "reason_id": "PMC11129193:series:bicyclic_steric_metabolism",
+    "parent_measurement_id": "m_biib_10_hlm_cl",
+    "child_measurement_id": "m_biib_13_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_13_mdr1_ratio_bicyclic",
+    "reason_id": "PMC11129193:series:bicyclic_steric_metabolism",
+    "parent_measurement_id": "m_biib_10_mdr1_ratio",
+    "child_measurement_id": "m_biib_13_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_10_13_kpuu_bicyclic",
+    "reason_id": "PMC11129193:series:bicyclic_steric_metabolism",
+    "parent_measurement_id": "m_biib_10_kpuu",
+    "child_measurement_id": "m_biib_13_kpuu",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_10_13_gsh_t_half_bicyclic",
+    "reason_id": "PMC11129193:series:bicyclic_steric_metabolism",
+    "parent_measurement_id": "m_biib_10_gsh_t_half",
+    "child_measurement_id": "m_biib_13_gsh_t_half",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "warhead_stability_context"
+  },
+  {
+    "comparison_id": "biib_10_17_log_kinact_ki_docking",
+    "reason_id": "PMC11129193:series:docking_linker_replacements",
+    "parent_measurement_id": "m_biib_10_log_kinact_ki",
+    "child_measurement_id": "m_biib_17_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "covalent_geometry_context"
+  },
+  {
+    "comparison_id": "biib_10_17_wb_cd69_docking",
+    "reason_id": "PMC11129193:series:docking_linker_replacements",
+    "parent_measurement_id": "m_biib_10_wb_cd69",
+    "child_measurement_id": "m_biib_17_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "potency_retention"
+  },
+  {
+    "comparison_id": "biib_10_17_mdr1_ratio_docking",
+    "reason_id": "PMC11129193:series:docking_linker_replacements",
+    "parent_measurement_id": "m_biib_10_mdr1_ratio",
+    "child_measurement_id": "m_biib_17_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_10_17_rlm_cl_docking",
+    "reason_id": "PMC11129193:series:docking_linker_replacements",
+    "parent_measurement_id": "m_biib_10_rlm_cl",
+    "child_measurement_id": "m_biib_17_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_10_17_hlm_cl_docking",
+    "reason_id": "PMC11129193:series:docking_linker_replacements",
+    "parent_measurement_id": "m_biib_10_hlm_cl",
+    "child_measurement_id": "m_biib_17_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_20_21_log_kinact_ki_four_bond",
+    "reason_id": "PMC11129193:20_21:four_bond_geometry_probe",
+    "parent_measurement_id": "m_biib_20_log_kinact_ki",
+    "child_measurement_id": "m_biib_21_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_20_21_wb_cd69_four_bond",
+    "reason_id": "PMC11129193:20_21:four_bond_geometry_probe",
+    "parent_measurement_id": "m_biib_20_wb_cd69",
+    "child_measurement_id": "m_biib_21_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "cellular_translation_context"
+  },
+  {
+    "comparison_id": "biib_20_21_tmd8_ic50_four_bond",
+    "reason_id": "PMC11129193:20_21:four_bond_geometry_probe",
+    "parent_measurement_id": "m_biib_20_tmd8_ic50",
+    "child_measurement_id": "m_biib_21_tmd8_ic50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "cellular_translation_context"
+  },
+  {
+    "comparison_id": "biib_20_21_mdr1_ratio_four_bond",
+    "reason_id": "PMC11129193:20_21:four_bond_geometry_probe",
+    "parent_measurement_id": "m_biib_20_mdr1_ratio",
+    "child_measurement_id": "m_biib_21_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_20_21_rlm_cl_four_bond",
+    "reason_id": "PMC11129193:20_21:four_bond_geometry_probe",
+    "parent_measurement_id": "m_biib_20_rlm_cl",
+    "child_measurement_id": "m_biib_21_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_context"
+  },
+  {
+    "comparison_id": "biib_20_21_hlm_cl_four_bond",
+    "reason_id": "PMC11129193:20_21:four_bond_geometry_probe",
+    "parent_measurement_id": "m_biib_20_hlm_cl",
+    "child_measurement_id": "m_biib_21_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_context"
+  },
+  {
+    "comparison_id": "biib_22_23_log_kinact_ki_bridge",
+    "reason_id": "PMC11129193:22_23:constrained_cyclobutyl_sar",
+    "parent_measurement_id": "m_biib_22_log_kinact_ki",
+    "child_measurement_id": "m_biib_23_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_22_23_wb_cd69_bridge",
+    "reason_id": "PMC11129193:22_23:constrained_cyclobutyl_sar",
+    "parent_measurement_id": "m_biib_22_wb_cd69",
+    "child_measurement_id": "m_biib_23_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_22_23_tmd8_ic50_bridge",
+    "reason_id": "PMC11129193:22_23:constrained_cyclobutyl_sar",
+    "parent_measurement_id": "m_biib_22_tmd8_ic50",
+    "child_measurement_id": "m_biib_23_tmd8_ic50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_22_23_mdr1_ratio_bridge",
+    "reason_id": "PMC11129193:22_23:constrained_cyclobutyl_sar",
+    "parent_measurement_id": "m_biib_22_mdr1_ratio",
+    "child_measurement_id": "m_biib_23_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_22_23_rlm_cl_bridge",
+    "reason_id": "PMC11129193:22_23:constrained_cyclobutyl_sar",
+    "parent_measurement_id": "m_biib_22_rlm_cl",
+    "child_measurement_id": "m_biib_23_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_context"
+  },
+  {
+    "comparison_id": "biib_22_23_hlm_cl_bridge",
+    "reason_id": "PMC11129193:22_23:constrained_cyclobutyl_sar",
+    "parent_measurement_id": "m_biib_22_hlm_cl",
+    "child_measurement_id": "m_biib_23_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_context"
+  },
+  {
+    "comparison_id": "biib_22_23_gsh_t_half_bridge",
+    "reason_id": "PMC11129193:22_23:constrained_cyclobutyl_sar",
+    "parent_measurement_id": "m_biib_22_gsh_t_half",
+    "child_measurement_id": "m_biib_23_gsh_t_half",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "warhead_stability_context"
+  },
+  {
+    "comparison_id": "biib_23_25_log_kinact_ki_deconstruct",
+    "reason_id": "PMC11129193:24_25:deconstruct_cellular_disconnect",
+    "parent_measurement_id": "m_biib_23_log_kinact_ki",
+    "child_measurement_id": "m_biib_25_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "biochemical_potency_context"
+  },
+  {
+    "comparison_id": "biib_23_25_wb_cd69_deconstruct",
+    "reason_id": "PMC11129193:24_25:deconstruct_cellular_disconnect",
+    "parent_measurement_id": "m_biib_23_wb_cd69",
+    "child_measurement_id": "m_biib_25_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_23_25_tmd8_ic50_deconstruct",
+    "reason_id": "PMC11129193:24_25:deconstruct_cellular_disconnect",
+    "parent_measurement_id": "m_biib_23_tmd8_ic50",
+    "child_measurement_id": "m_biib_25_tmd8_ic50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_23_25_mdr1_ratio_deconstruct",
+    "reason_id": "PMC11129193:24_25:deconstruct_cellular_disconnect",
+    "parent_measurement_id": "m_biib_23_mdr1_ratio",
+    "child_measurement_id": "m_biib_25_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_23_25_rlm_cl_deconstruct",
+    "reason_id": "PMC11129193:24_25:deconstruct_cellular_disconnect",
+    "parent_measurement_id": "m_biib_23_rlm_cl",
+    "child_measurement_id": "m_biib_25_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_context"
+  },
+  {
+    "comparison_id": "biib_23_25_hlm_cl_deconstruct",
+    "reason_id": "PMC11129193:24_25:deconstruct_cellular_disconnect",
+    "parent_measurement_id": "m_biib_23_hlm_cl",
+    "child_measurement_id": "m_biib_25_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_context"
+  },
+  {
+    "comparison_id": "biib_23_25_kpuu_deconstruct",
+    "reason_id": "PMC11129193:24_25:deconstruct_cellular_disconnect",
+    "parent_measurement_id": "m_biib_23_kpuu",
+    "child_measurement_id": "m_biib_25_kpuu",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "CNS_property_context"
+  },
+  {
+    "comparison_id": "biib_23_25_gsh_t_half_deconstruct",
+    "reason_id": "PMC11129193:24_25:deconstruct_cellular_disconnect",
+    "parent_measurement_id": "m_biib_23_gsh_t_half",
+    "child_measurement_id": "m_biib_25_gsh_t_half",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "warhead_stability_context"
+  },
+  {
+    "comparison_id": "biib_14_26_log_kinact_ki_methyl_14_26",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_14_log_kinact_ki",
+    "child_measurement_id": "m_biib_26_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_14_26_wb_cd69_methyl_14_26",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_14_wb_cd69",
+    "child_measurement_id": "m_biib_26_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_14_26_tmd8_ic50_methyl_14_26",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_14_tmd8_ic50",
+    "child_measurement_id": "m_biib_26_tmd8_ic50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_14_26_mdr1_ratio_methyl_14_26",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_14_mdr1_ratio",
+    "child_measurement_id": "m_biib_26_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_14_26_rlm_cl_methyl_14_26",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_14_rlm_cl",
+    "child_measurement_id": "m_biib_26_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_14_26_hlm_cl_methyl_14_26",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_14_hlm_cl",
+    "child_measurement_id": "m_biib_26_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_15_27_log_kinact_ki_methyl_15_27",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_15_log_kinact_ki",
+    "child_measurement_id": "m_biib_27_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_15_27_wb_cd69_methyl_15_27",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_15_wb_cd69",
+    "child_measurement_id": "m_biib_27_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_15_27_tmd8_ic50_methyl_15_27",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_15_tmd8_ic50",
+    "child_measurement_id": "m_biib_27_tmd8_ic50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_15_27_mdr1_ratio_methyl_15_27",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_15_mdr1_ratio",
+    "child_measurement_id": "m_biib_27_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_15_27_rlm_cl_methyl_15_27",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_15_rlm_cl",
+    "child_measurement_id": "m_biib_27_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_15_27_hlm_cl_methyl_15_27",
+    "reason_id": "PMC11129193:26_27:alpha_methyl_transfer",
+    "parent_measurement_id": "m_biib_15_hlm_cl",
+    "child_measurement_id": "m_biib_27_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "supporting_endpoint"
+  },
+  {
+    "comparison_id": "biib_25_27_log_kinact_ki_conformation",
+    "reason_id": "PMC11129193:27:conformational_restriction_explanation",
+    "parent_measurement_id": "m_biib_25_log_kinact_ki",
+    "child_measurement_id": "m_biib_27_log_kinact_ki",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_25_27_wb_cd69_conformation",
+    "reason_id": "PMC11129193:27:conformational_restriction_explanation",
+    "parent_measurement_id": "m_biib_25_wb_cd69",
+    "child_measurement_id": "m_biib_27_wb_cd69",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_25_27_tmd8_ic50_conformation",
+    "reason_id": "PMC11129193:27:conformational_restriction_explanation",
+    "parent_measurement_id": "m_biib_25_tmd8_ic50",
+    "child_measurement_id": "m_biib_27_tmd8_ic50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_25_27_mdr1_ratio_conformation",
+    "reason_id": "PMC11129193:27:conformational_restriction_explanation",
+    "parent_measurement_id": "m_biib_25_mdr1_ratio",
+    "child_measurement_id": "m_biib_27_mdr1_ratio",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_25_27_rlm_cl_conformation",
+    "reason_id": "PMC11129193:27:conformational_restriction_explanation",
+    "parent_measurement_id": "m_biib_25_rlm_cl",
+    "child_measurement_id": "m_biib_27_rlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_25_27_hlm_cl_conformation",
+    "reason_id": "PMC11129193:27:conformational_restriction_explanation",
+    "parent_measurement_id": "m_biib_25_hlm_cl",
+    "child_measurement_id": "m_biib_27_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_25_27_kpuu_conformation",
+    "reason_id": "PMC11129193:27:conformational_restriction_explanation",
+    "parent_measurement_id": "m_biib_25_kpuu",
+    "child_measurement_id": "m_biib_27_kpuu",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "biib_25_27_gsh_t_half_conformation",
+    "reason_id": "PMC11129193:27:conformational_restriction_explanation",
+    "parent_measurement_id": "m_biib_25_gsh_t_half",
+    "child_measurement_id": "m_biib_27_gsh_t_half",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  }
+]

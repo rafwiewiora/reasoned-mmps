@@ -19,11 +19,11 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUTPUTS = ROOT / "outputs"
 DOCS = ROOT / "docs"
-DATASET_PREFIXES = (
-    "photo_clenbuterol",
-    "pf06815189",
-    "antimalarial_dos",
-    "bosutinib_noralkoxy",
+DATASET_PREFIXES = tuple(
+    sorted(
+        path.name.removesuffix("_compounds.csv")
+        for path in DATA.glob("*_compounds.csv")
+    )
 )
 
 
@@ -356,8 +356,8 @@ def build() -> dict:
         })
 
     manifest = {
-        "corpus": "reasoned_mmp_pilot_corpus",
-        "schema_version": "0.3.0",
+        "corpus": "reasoned_mmp_corpus",
+        "schema_version": "0.4.0",
         "rdkit_version": rdBase.rdkitVersion,
         "input_sha256": {
             path.name: _sha256(path) for path in input_paths

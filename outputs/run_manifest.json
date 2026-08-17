@@ -1,17 +1,17 @@
 {
-  "corpus": "reasoned_mmp_pilot_corpus",
+  "corpus": "reasoned_mmp_corpus",
   "counts": {
-    "compounds": 58,
+    "compounds": 81,
     "mmp_decompositions": 127,
-    "outcome_comparisons": 81,
-    "papers": 4,
-    "rationale_episodes": 19,
-    "reason_assertions": 19,
-    "reason_bearing_compounds": 44,
-    "resolved_structures": 58,
-    "unique_outcome_pairs": 75,
+    "outcome_comparisons": 154,
+    "papers": 5,
+    "rationale_episodes": 32,
+    "reason_assertions": 32,
+    "reason_bearing_compounds": 65,
+    "resolved_structures": 81,
+    "unique_outcome_pairs": 141,
     "unique_reason_parent_candidates": 54,
-    "unpaired_outcome_facts": 3
+    "unpaired_outcome_facts": 6
   },
   "guardrails": {
     "bounds_preserved": true,
@@ -26,6 +26,10 @@
     "antimalarial_dos_measurements.csv": "ca06c991a1e94e67a4f8fd804aa77de952d369c4ef2efb96fdceea2d81e410d7",
     "antimalarial_dos_outcome_specs.json": "18d4a13caffa8fc8d25aeaff6df54895a834d8c3f9fa6817f1ffc0add78ec120",
     "antimalarial_dos_reasons.json": "c507fb968f665850b54d5107d4d4c3c0b2ea5a32cb3f16f9bd02f6c28c9fa18d",
+    "biib129_compounds.csv": "ab47e17211383f0acba95b11834a841916581ef55bc372e453d378f475ddc63c",
+    "biib129_measurements.csv": "10ea1298217facb1a64764111ded809e9c4e367ee6185f7cc7731bb3281ceb36",
+    "biib129_outcome_specs.json": "3ea8231c7a6d0d5acc53f7864b0c3ce93e50f9211c725c97717c2a5273b406a2",
+    "biib129_reasons.json": "957eb25daf71f110da9984ba6393a2c31626e5d9fb71102b6f6c240d3b7d8d3a",
     "bosutinib_noralkoxy_compounds.csv": "ccfeaa71ff7b5f3edbfb50f2e8d8d375d508cec2b5526101612d86e8632e4bca",
     "bosutinib_noralkoxy_measurements.csv": "e3f5087e2bac696a66b75aaf0c6084584f673892d74d08d05987685387c774d9",
     "bosutinib_noralkoxy_outcome_specs.json": "1945018c686b5a1845702b3d7f5e8772d8eec4308d17f7a2e533aa708e5b9953",
@@ -46,6 +50,13 @@
       "reason_bearing_compounds": 2,
       "resolved_structures": 7,
       "source_title": "Atypical N-Alkyl to N-Noralkoxy Switch in a Dual cSRC/BCR-ABL1 Kinase Inhibitor"
+    },
+    {
+      "document_id": "PMC11129193",
+      "rationale_episodes": 13,
+      "reason_bearing_compounds": 21,
+      "resolved_structures": 23,
+      "source_title": "Discovery and Preclinical Characterization of BIIB129, a Covalent, Selective, and Brain-Penetrant BTK Inhibitor for the Treatment of Multiple Sclerosis"
     },
     {
       "document_id": "PMC12225454",
@@ -70,5 +81,5 @@
     }
   ],
   "rdkit_version": "2026.03.4",
-  "schema_version": "0.3.0"
+  "schema_version": "0.4.0"
 }
