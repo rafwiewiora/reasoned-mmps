@@ -27,7 +27,7 @@ class ParentInferenceTests(unittest.TestCase):
         cls.by_id = {row["chembl_id"]: row for row in cls.compounds}
 
     def test_reason_aligned_cl_to_cn_is_top_candidate(self):
-        reason = self.reasons[0]
+        reason = next(reason for reason in self.reasons if reason["reason_id"].endswith("chlorocyano_sar"))
         child = self.by_id[reason["child_chembl_id"]]
         candidates = best_candidate_per_parent(
             infer_parent_candidates(child, self.compounds, reason)
@@ -40,7 +40,7 @@ class ParentInferenceTests(unittest.TestCase):
         self.assertFalse(top["historical_parent_claim"])
 
     def test_hydrogen_change_indexes_secondary_neighbor(self):
-        reason = self.reasons[0]
+        reason = next(reason for reason in self.reasons if reason["reason_id"].endswith("chlorocyano_sar"))
         child = self.by_id[reason["child_chembl_id"]]
         candidates = best_candidate_per_parent(
             infer_parent_candidates(child, self.compounds, reason)
@@ -55,17 +55,17 @@ class ParentInferenceTests(unittest.TestCase):
         )
 
     def test_large_explicit_azoextension_is_sensitivity_only(self):
-        reason = self.reasons[1]
+        reason = next(reason for reason in self.reasons if reason["reason_id"].endswith("series:azoextension"))
         child = self.by_id[reason["child_chembl_id"]]
         strict = infer_parent_candidates(child, self.compounds, reason)
         sensitive = infer_parent_candidates(
-            child, self.compounds, reason, max_variable_fraction=0.40
+            child, self.compounds, reason, max_variable_fraction=0.50
         )
         self.assertNotIn(
-            "CHEMBL6189525", {row["parent_chembl_id"] for row in strict}
+            "CHEMBL49080", {row["parent_chembl_id"] for row in strict}
         )
         match = next(
-            row for row in sensitive if row["parent_chembl_id"] == "CHEMBL6189525"
+            row for row in sensitive if row["parent_chembl_id"] == "CHEMBL49080"
         )
         self.assertEqual(match["scores"]["reason_transform_alignment"], 1.0)
 

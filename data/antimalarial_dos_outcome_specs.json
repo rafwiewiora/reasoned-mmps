@@ -1,47 +1,322 @@
 [
   {
-    "comparison_id": "am2_am5_solubility",
-    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
-    "parent_measurement_id": "m_am2_sol",
-    "child_measurement_id": "m_am5_sol",
-    "higher_is_better": true,
-    "equivalence_margin": 5000,
-    "relation_to_stated_intent": "direct_supporting_endpoint"
-  },
-  {
-    "comparison_id": "am2_am5_growth_potency",
-    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
-    "parent_measurement_id": "m_am2_gi50",
-    "child_measurement_id": "m_am5_gi50",
+    "comparison_id": "series_appendage_dmpk_2_3_gi50",
+    "reason_id": "PMC4207553:series:appendage_dmpk",
+    "parent_measurement_id": "m_am_2_gi50",
+    "child_measurement_id": "m_am_3_gi50",
     "higher_is_better": false,
     "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
     "relation_to_stated_intent": "target_potency_tradeoff"
   },
   {
-    "comparison_id": "am2_am5_herg",
-    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
-    "parent_measurement_id": "m_am2_herg",
-    "child_measurement_id": "m_am5_herg",
-    "higher_is_better": false,
-    "equivalence_margin": 5,
-    "relation_to_stated_intent": "beneficial_adjacent_outcome"
+    "comparison_id": "series_appendage_dmpk_2_3_sol",
+    "reason_id": "PMC4207553:series:appendage_dmpk",
+    "parent_measurement_id": "m_am_2_sol",
+    "child_measurement_id": "m_am_3_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
   },
   {
-    "comparison_id": "am2_am5_logd",
-    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
-    "parent_measurement_id": "m_am2_logd",
-    "child_measurement_id": "m_am5_logd",
+    "comparison_id": "series_appendage_dmpk_2_3_logd",
+    "reason_id": "PMC4207553:series:appendage_dmpk",
+    "parent_measurement_id": "m_am_2_logd",
+    "child_measurement_id": "m_am_3_logd",
     "higher_is_better": false,
     "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
     "relation_to_stated_intent": "mechanistic_supporting_endpoint"
   },
   {
-    "comparison_id": "am2_am5_microsomal_stability",
-    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
-    "parent_measurement_id": "m_am2_mlm",
-    "child_measurement_id": "m_am5_mlm",
+    "comparison_id": "series_appendage_dmpk_2_3_mlm",
+    "reason_id": "PMC4207553:series:appendage_dmpk",
+    "parent_measurement_id": "m_am_2_mlm",
+    "child_measurement_id": "m_am_3_mlm",
     "higher_is_better": true,
     "equivalence_margin": 5,
-    "relation_to_stated_intent": "metabolic_stability_tradeoff"
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "4_oxetane_solubility_2_4_gi50",
+    "reason_id": "PMC4207553:4:oxetane_solubility",
+    "parent_measurement_id": "m_am_2_gi50",
+    "child_measurement_id": "m_am_4_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_tradeoff"
+  },
+  {
+    "comparison_id": "4_oxetane_solubility_2_4_sol",
+    "reason_id": "PMC4207553:4:oxetane_solubility",
+    "parent_measurement_id": "m_am_2_sol",
+    "child_measurement_id": "m_am_4_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "4_oxetane_solubility_2_4_logd",
+    "reason_id": "PMC4207553:4:oxetane_solubility",
+    "parent_measurement_id": "m_am_2_logd",
+    "child_measurement_id": "m_am_4_logd",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "profile_context"
+  },
+  {
+    "comparison_id": "4_oxetane_solubility_2_4_mlm",
+    "reason_id": "PMC4207553:4:oxetane_solubility",
+    "parent_measurement_id": "m_am_2_mlm",
+    "child_measurement_id": "m_am_4_mlm",
+    "higher_is_better": true,
+    "equivalence_margin": 5,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "profile_context"
+  },
+  {
+    "comparison_id": "5_dimethylisoxazole_solubility_2_5_gi50",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am_2_gi50",
+    "child_measurement_id": "m_am_5_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_tradeoff"
+  },
+  {
+    "comparison_id": "5_dimethylisoxazole_solubility_2_5_sol",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am_2_sol",
+    "child_measurement_id": "m_am_5_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "5_dimethylisoxazole_solubility_2_5_herg",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am_2_herg",
+    "child_measurement_id": "m_am_5_herg",
+    "higher_is_better": false,
+    "equivalence_margin": 5,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "beneficial_adjacent_outcome"
+  },
+  {
+    "comparison_id": "5_dimethylisoxazole_solubility_2_5_logd",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am_2_logd",
+    "child_measurement_id": "m_am_5_logd",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "profile_context"
+  },
+  {
+    "comparison_id": "5_dimethylisoxazole_solubility_2_5_mlm",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am_2_mlm",
+    "child_measurement_id": "m_am_5_mlm",
+    "higher_is_better": true,
+    "equivalence_margin": 5,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "profile_context"
+  },
+  {
+    "comparison_id": "series_r1_steric_bulk_5_9_gi50",
+    "reason_id": "PMC4207553:series:r1_steric_bulk",
+    "parent_measurement_id": "m_am_5_gi50",
+    "child_measurement_id": "m_am_9_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_tradeoff"
+  },
+  {
+    "comparison_id": "series_r1_steric_bulk_5_9_sol",
+    "reason_id": "PMC4207553:series:r1_steric_bulk",
+    "parent_measurement_id": "m_am_5_sol",
+    "child_measurement_id": "m_am_9_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_r1_steric_bulk_5_9_logd",
+    "reason_id": "PMC4207553:series:r1_steric_bulk",
+    "parent_measurement_id": "m_am_5_logd",
+    "child_measurement_id": "m_am_9_logd",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "mechanistic_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_r1_steric_bulk_5_9_mlm",
+    "reason_id": "PMC4207553:series:r1_steric_bulk",
+    "parent_measurement_id": "m_am_5_mlm",
+    "child_measurement_id": "m_am_9_mlm",
+    "higher_is_better": true,
+    "equivalence_margin": 5,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_r1_lower_basicity_5_12_gi50",
+    "reason_id": "PMC4207553:series:r1_lower_basicity",
+    "parent_measurement_id": "m_am_5_gi50",
+    "child_measurement_id": "m_am_12_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_tradeoff"
+  },
+  {
+    "comparison_id": "series_r1_lower_basicity_5_12_herg",
+    "reason_id": "PMC4207553:series:r1_lower_basicity",
+    "parent_measurement_id": "m_am_5_herg",
+    "child_measurement_id": "m_am_12_herg",
+    "higher_is_better": false,
+    "equivalence_margin": 5,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "beneficial_adjacent_outcome"
+  },
+  {
+    "comparison_id": "series_r1_lower_basicity_5_12_logd",
+    "reason_id": "PMC4207553:series:r1_lower_basicity",
+    "parent_measurement_id": "m_am_5_logd",
+    "child_measurement_id": "m_am_12_logd",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "mechanistic_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_r1_lower_basicity_5_12_mlm",
+    "reason_id": "PMC4207553:series:r1_lower_basicity",
+    "parent_measurement_id": "m_am_5_mlm",
+    "child_measurement_id": "m_am_12_mlm",
+    "higher_is_better": true,
+    "equivalence_margin": 5,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_metabolite_guided_core_5_14_gi50",
+    "reason_id": "PMC4207553:series:metabolite_guided_core",
+    "parent_measurement_id": "m_am_5_gi50",
+    "child_measurement_id": "m_am_14_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_tradeoff"
+  },
+  {
+    "comparison_id": "series_metabolite_guided_core_5_14_sol",
+    "reason_id": "PMC4207553:series:metabolite_guided_core",
+    "parent_measurement_id": "m_am_5_sol",
+    "child_measurement_id": "m_am_14_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "profile_context"
+  },
+  {
+    "comparison_id": "series_des_urea_pharmacophore_5_14_gi50",
+    "reason_id": "PMC4207553:series:des_urea_pharmacophore",
+    "parent_measurement_id": "m_am_5_gi50",
+    "child_measurement_id": "m_am_14_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_des_urea_pharmacophore_5_14_sol",
+    "reason_id": "PMC4207553:series:des_urea_pharmacophore",
+    "parent_measurement_id": "m_am_5_sol",
+    "child_measurement_id": "m_am_14_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "profile_context"
+  },
+  {
+    "comparison_id": "19_pyridyl_physchem_path_16_19_gi50",
+    "reason_id": "PMC4207553:19:pyridyl_physchem_path",
+    "parent_measurement_id": "m_am_16_gi50",
+    "child_measurement_id": "m_am_19_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_tradeoff"
+  },
+  {
+    "comparison_id": "19_pyridyl_physchem_path_16_19_sol",
+    "reason_id": "PMC4207553:19:pyridyl_physchem_path",
+    "parent_measurement_id": "m_am_16_sol",
+    "child_measurement_id": "m_am_19_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_des_methyl_probe_40_31_gi50",
+    "reason_id": "PMC4207553:series:des_methyl_probe",
+    "parent_measurement_id": "m_am_40_gi50",
+    "child_measurement_id": "m_am_31_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "33_ether_to_amine_probe_31_33_gi50",
+    "reason_id": "PMC4207553:33:ether_to_amine_probe",
+    "parent_measurement_id": "m_am_31_gi50",
+    "child_measurement_id": "m_am_33_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_ring_contraction_31_34_gi50",
+    "reason_id": "PMC4207553:series:ring_contraction",
+    "parent_measurement_id": "m_am_31_gi50",
+    "child_measurement_id": "m_am_34_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_dimethylamine_profile_29_30_gi50",
+    "reason_id": "PMC4207553:series:dimethylamine_profile",
+    "parent_measurement_id": "m_am_29_gi50",
+    "child_measurement_id": "m_am_30_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "series_dimethylamine_profile_29_30_sol",
+    "reason_id": "PMC4207553:series:dimethylamine_profile",
+    "parent_measurement_id": "m_am_29_sol",
+    "child_measurement_id": "m_am_30_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
   }
 ]

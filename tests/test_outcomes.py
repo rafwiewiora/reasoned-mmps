@@ -49,6 +49,21 @@ class OutcomeTests(unittest.TestCase):
         self.assertEqual(result["assay_comparability"], "not_comparable")
         self.assertIn("state", result["mismatched_fields"])
 
+    def test_log_scale_compares_fold_changes_and_preserves_bounds(self):
+        parent = measurement("=", 10)
+        child = measurement("<", 2)
+        result = compare_measurements(
+            parent,
+            child,
+            higher_is_better=False,
+            equivalence_margin=0.3,
+            comparison_scale="log10",
+        )
+        self.assertEqual(result["classification"], "improved")
+        self.assertEqual(result["comparison_scale"], "log10")
+        self.assertGreater(result["delta_lower"], 0.69)
+        self.assertIsNone(result["delta_upper"])
+
 
 if __name__ == "__main__":
     unittest.main()

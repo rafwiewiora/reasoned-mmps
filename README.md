@@ -17,20 +17,23 @@ a claim about synthetic or historical lineage**.
 
 ## Current extraction corpus
 
-The pilot now contains four papers, five rationale assertions, 17 resolved
-ChEMBL compounds, and 19 assay-matched outcome comparisons:
+The four-paper within-document pass now contains **19 evidence episodes**, **44
+reason-bearing compounds**, **58 resolved ChEMBL structures**, and **75 unique
+assay-matched parent/child pairs**. Six pairs support more than one episode, so
+the derived view contains 81 episode-specific outcome links.
 
-| Paper | Reason-bearing move | Rationale class | Main readout |
-|---|---|---|---|
-| Photo-clenbuterol | `12b → 12e`, `Cl→CN` | Explicit feature choice from prior SAR | Binding worsened; exact stated bronchodilation outcome unavailable |
-| PF-06815189 | `1 → 2`, `C–H→C–OH` | Explicit prospective intent | Human microsomal and hepatocyte clearance improved |
-| DOS antimalarial | `2 → 5`, `phenyl→dimethylisoxazole` | Explicit prospective intent | Solubility and hERG improved; potency worsened |
-| Bosutinib analogue | `3 → 9`, `N-alkyl→N-noralkoxy` | Retrospective explanation | Efflux and hERG improved; kinase activity retained |
+| Paper | Evidence episodes | Reason-bearing compounds | Resolved structures | What was captured |
+|---|---:|---:|---:|---|
+| Photo-clenbuterol | 3 | 5 | 9 | Azoextension series strategy, computed geometry hypothesis, chlorocyano SAR choice |
+| PF-06815189 | 1 | 1 | 4 | Late-stage oxidation for CYP/renal-clearance/DDI objectives |
+| DOS antimalarial | 12 | 36 | 38 | Appendage, metabolite-guided core, des-urea, heteroaryl, des-methyl, heteroatom, ring-size, and matched-R1 campaigns |
+| Bosutinib analogue | 3 | 2 | 7 | Prospective bioisostere design, fragment basicity probe, retrospective pKa explanation |
 
-The last row is intentionally not labeled prospective intent: the paper's MMP
-analysis explains the observed improvements through reduced piperazine
-basicity retrospectively. That distinction is part of the dataset, not a
-footnote.
+A named series is counted once as an evidence episode. Its individual named
+members contribute to the reason-bearing-compound count but are not presented
+as independent author rationales. See
+[`EXTRACTION_NOTES.md`](EXTRACTION_NOTES.md) for the paper-by-paper audit and
+exclusion rules.
 
 ### Photo-clenbuterol example
 
@@ -55,9 +58,10 @@ so the strict outcome for that exact intent remains **indeterminate**. The β2
 measurements are explicitly labeled as proxy or adjacent pharmacology.
 
 The same child also has a different relationship: compound `18` is the
-author-described scaffold parent for an azoextension. That large one-site move
-passes a `0.40` variable-fraction sensitivity rule but not the primary `0.30`
-MMP rule. The two relationships remain separate.
+author-described scaffold parent for an azoextension. That author link is kept
+separate from the chlorocyano reason. Independently stated relationships may be
+checked at a `0.50` variable-fraction sensitivity limit; ordinary inferred MMP
+candidates remain constrained to the primary `0.30` rule.
 
 ## What is implemented
 
@@ -68,6 +72,10 @@ MMP rule. The two relationships remain separate.
 - Ranked top-k same-paper comparators with every decomposition witness retained
 - Separate author-explicit scaffold relationships
 - Censoring-aware assay comparisons that preserve `<` and `>` bounds
+- Log-scale comparisons for concentration and clearance endpoints, so a 0.3
+  margin means approximately two-fold rather than 0.3 nM
+- Separate counts for evidence episodes, reason-bearing compounds, resolved
+  structures, unique assay pairs, and episode-specific links
 - Independent confidence fields for evidence, resolution, inference, assay
   comparability, and outcomes
 - Frozen inputs, outputs, hashes, tests, and a reproducible ChEMBL query
@@ -93,7 +101,7 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
 python -m unittest discover -s tests -v
-reasoned-mmps build-pilot
+reasoned-mmps build
 ```
 
 The build writes:
@@ -138,15 +146,17 @@ the closest structure into a fictional historical parent.
 
 ## Current limits
 
-- Four papers and five rationale assertions—not a benchmark yet
+- Four comprehensively audited papers—not a representative benchmark yet
+- Series-level evidence is linked to named members, but only the representative
+  anchor gets a full inferred-candidate ranking in this version
 - Candidate generation currently stops at the same-paper universe
 - Heuristic ranking scores are transparent but uncalibrated
 - No tautomer/salt standardization policy beyond deterministic RDKit parsing
 - No claim that compound numbering reflects synthesis order
 - Outcome success is per objective; there is no universal “potency won” label
 
-Next comes an adjudicated rationale-episode benchmark, then expansion through
-cited predecessors, same-document ChEMBL compounds, and global ChEMBL
+Next comes per-member MMP expansion for named series and an adjudicated
+rationale-episode benchmark, followed by cited predecessors and global ChEMBL
 neighbors. Evaluation will keep reason extraction, parent Recall@k,
 reason-transform alignment, assay joining, and end-to-end strict precision
 separate.

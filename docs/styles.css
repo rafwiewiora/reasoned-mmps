@@ -47,7 +47,7 @@ a { color: inherit; }
 .eyebrow { margin: 0 0 10px; color: var(--acid); font: 700 12px/1.3 ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
 h1 { max-width: 700px; margin: 0; font-size: clamp(48px, 7vw, 92px); line-height: .92; letter-spacing: -.065em; }
 .hero-copy { max-width: 660px; margin: 22px 0 0; color: #bdc7c0; font-size: 18px; line-height: 1.55; }
-.metrics { display: grid; grid-template-columns: repeat(2, 110px); border: 1px solid #39443e; }
+.metrics { display: grid; grid-template-columns: repeat(3, 110px); border: 1px solid #39443e; }
 .metric { min-height: 92px; padding: 16px; border: 1px solid #39443e; }
 .metric strong { display: block; color: var(--acid); font-size: 30px; letter-spacing: -.04em; }
 .metric span { display: block; margin-top: 7px; color: #aeb9b2; font: 600 10px/1.25 ui-monospace, monospace; letter-spacing: .06em; text-transform: uppercase; }
@@ -89,6 +89,9 @@ input:focus, select:focus { outline: 3px solid rgba(201, 243, 106, .65); outline
 .reason-callout { margin: 28px 0; padding: 22px 24px; background: #17211d; color: #f7f6ef; border-left: 7px solid var(--orange); }
 .reason-callout .label { color: var(--acid); }
 .reason-callout p { margin: 10px 0 0; font-size: 17px; line-height: 1.55; }
+.series-scope { margin: -12px 0 26px; padding: 16px 18px; background: #eef3e7; border: 1px solid #d7dfcc; }
+.series-scope p { margin: 8px 0 5px; line-height: 1.55; }
+.series-scope small { color: var(--muted); }
 .label { color: var(--muted); font: 700 10px/1.2 ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
 
 .flow { display: grid; grid-template-columns: 1fr 38px 1fr; gap: 10px; align-items: center; margin: 24px 0; }
@@ -114,6 +117,9 @@ th { padding: 10px 8px; color: var(--muted); border-bottom: 1px solid var(--ink)
 td { padding: 11px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .measurement { font-family: ui-monospace, monospace; white-space: nowrap; }
 .scope-note { max-width: 240px; color: var(--muted); }
+.fact-strip { margin-top: 14px; padding: 16px 18px; background: #edf3fb; border: 1px solid #d3dfef; }
+.fact-strip p { display: inline-block; margin: 8px 18px 0 0; font: 12px ui-monospace, monospace; }
+.empty.compact { padding: 24px 16px; border: 1px dashed var(--line); }
 .candidates { margin-top: 34px; }
 .candidate-row { display: grid; grid-template-columns: 32px minmax(120px, .7fr) minmax(180px, 1.4fr) 90px; gap: 12px; align-items: center; padding: 11px 0; border-top: 1px solid var(--line); font-size: 12px; }
 .candidate-row code { overflow-wrap: anywhere; font-size: 10px; }
@@ -124,7 +130,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 22px
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
-  .metrics { grid-template-columns: repeat(4, 1fr); }
+  .metrics { grid-template-columns: repeat(3, 1fr); }
   .metric { min-height: 74px; }
   .workspace { grid-template-columns: 1fr; }
   .episode-column { position: static; max-height: 430px; }

@@ -3,6 +3,10 @@
     "reason_id": "PMC5807869:2:late_stage_oxidation",
     "child_chembl_id": "CHEMBL4062397",
     "child_paper_label": "2; PF-06815189",
+    "member_chembl_ids": ["CHEMBL4062397"],
+    "member_paper_labels": ["2; PF-06815189"],
+    "assertion_scope": "single_compound",
+    "decision_kind": "compound_design",
     "source_title": "Late-Stage Microsomal Oxidation Reduces Drug-Drug Interaction and Identifies PDE2A Inhibitor PF-06815189",
     "assertion_class": "explicit_prospective_intent",
     "reason_statement": "The authors applied late-stage microsomal oxidation to PDE2 inhibitor 1 to reduce CYP-mediated clearance, introduce renal clearance, and reduce victim drug-drug-interaction risk, yielding compound 2.",
@@ -22,6 +26,11 @@
     "explicit_parent_edge_semantics": "author_explicit_starting_compound",
     "explicit_historical_synthesis_lineage": true,
     "explicit_parent_basis": "The source states that inhibitor 1 was subjected to late-stage oxidation to yield compound 2.",
+    "unpaired_outcome_facts": [
+      {"fact_id": "pf2_renal_clearance_rat", "chembl_id": "CHEMBL4062397", "endpoint": "renal_clearance_fraction", "state": "rat_0_to_24h", "relation": "=", "value": 22, "units": "%_dose", "relation_to_stated_intent": "direct_supporting_endpoint", "source": "paper_Table_2"},
+      {"fact_id": "pf2_renal_clearance_dog", "chembl_id": "CHEMBL4062397", "endpoint": "renal_clearance_fraction", "state": "dog_0_to_24h", "relation": "=", "value": 48, "units": "%_dose", "relation_to_stated_intent": "direct_supporting_endpoint", "source": "paper_Table_2"},
+      {"fact_id": "pf2_renal_clearance_nhp", "chembl_id": "CHEMBL4062397", "endpoint": "renal_clearance_fraction", "state": "NHP_0_to_24h", "relation": "=", "value": 26, "units": "%_dose", "relation_to_stated_intent": "direct_supporting_endpoint", "source": "paper_Table_2"}
+    ],
     "evidence": {
       "document_id": "PMC5807869",
       "publication_year": 2018,

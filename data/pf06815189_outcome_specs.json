@@ -5,7 +5,8 @@
     "parent_measurement_id": "m_pf1_hlm_cl",
     "child_measurement_id": "m_pf2_hlm_cl",
     "higher_is_better": false,
-    "equivalence_margin": 1.0,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
     "relation_to_stated_intent": "direct_supporting_endpoint"
   },
   {
@@ -14,7 +15,8 @@
     "parent_measurement_id": "m_pf1_hep_cl",
     "child_measurement_id": "m_pf2_hep_cl",
     "higher_is_better": false,
-    "equivalence_margin": 1.0,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
     "relation_to_stated_intent": "direct_supporting_endpoint"
   },
   {
@@ -24,6 +26,7 @@
     "child_measurement_id": "m_pf2_pde2_ic50",
     "higher_is_better": false,
     "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
     "relation_to_stated_intent": "target_potency_tradeoff"
   }
 ]

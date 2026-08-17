@@ -1,38 +1,74 @@
 {
   "corpus": "reasoned_mmp_pilot_corpus",
   "counts": {
-    "compounds": 17,
-    "mmp_decompositions": 13,
-    "outcome_comparisons": 19,
+    "compounds": 58,
+    "mmp_decompositions": 127,
+    "outcome_comparisons": 81,
     "papers": 4,
-    "reason_assertions": 5,
-    "unique_reason_parent_candidates": 8
+    "rationale_episodes": 19,
+    "reason_assertions": 19,
+    "reason_bearing_compounds": 44,
+    "resolved_structures": 58,
+    "unique_outcome_pairs": 75,
+    "unique_reason_parent_candidates": 54,
+    "unpaired_outcome_facts": 3
   },
   "guardrails": {
     "bounds_preserved": true,
+    "explicit_relationship_sensitivity_fraction": 0.5,
     "hydrogen_changes_indexed": true,
     "inferred_comparator_is_not_lineage": true,
     "primary_max_variable_fraction": 0.3,
     "reason_frozen_before_outcome_join": true
   },
   "input_sha256": {
-    "antimalarial_dos_compounds.csv": "db2aeff376dc01daed82c355df2252a5412f459d27b1805214bef4b804d943d3",
-    "antimalarial_dos_measurements.csv": "d0e2c7d687a3b2d09f3ceeecdaca5060fcae25604141e65b4cd7ba480c04b2a7",
-    "antimalarial_dos_outcome_specs.json": "06e1ad518e305b951c9a99ead815d53f557ee4a9aca257d52ee169df60fe7a41",
-    "antimalarial_dos_reasons.json": "4052aa0c911be1fa855c483c055bcff6af640eb0e358e8843332a6a1b0408e46",
-    "bosutinib_noralkoxy_compounds.csv": "422a45386b0f15c5c095a6b6dadec852f48951091e001a669dc6f1af70de215c",
-    "bosutinib_noralkoxy_measurements.csv": "7a3cf0e644d8eeb40e639f4edcd71d2e0894621ecc945db96e47c2e5baadeca6",
-    "bosutinib_noralkoxy_outcome_specs.json": "a7d7a28a8bf686178fac052981c003ce71cdae94e5977a05126f2676c4934f8e",
-    "bosutinib_noralkoxy_reasons.json": "1e89aca19490768991113bfb56156492ff11c80fc51694e20092645486e634cf",
+    "antimalarial_dos_compounds.csv": "7a966bfafa2f7483db0a503b8f672efc62a1edc653d2c31e1739825d1890c928",
+    "antimalarial_dos_measurements.csv": "ca06c991a1e94e67a4f8fd804aa77de952d369c4ef2efb96fdceea2d81e410d7",
+    "antimalarial_dos_outcome_specs.json": "18d4a13caffa8fc8d25aeaff6df54895a834d8c3f9fa6817f1ffc0add78ec120",
+    "antimalarial_dos_reasons.json": "c507fb968f665850b54d5107d4d4c3c0b2ea5a32cb3f16f9bd02f6c28c9fa18d",
+    "bosutinib_noralkoxy_compounds.csv": "ccfeaa71ff7b5f3edbfb50f2e8d8d375d508cec2b5526101612d86e8632e4bca",
+    "bosutinib_noralkoxy_measurements.csv": "e3f5087e2bac696a66b75aaf0c6084584f673892d74d08d05987685387c774d9",
+    "bosutinib_noralkoxy_outcome_specs.json": "1945018c686b5a1845702b3d7f5e8772d8eec4308d17f7a2e533aa708e5b9953",
+    "bosutinib_noralkoxy_reasons.json": "8c0ecffdb1bb680ec300d59e8e40a642580411d2866b304ef526d54003770698",
     "pf06815189_compounds.csv": "85bcf5c3061ba6ad39ad4c42d768f50b3fd25c86c8af54cc47560bfa7423f7f5",
     "pf06815189_measurements.csv": "8769ba4c6447f4ead53d20589f5ee5d044882e8e5213f1dfae59faa02e92c5a2",
-    "pf06815189_outcome_specs.json": "6919704c8ab1b596ec03c27077dcbb1a98feebedc1ea2eedcbd05e816db952cb",
-    "pf06815189_reasons.json": "466249af5376bc8aaab492dddf21164a5c8af4c9f3adfd8b6324c43902377d9f",
+    "pf06815189_outcome_specs.json": "3dfc9ee0612dcb95bf6fba04f282e8f60b2f9cf2f7a5251976a4d25d7a729016",
+    "pf06815189_reasons.json": "b10a2df7f1d5d8f4aa45ae2c507143c9c8cb002305955ae7accb300e67878d0f",
     "photo_clenbuterol_compounds.csv": "2b42badf96e280a3d1c8c060496e07412e5c631ee9724282bc832bf66a1b59d6",
     "photo_clenbuterol_measurements.csv": "cb9dc0c65c1ec6e72dd472d82364d654d465c07c1dae13b9382463b0e099a6d1",
-    "photo_clenbuterol_outcome_specs.json": "3ba80b746789a0dca3d8b7b5663f0a07d63caa0a6f49381c6bd60047750bb62b",
-    "photo_clenbuterol_reasons.json": "ab99b5609d66abe6d943d8eb45d9a8a19d251f087c0d2d195c8bdf9a5b042eb3"
+    "photo_clenbuterol_outcome_specs.json": "55964fa8c0641a36941762ffd72863650bba243c5b31da6d6604c4c6d90dc2e0",
+    "photo_clenbuterol_reasons.json": "72b8c3223453d6e09fcf680eaeca5f59f717d8f3afbefad4cc62fc8020bc90d4"
   },
+  "paper_coverage": [
+    {
+      "document_id": "PMC10726475",
+      "rationale_episodes": 3,
+      "reason_bearing_compounds": 2,
+      "resolved_structures": 7,
+      "source_title": "Atypical N-Alkyl to N-Noralkoxy Switch in a Dual cSRC/BCR-ABL1 Kinase Inhibitor"
+    },
+    {
+      "document_id": "PMC12225454",
+      "rationale_episodes": 3,
+      "reason_bearing_compounds": 5,
+      "resolved_structures": 9,
+      "source_title": "Photo-clenbuterol: Optical Control of beta2-Adrenergic Receptor Signaling by Photoswitchable Ligand Efficacy"
+    },
+    {
+      "document_id": "PMC4207553",
+      "rationale_episodes": 12,
+      "reason_bearing_compounds": 36,
+      "resolved_structures": 38,
+      "source_title": "Diversity-Oriented Synthesis-Facilitated Medicinal Chemistry: Novel Antimalarial Agents"
+    },
+    {
+      "document_id": "PMC5807869",
+      "rationale_episodes": 1,
+      "reason_bearing_compounds": 1,
+      "resolved_structures": 4,
+      "source_title": "Late-Stage Microsomal Oxidation Reduces Drug-Drug Interaction and Identifies PDE2A Inhibitor PF-06815189"
+    }
+  ],
   "rdkit_version": "2026.03.4",
-  "schema_version": "0.2.0"
+  "schema_version": "0.3.0"
 }

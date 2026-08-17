@@ -1,9 +1,74 @@
 measurement_id,chembl_id,paper_label,endpoint,state,relation,value,error,units,assay_context,assay_id,assay_chembl_id,source_kind,source_ref
-m_bos_efflux,CHEMBL288441,3,efflux_ratio,Caco2,=,12.1,,ratio,human_Caco2_BL_to_AP_over_AP_to_BL,2364283,CHEMBL5375736,ChEMBL,activity_25669014
-m_9_efflux,CHEMBL5435819,9,efflux_ratio,Caco2,=,3.6,,ratio,human_Caco2_BL_to_AP_over_AP_to_BL,2364283,CHEMBL5375736,ChEMBL,activity_25669015
-m_bos_herg,CHEMBL288441,3,hERG_IC50,not_applicable,=,1010,,nM,human_hERG_HEK293_patch_clamp,2364286,CHEMBL5375739,ChEMBL,activity_25669020
-m_9_herg,CHEMBL5435819,9,hERG_IC50,not_applicable,=,3410,,nM,human_hERG_HEK293_patch_clamp,2364286,CHEMBL5375739,ChEMBL,activity_25669021
-m_bos_bcrabl_wt,CHEMBL288441,3,IC50,wild_type,<,1.0,,nM,human_BCR_ABL1_radiometric,2364267,CHEMBL5375720,ChEMBL,activity_25668981
-m_9_bcrabl_wt,CHEMBL5435819,9,IC50,wild_type,<,1.0,,nM,human_BCR_ABL1_radiometric,2364267,CHEMBL5375720,ChEMBL,activity_25668982
-m_bos_bcrabl_t315i,CHEMBL288441,3,IC50,T315I,=,44,,nM,human_BCR_ABL1_radiometric,2364271,CHEMBL5375724,ChEMBL,activity_25668989
-m_9_bcrabl_t315i,CHEMBL5435819,9,IC50,T315I,=,47,,nM,human_BCR_ABL1_radiometric,2364271,CHEMBL5375724,ChEMBL,activity_25668990
+m_bos_3_hlm_t_half,CHEMBL288441,3,microsomal_half_life,human,=,0.08,,hr,human_liver_microsomes_half_life,2364258,,ChEMBL,activity_25668961
+m_bos_9_hlm_t_half,CHEMBL5435819,9,microsomal_half_life,human,=,0.1017,,hr,human_liver_microsomes_half_life,2364258,,ChEMBL,activity_25668962
+m_bos_3_rlm_cl,CHEMBL288441,3,intrinsic_clearance,rat_microsomes,=,264.0,,mL.min-1.g-1,rat_liver_microsomes,2364259,,ChEMBL,activity_25668963
+m_bos_9_rlm_cl,CHEMBL5435819,9,intrinsic_clearance,rat_microsomes,=,185.0,,mL.min-1.g-1,rat_liver_microsomes,2364259,,ChEMBL,activity_25668964
+m_bos_3_hlm_cl,CHEMBL288441,3,intrinsic_clearance,human_microsomes,=,288.0,,mL.min-1.g-1,human_liver_microsomes,2364260,,ChEMBL,activity_25668965
+m_bos_9_hlm_cl,CHEMBL5435819,9,intrinsic_clearance,human_microsomes,=,228.0,,mL.min-1.g-1,human_liver_microsomes,2364260,,ChEMBL,activity_25668966
+m_bos_3_rlm_t_half,CHEMBL288441,3,microsomal_half_life,rat,=,0.08833,,hr,rat_liver_microsomes_half_life,2364261,,ChEMBL,activity_25668967
+m_bos_9_rlm_t_half,CHEMBL5435819,9,microsomal_half_life,rat,=,0.1267,,hr,rat_liver_microsomes_half_life,2364261,,ChEMBL,activity_25668968
+m_bos_17_logd,CHEMBL5431908,17,LogD,pH_7.4,=,0.9,,log10,shake_flask_logD_pH_7.4,2364262,,ChEMBL,activity_25668971
+m_bos_18_logd,CHEMBL5408134,18,LogD,pH_7.4,=,1.0,,log10,shake_flask_logD_pH_7.4,2364262,,ChEMBL,activity_25668972
+m_bos_3_logd,CHEMBL288441,3,LogD,pH_7.4,=,3.1,,log10,shake_flask_logD_pH_7.4,2364262,,ChEMBL,activity_25668969
+m_bos_9_logd,CHEMBL5435819,9,LogD,pH_7.4,=,3.5,,log10,shake_flask_logD_pH_7.4,2364262,,ChEMBL,activity_25668970
+m_bos_9_fu_mouse,CHEMBL5435819,9,fraction_unbound,mouse,=,0.028,,fraction,mouse_plasma_protein_binding,2364263,,ChEMBL,activity_25668974
+m_bos_3_fu_rat,CHEMBL288441,3,fraction_unbound,rat,=,0.072,,fraction,rat_plasma_protein_binding,2364264,,ChEMBL,activity_25668975
+m_bos_9_fu_rat,CHEMBL5435819,9,fraction_unbound,rat,=,0.065,,fraction,rat_plasma_protein_binding,2364264,,ChEMBL,activity_25668976
+m_bos_3_fu_human,CHEMBL288441,3,fraction_unbound,human,=,0.045,,fraction,human_plasma_protein_binding,2364265,,ChEMBL,activity_25668977
+m_bos_9_fu_human,CHEMBL5435819,9,fraction_unbound,human,=,0.05,,fraction,human_plasma_protein_binding,2364265,,ChEMBL,activity_25668978
+m_bos_3_efflux_aux,CHEMBL288441,3,efflux_ratio,MDCKII_MDR1,=,28.3,,ratio,dog_MDCKII_MDR1_BL_to_AP_over_AP_to_BL,2364266,,ChEMBL,activity_25668979
+m_bos_9_efflux_aux,CHEMBL5435819,9,efflux_ratio,MDCKII_MDR1,=,20.6,,ratio,dog_MDCKII_MDR1_BL_to_AP_over_AP_to_BL,2364266,,ChEMBL,activity_25668980
+m_bos_3_bcrabl_wt,CHEMBL288441,3,IC50,BCR_ABL1_wild_type,<,1.0,,nM,human_BCR_ABL1_radiometric,2364267,,ChEMBL,activity_25668981
+m_bos_9_bcrabl_wt,CHEMBL5435819,9,IC50,BCR_ABL1_wild_type,<,1.0,,nM,human_BCR_ABL1_radiometric,2364267,,ChEMBL,activity_25668982
+m_bos_3_bcrabl_h396p,CHEMBL288441,3,IC50,BCR_ABL1_H396P,<,1.0,,nM,human_BCR_ABL1_H396P_radiometric,2364268,,ChEMBL,activity_25668983
+m_bos_9_bcrabl_h396p,CHEMBL5435819,9,IC50,BCR_ABL1_H396P,<,1.0,,nM,human_BCR_ABL1_H396P_radiometric,2364268,,ChEMBL,activity_25668984
+m_bos_3_bcrabl_m351t,CHEMBL288441,3,IC50,BCR_ABL1_M351T,<,1.0,,nM,human_BCR_ABL1_M351T_radiometric,2364269,,ChEMBL,activity_25668985
+m_bos_9_bcrabl_m351t,CHEMBL5435819,9,IC50,BCR_ABL1_M351T,<,1.0,,nM,human_BCR_ABL1_M351T_radiometric,2364269,,ChEMBL,activity_25668986
+m_bos_3_bcrabl_q252h,CHEMBL288441,3,IC50,BCR_ABL1_Q252H,<,1.0,,nM,human_BCR_ABL1_Q252H_radiometric,2364270,,ChEMBL,activity_25668987
+m_bos_9_bcrabl_q252h,CHEMBL5435819,9,IC50,BCR_ABL1_Q252H,<,1.0,,nM,human_BCR_ABL1_Q252H_radiometric,2364270,,ChEMBL,activity_25668988
+m_bos_3_bcrabl_t315i,CHEMBL288441,3,IC50,BCR_ABL1_T315I,=,44.0,,nM,human_BCR_ABL1_T315I_radiometric,2364271,,ChEMBL,activity_25668989
+m_bos_9_bcrabl_t315i,CHEMBL5435819,9,IC50,BCR_ABL1_T315I,=,47.0,,nM,human_BCR_ABL1_T315I_radiometric,2364271,,ChEMBL,activity_25668990
+m_bos_3_bcrabl_y253f,CHEMBL288441,3,IC50,BCR_ABL1_Y253F,<,1.0,,nM,human_BCR_ABL1_Y253F_radiometric,2364272,,ChEMBL,activity_25668991
+m_bos_9_bcrabl_y253f,CHEMBL5435819,9,IC50,BCR_ABL1_Y253F,<,1.0,,nM,human_BCR_ABL1_Y253F_radiometric,2364272,,ChEMBL,activity_25668992
+m_bos_3_csrc_wt,CHEMBL288441,3,IC50,cSRC_wild_type,=,2.0,,nM,human_cSRC_radiometric,2364273,,ChEMBL,activity_25668993
+m_bos_9_csrc_wt,CHEMBL5435819,9,IC50,cSRC_wild_type,=,2.0,,nM,human_cSRC_radiometric,2364273,,ChEMBL,activity_25668994
+m_bos_17_sol,CHEMBL5431908,17,solubility,pH_7.4,=,277000.0,,nM,aqueous_solubility_pH_7.4,2364274,,ChEMBL,activity_25668997
+m_bos_18_sol,CHEMBL5408134,18,solubility,pH_7.4,=,287000.0,,nM,aqueous_solubility_pH_7.4,2364274,,ChEMBL,activity_25668998
+m_bos_3_sol,CHEMBL288441,3,solubility,pH_7.4,=,14000.0,,nM,aqueous_solubility_pH_7.4,2364274,,ChEMBL,activity_25668995
+m_bos_9_sol,CHEMBL5435819,9,solubility,pH_7.4,=,12000.0,,nM,aqueous_solubility_pH_7.4,2364274,,ChEMBL,activity_25668996
+m_bos_3_hhep_cl,CHEMBL288441,3,intrinsic_clearance,human_hepatocytes,=,25.3,,uL/min,human_hepatocyte_clearance,2364275,,ChEMBL,activity_25668999
+m_bos_9_hhep_cl,CHEMBL5435819,9,intrinsic_clearance,human_hepatocytes,=,34.3,,uL/min,human_hepatocyte_clearance,2364275,,ChEMBL,activity_25669000
+m_bos_3_rhep_cl,CHEMBL288441,3,intrinsic_clearance,rat_hepatocytes,=,103.4,,uL/min,rat_hepatocyte_clearance,2364276,,ChEMBL,activity_25669001
+m_bos_9_rhep_cl,CHEMBL5435819,9,intrinsic_clearance,rat_hepatocytes,=,178.2,,uL/min,rat_hepatocyte_clearance,2364276,,ChEMBL,activity_25669002
+m_bos_9_mhep_cl,CHEMBL5435819,9,intrinsic_clearance,mouse_hepatocytes,=,60.1,,uL/min,mouse_hepatocyte_clearance,2364277,,ChEMBL,activity_25669004
+m_bos_3_hhep_t_half,CHEMBL288441,3,hepatocyte_half_life,human,=,0.915,,hr,human_hepatocyte_half_life,2364278,,ChEMBL,activity_25669005
+m_bos_9_hhep_t_half,CHEMBL5435819,9,hepatocyte_half_life,human,=,0.6733,,hr,human_hepatocyte_half_life,2364278,,ChEMBL,activity_25669006
+m_bos_3_rhep_t_half,CHEMBL288441,3,hepatocyte_half_life,rat,=,0.2233,,hr,rat_hepatocyte_half_life,2364279,,ChEMBL,activity_25669007
+m_bos_9_rhep_t_half,CHEMBL5435819,9,hepatocyte_half_life,rat,=,0.13,,hr,rat_hepatocyte_half_life,2364279,,ChEMBL,activity_25669008
+m_bos_9_mhep_t_half,CHEMBL5435819,9,hepatocyte_half_life,mouse,=,0.385,,hr,mouse_hepatocyte_half_life,2364280,,ChEMBL,activity_25669009
+m_bos_3_caco_apbl,CHEMBL288441,3,Papp,Caco2_AP_to_BL,=,0.9,,10^-6 cm/s,human_Caco2_AP_to_BL,2364281,,ChEMBL,activity_25669010
+m_bos_9_caco_apbl,CHEMBL5435819,9,Papp,Caco2_AP_to_BL,=,1.1,,10^-6 cm/s,human_Caco2_AP_to_BL,2364281,,ChEMBL,activity_25669011
+m_bos_3_caco_blap,CHEMBL288441,3,Papp,Caco2_BL_to_AP,=,10.9,,10^-6 cm/s,human_Caco2_BL_to_AP,2364282,,ChEMBL,activity_25669012
+m_bos_9_caco_blap,CHEMBL5435819,9,Papp,Caco2_BL_to_AP,=,4.0,,10^-6 cm/s,human_Caco2_BL_to_AP,2364282,,ChEMBL,activity_25669013
+m_bos_3_caco_efflux,CHEMBL288441,3,efflux_ratio,Caco2,=,12.1,,ratio,human_Caco2_BL_to_AP_over_AP_to_BL,2364283,,ChEMBL,activity_25669014
+m_bos_9_caco_efflux,CHEMBL5435819,9,efflux_ratio,Caco2,=,3.6,,ratio,human_Caco2_BL_to_AP_over_AP_to_BL,2364283,,ChEMBL,activity_25669015
+m_bos_3_mdck_apbl,CHEMBL288441,3,Papp,MDCKII_MDR1_AP_to_BL,=,0.4,,10^-6 cm/s,dog_MDCKII_MDR1_AP_to_BL,2364284,,ChEMBL,activity_25669016
+m_bos_9_mdck_apbl,CHEMBL5435819,9,Papp,MDCKII_MDR1_AP_to_BL,=,0.5,,10^-6 cm/s,dog_MDCKII_MDR1_AP_to_BL,2364284,,ChEMBL,activity_25669017
+m_bos_3_mdck_blap,CHEMBL288441,3,Papp,MDCKII_MDR1_BL_to_AP,=,11.3,,10^-6 cm/s,dog_MDCKII_MDR1_BL_to_AP,2364285,,ChEMBL,activity_25669018
+m_bos_9_mdck_blap,CHEMBL5435819,9,Papp,MDCKII_MDR1_BL_to_AP,=,10.3,,10^-6 cm/s,dog_MDCKII_MDR1_BL_to_AP,2364285,,ChEMBL,activity_25669019
+m_bos_3_herg_ic50,CHEMBL288441,3,hERG_IC50,not_applicable,=,1010.0,,nM,human_hERG_HEK293_patch_clamp,2364286,,ChEMBL,activity_25669020
+m_bos_9_herg_ic50,CHEMBL5435819,9,hERG_IC50,not_applicable,=,3410.0,,nM,human_hERG_HEK293_patch_clamp,2364286,,ChEMBL,activity_25669021
+m_bos_3_herg_1um,CHEMBL288441,3,hERG_inhibition,1_uM,=,52.0,,%,human_hERG_HEK293_patch_clamp,2364287,,ChEMBL,activity_25669022
+m_bos_9_herg_1um,CHEMBL5435819,9,hERG_inhibition,1_uM,=,24.0,,%,human_hERG_HEK293_patch_clamp,2364287,,ChEMBL,activity_25669023
+m_bos_3_herg_10um,CHEMBL288441,3,hERG_inhibition,10_uM,=,93.0,,%,human_hERG_HEK293_patch_clamp,2364288,,ChEMBL,activity_25669024
+m_bos_9_herg_10um,CHEMBL5435819,9,hERG_inhibition,10_uM,=,83.0,,%,human_hERG_HEK293_patch_clamp,2364288,,ChEMBL,activity_25669025
+m_bos_3_ku812,CHEMBL288441,3,cell_growth_IC50,KU812,=,3.6,,nM,human_KU812_72h_CellTiterGlo,2364308,,ChEMBL,activity_25669050
+m_bos_9_ku812,CHEMBL5435819,9,cell_growth_IC50,KU812,=,5.2,,nM,human_KU812_72h_CellTiterGlo,2364308,,ChEMBL,activity_25669051
+m_bos_3_meg01,CHEMBL288441,3,cell_growth_IC50,MEG_01,=,13.0,,nM,human_MEG01_72h_CellTiterGlo,2364309,,ChEMBL,activity_25669052
+m_bos_9_meg01,CHEMBL5435819,9,cell_growth_IC50,MEG_01,=,25.0,,nM,human_MEG01_72h_CellTiterGlo,2364309,,ChEMBL,activity_25669053
+m_bos_3_supb15,CHEMBL288441,3,cell_growth_IC50,SUP_B15,=,210.0,,nM,human_SUPB15_72h_CellTiterGlo,2364310,,ChEMBL,activity_25669054
+m_bos_9_supb15,CHEMBL5435819,9,cell_growth_IC50,SUP_B15,=,410.0,,nM,human_SUPB15_72h_CellTiterGlo,2364310,,ChEMBL,activity_25669055
+m_bos_3_molt4,CHEMBL288441,3,cell_growth_IC50,MOLT_4_BCR_ABL_negative,>,2000.0,,nM,human_MOLT4_72h_CellTiterGlo,2364311,,ChEMBL,activity_25669056
+m_bos_9_molt4,CHEMBL5435819,9,cell_growth_IC50,MOLT_4_BCR_ABL_negative,>,2000.0,,nM,human_MOLT4_72h_CellTiterGlo,2364311,,ChEMBL,activity_25669057
+m_bos_17_pka_terminal,CHEMBL5431908,17,pKa,terminal_N_methylamine,=,8.1,,pKa,pH_metric_fragment_pKa,,,paper,paper_Figure_3
+m_bos_18_pka_terminal,CHEMBL5408134,18,pKa,terminal_N_methylamine,=,7.4,,pKa,pH_metric_fragment_pKa,,,paper,paper_Figure_3

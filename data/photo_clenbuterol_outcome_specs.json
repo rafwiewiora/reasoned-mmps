@@ -46,7 +46,7 @@
   },
   {
     "comparison_id": "12b_12e_photo_shift",
-    "reason_id": "PMC12225454:12e:azoextension",
+    "reason_id": "PMC12225454:series:azoextension",
     "parent_measurement_id": "m_12b_delta_pkb",
     "child_measurement_id": "m_12e_delta_pkb",
     "higher_is_better": true,
@@ -55,7 +55,7 @@
   },
   {
     "comparison_id": "12b_12e_thermal_half_life",
-    "reason_id": "PMC12225454:12e:azoextension",
+    "reason_id": "PMC12225454:series:azoextension",
     "parent_measurement_id": "m_12b_t_half",
     "child_measurement_id": "m_12e_t_half",
     "higher_is_better": true,

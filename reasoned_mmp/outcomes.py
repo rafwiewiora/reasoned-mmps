@@ -5,9 +5,15 @@ from __future__ import annotations
 import math
 
 
-def _interval(measurement: dict) -> tuple[float, float]:
+def _interval(measurement: dict, scale: str) -> tuple[float, float]:
     relation = measurement["relation"]
     value = float(measurement["value"])
+    if scale == "log10":
+        if value <= 0:
+            raise ValueError("log10 outcome comparison requires positive values")
+        value = math.log10(value)
+    elif scale != "linear":
+        raise ValueError(f"Unsupported comparison scale: {scale}")
     if relation == "=":
         return value, value
     if relation == "<":
@@ -27,6 +33,7 @@ def compare_measurements(
     *,
     higher_is_better: bool,
     equivalence_margin: float = 0.0,
+    comparison_scale: str = "linear",
 ) -> dict:
     """Compare like-for-like values without turning bounds into point values."""
     comparability_fields = ("endpoint", "state", "units", "assay_context")
@@ -44,8 +51,8 @@ def compare_measurements(
             "delta_upper": None,
         }
 
-    parent_low, parent_high = _interval(parent)
-    child_low, child_high = _interval(child)
+    parent_low, parent_high = _interval(parent, comparison_scale)
+    child_low, child_high = _interval(child, comparison_scale)
     delta_low = child_low - parent_high
     delta_high = child_high - parent_low
     if not higher_is_better:
@@ -72,6 +79,7 @@ def compare_measurements(
         "delta_lower": _display_bound(delta_low),
         "delta_upper": _display_bound(delta_high),
         "delta_orientation": "child_minus_parent; positive_is_better",
+        "comparison_scale": comparison_scale,
         "censoring_preserved": (
             parent["relation"] != "=" or child["relation"] != "="
         ),

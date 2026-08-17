@@ -139,7 +139,7 @@ def fragment_records(
     return sorted(records, key=lambda r: (r.context, r.variable))
 
 
-def _feature_present(fragment: str, feature: str) -> bool:
+def _feature_present(fragment: str, feature: str) -> bool | None:
     normalized = feature.lower().replace("-", "_")
     if normalized in {"hydrogen", "h"}:
         return fragment == "[*:1][H]"
@@ -166,11 +166,17 @@ def _feature_present(fragment: str, feature: str) -> bool:
         "phenylazo": "N=Nc1ccccc1",
         "phenyl": "c1ccccc1",
         "dimethylisoxazole": "Cc1noc(C)c1",
+        "oxetane": "C1COC1",
+        "pyridyl": "n1ccccc1",
+        "dimethylamine": "N(C)C",
+        "amine_nitrogen": "[N;X3]",
         "aliphatic_carbon": "[C;!$(C=*)]",
         "ether_oxygen": "[O;X2;H0]",
     }
     pattern = patterns.get(normalized)
-    query = Chem.MolFromSmarts(pattern) if pattern else None
+    if pattern is None:
+        return None
+    query = Chem.MolFromSmarts(pattern)
     return bool(query and mol.HasSubstructMatch(query))
 
 
@@ -183,24 +189,15 @@ def feature_alignment(
     """Score only normalized feature constraints asserted during extraction."""
     checks: list[dict] = []
     for feature in required_removed:
-        checks.append(
-            {
-                "side": "parent",
-                "feature": feature,
-                "matched": _feature_present(parent_fragment, feature),
-            }
-        )
+        matched = _feature_present(parent_fragment, feature)
+        checks.append({"side": "parent", "feature": feature, "supported": matched is not None, "matched": matched})
     for feature in required_added:
-        checks.append(
-            {
-                "side": "child",
-                "feature": feature,
-                "matched": _feature_present(child_fragment, feature),
-            }
-        )
-    if not checks:
-        return None, []
-    return sum(check["matched"] for check in checks) / len(checks), checks
+        matched = _feature_present(child_fragment, feature)
+        checks.append({"side": "child", "feature": feature, "supported": matched is not None, "matched": matched})
+    supported = [check for check in checks if check["supported"]]
+    if not supported:
+        return None, checks
+    return sum(bool(check["matched"]) for check in supported) / len(supported), checks
 
 
 def _series_key(label: str) -> str | None:

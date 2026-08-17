@@ -16,8 +16,11 @@ class PipelineTests(unittest.TestCase):
     def test_manifest_records_core_guardrails(self):
         guardrails = self.manifest["guardrails"]
         self.assertEqual(self.manifest["counts"]["papers"], 4)
-        self.assertEqual(self.manifest["counts"]["reason_assertions"], 5)
-        self.assertEqual(self.manifest["counts"]["outcome_comparisons"], 19)
+        self.assertEqual(self.manifest["counts"]["rationale_episodes"], 19)
+        self.assertEqual(self.manifest["counts"]["reason_bearing_compounds"], 44)
+        self.assertEqual(self.manifest["counts"]["resolved_structures"], 58)
+        self.assertEqual(self.manifest["counts"]["outcome_comparisons"], 81)
+        self.assertEqual(self.manifest["counts"]["unique_outcome_pairs"], 75)
         self.assertTrue(guardrails["reason_frozen_before_outcome_join"])
         self.assertTrue(guardrails["inferred_comparator_is_not_lineage"])
         self.assertTrue(guardrails["bounds_preserved"])
@@ -48,7 +51,7 @@ class PipelineTests(unittest.TestCase):
         relation = azo["layer_3_inferred_structural_comparison"][
             "author_explicit_relationship"
         ]
-        self.assertEqual(relation["parent_chembl_id"], "CHEMBL6189525")
+        self.assertEqual(relation["parent_chembl_id"], "CHEMBL49080")
         self.assertFalse(relation["historical_synthesis_lineage_claim"])
         self.assertFalse(relation["valid_primary_mmp_rule"])
         self.assertTrue(relation["valid_single_cut_sensitivity_rule"])
@@ -65,8 +68,8 @@ class PipelineTests(unittest.TestCase):
                 "reason_constrained_mmp_comparator",
             ),
             "PMC4207553:5:dimethylisoxazole_solubility": (
-                "CHEMBL1873309",
-                "c1ccc([*:1])cc1>>Cc1noc(C)c1[*:1]",
+                "CHEMBL3343648",
+                "Fc1ccc([*:1])cc1>>Cc1noc(C)c1[*:1]",
                 "reason_constrained_mmp_comparator",
             ),
             "PMC10726475:9:noralkoxy_basicity": (
@@ -82,6 +85,17 @@ class PipelineTests(unittest.TestCase):
             self.assertEqual(top["parent_chembl_id"], parent_id)
             self.assertEqual(top["transformation"], transform)
             self.assertEqual(top["edge_semantics"], semantics)
+
+        explicit = by_reason["PMC4207553:5:dimethylisoxazole_solubility"]["layer_3_inferred_structural_comparison"]["author_explicit_relationship"]
+        self.assertEqual(explicit["parent_chembl_id"], "CHEMBL1873309")
+
+    def test_named_series_are_not_counted_as_independent_rationales(self):
+        antimalarial = next(
+            row for row in self.manifest["paper_coverage"] if row["document_id"] == "PMC4207553"
+        )
+        self.assertEqual(antimalarial["rationale_episodes"], 12)
+        self.assertEqual(antimalarial["reason_bearing_compounds"], 36)
+        self.assertEqual(antimalarial["resolved_structures"], 38)
 
     def test_retrospective_reason_has_no_prospective_success_label(self):
         move = next(

@@ -14,10 +14,10 @@ def main() -> None:
         description="Build auditable medicinal-chemistry moves with reasons.",
     )
     parser.add_argument(
-        "command", choices=["build-pilot"], help="Pipeline command to run"
+        "command", choices=["build", "build-pilot"], help="Pipeline command to run"
     )
     args = parser.parse_args()
-    if args.command == "build-pilot":
+    if args.command in {"build", "build-pilot"}:
         print(json.dumps(build(), indent=2, sort_keys=True))
 
 

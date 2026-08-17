@@ -21,6 +21,7 @@
         "explicit_prospective_intent",
         "explicit_feature_choice_with_sar_basis",
         "explicit_series_rationale",
+        "explicit_mechanistic_probe",
         "implied_intent",
         "retrospective_explanation",
         "generic_sar",
@@ -28,6 +29,10 @@
       ]
     },
     "reason_statement": {"type": "string"},
+    "assertion_scope": {"enum": ["single_compound", "named_series"]},
+    "decision_kind": {"type": "string"},
+    "member_chembl_ids": {"type": "array", "items": {"type": "string", "pattern": "^CHEMBL[0-9]+$"}},
+    "member_paper_labels": {"type": "array", "items": {"type": "string"}},
     "intended_property": {
       "type": "object",
       "required": ["name", "direction", "explicitness"],

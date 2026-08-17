@@ -1,4 +1,4 @@
-"""Build the frozen photo-clenbuterol reasoned-MMP pilot artifacts."""
+"""Build the frozen multi-paper reasoned-MMP corpus and evidence viewer."""
 
 from __future__ import annotations
 
@@ -106,13 +106,16 @@ def _explicit_parent_edge(
     explicit_id = reason.get("explicit_parent_chembl_id")
     if not explicit_id:
         return None
-    # The primary MMP rule is variable fraction <= 0.30. A sensitivity pass at
-    # 0.40 checks large but still one-site series moves such as azoextension.
+    # The primary MMP rule is variable fraction <= 0.30. A 0.50 sensitivity
+    # pass is used only for an independently author-stated relationship. This
+    # captures small fragment-model pairs and large one-site azoextensions
+    # without broadening ordinary inferred-candidate generation.
+    sensitivity_limit = 0.50
     sensitivity = infer_parent_candidates(
         child,
         compounds,
         reason,
-        max_variable_fraction=0.40,
+        max_variable_fraction=sensitivity_limit,
     )
     matches = [row for row in sensitivity if row["parent_chembl_id"] == explicit_id]
     witness = matches[0] if matches else None
@@ -125,7 +128,8 @@ def _explicit_parent_edge(
         "edge_semantics": reason.get(
             "explicit_parent_edge_semantics", "author_explicit_scaffold_parent"
         ),
-        "paper_uses_parent_term": True,
+        "author_relationship_explicit": True,
+        "paper_uses_parent_term": bool(reason.get("paper_uses_parent_term", False)),
         "historical_synthesis_lineage_claim": reason.get(
             "explicit_historical_synthesis_lineage", False
         ),
@@ -134,7 +138,7 @@ def _explicit_parent_edge(
             for row in infer_parent_candidates(child, compounds, reason)
         ),
         "valid_single_cut_sensitivity_rule": witness is not None,
-        "sensitivity_rule_max_variable_fraction": 0.40,
+        "sensitivity_rule_max_variable_fraction": sensitivity_limit,
         "structural_witness": witness,
         "basis": reason.get("explicit_parent_basis"),
     }
@@ -169,8 +173,33 @@ def build() -> dict:
         measurements.extend(dataset_measurements)
         outcome_specs.extend(dataset_specs)
         compounds_by_dataset[dataset_id].extend(dataset_compounds)
-    compounds_by_id = {row["chembl_id"]: row for row in compounds}
+    compounds_by_key = {
+        (row["dataset_id"], row["chembl_id"]): row for row in compounds
+    }
     measurements_by_id = {row["measurement_id"]: row for row in measurements}
+    reason_ids = [reason["reason_id"] for reason in reasons]
+    measurement_ids = [measurement["measurement_id"] for measurement in measurements]
+    if len(reason_ids) != len(set(reason_ids)):
+        raise ValueError("reason_id values must be unique")
+    if len(measurement_ids) != len(set(measurement_ids)):
+        raise ValueError("measurement_id values must be unique")
+    for reason in reasons:
+        dataset_ids = {
+            compound["chembl_id"] for compound in compounds_by_dataset[reason["dataset_id"]]
+        }
+        members = reason.get("member_chembl_ids", [reason["child_chembl_id"]])
+        if reason["child_chembl_id"] not in members:
+            raise ValueError(f"{reason['reason_id']}: anchor child is not a named member")
+        missing = sorted(set(members) - dataset_ids)
+        if missing:
+            raise ValueError(f"{reason['reason_id']}: unresolved named members {missing}")
+    known_reasons = set(reason_ids)
+    for spec in outcome_specs:
+        if spec["reason_id"] not in known_reasons:
+            raise ValueError(f"unknown reason_id in outcome spec: {spec['reason_id']}")
+        for field in ("parent_measurement_id", "child_measurement_id"):
+            if spec[field] not in measurements_by_id:
+                raise ValueError(f"unknown {field} in outcome spec: {spec[field]}")
 
     outcome_rows: list[dict] = []
     outcomes_by_reason: dict[str, list[dict]] = defaultdict(list)
@@ -182,6 +211,7 @@ def build() -> dict:
             child,
             higher_is_better=bool(spec["higher_is_better"]),
             equivalence_margin=float(spec["equivalence_margin"]),
+            comparison_scale=spec.get("comparison_scale", "linear"),
         )
         row = {
             **spec,
@@ -203,7 +233,7 @@ def build() -> dict:
     best_candidates: list[dict] = []
     reasoned_moves: list[dict] = []
     for reason in reasons:
-        child = compounds_by_id[reason["child_chembl_id"]]
+        child = compounds_by_key[(reason["dataset_id"], reason["child_chembl_id"])]
         candidate_compounds = compounds_by_dataset[reason["dataset_id"]]
         decompositions = infer_parent_candidates(child, candidate_compounds, reason)
         best = best_candidate_per_parent(decompositions)
@@ -248,9 +278,13 @@ def build() -> dict:
                 "author_explicit_relationship": _explicit_parent_edge(
                     reason, child, candidate_compounds
                 ),
+                "additional_author_relationships": reason.get(
+                    "related_author_relationships", []
+                ),
             },
             "layer_4_observed_outcomes": {
                 "comparisons": reason_outcomes,
+                "unpaired_facts": reason.get("unpaired_outcome_facts", []),
                 "classification_counts": dict(counts),
                 "direct_supporting_endpoint_counts": dict(direct_counts),
                 "stated_intent_outcome": (
@@ -295,9 +329,35 @@ def build() -> dict:
     )
     _write_csv(OUTPUTS / "outcome_comparisons.csv", outcome_rows)
 
+    reason_bearing_compounds = {
+        chembl_id
+        for reason in reasons
+        for chembl_id in reason.get("member_chembl_ids", [reason["child_chembl_id"]])
+    }
+    unique_outcome_pairs = {
+        (row["parent_measurement_id"], row["child_measurement_id"])
+        for row in outcome_specs
+    }
+    coverage_by_paper = []
+    for document_id in sorted({reason["evidence"]["document_id"] for reason in reasons}):
+        paper_reasons = [reason for reason in reasons if reason["evidence"]["document_id"] == document_id]
+        paper_members = {
+            chembl_id
+            for reason in paper_reasons
+            for chembl_id in reason.get("member_chembl_ids", [reason["child_chembl_id"]])
+        }
+        paper_structures = [compound for compound in compounds if compound["source_document_id"] == document_id]
+        coverage_by_paper.append({
+            "document_id": document_id,
+            "source_title": paper_reasons[0].get("source_title", document_id),
+            "rationale_episodes": len(paper_reasons),
+            "reason_bearing_compounds": len(paper_members),
+            "resolved_structures": len(paper_structures),
+        })
+
     manifest = {
         "corpus": "reasoned_mmp_pilot_corpus",
-        "schema_version": "0.2.0",
+        "schema_version": "0.3.0",
         "rdkit_version": rdBase.rdkitVersion,
         "input_sha256": {
             path.name: _sha256(path) for path in input_paths
@@ -306,17 +366,24 @@ def build() -> dict:
             "papers": len(
                 {reason["evidence"]["document_id"] for reason in reasons}
             ),
-            "compounds": len(compounds),
+            "rationale_episodes": len(reasons),
             "reason_assertions": len(reasons),
+            "reason_bearing_compounds": len(reason_bearing_compounds),
+            "resolved_structures": len(compounds),
+            "compounds": len(compounds),
             "mmp_decompositions": len(all_decompositions),
             "unique_reason_parent_candidates": len(best_candidates),
             "outcome_comparisons": len(outcome_rows),
+            "unique_outcome_pairs": len(unique_outcome_pairs),
+            "unpaired_outcome_facts": sum(len(reason.get("unpaired_outcome_facts", [])) for reason in reasons),
         },
+        "paper_coverage": coverage_by_paper,
         "guardrails": {
             "reason_frozen_before_outcome_join": True,
             "bounds_preserved": True,
             "inferred_comparator_is_not_lineage": True,
             "primary_max_variable_fraction": 0.30,
+            "explicit_relationship_sensitivity_fraction": 0.50,
             "hydrogen_changes_indexed": True,
         },
     }

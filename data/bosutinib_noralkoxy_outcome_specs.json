@@ -1,38 +1,392 @@
 [
   {
-    "comparison_id": "bos_9_efflux",
-    "reason_id": "PMC10726475:9:noralkoxy_basicity",
-    "parent_measurement_id": "m_bos_efflux",
-    "child_measurement_id": "m_9_efflux",
-    "higher_is_better": false,
-    "equivalence_margin": 1.0,
-    "relation_to_stated_intent": "effect_explained_retrospectively"
-  },
-  {
-    "comparison_id": "bos_9_herg",
-    "reason_id": "PMC10726475:9:noralkoxy_basicity",
-    "parent_measurement_id": "m_bos_herg",
-    "child_measurement_id": "m_9_herg",
+    "comparison_id": "bos_3_9_hlm_t_half_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_hlm_t_half",
+    "child_measurement_id": "m_bos_9_hlm_t_half",
     "higher_is_better": true,
-    "equivalence_margin": 300,
-    "relation_to_stated_intent": "effect_explained_retrospectively"
+    "equivalence_margin": 0.1,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
   },
   {
-    "comparison_id": "bos_9_bcrabl_wt",
-    "reason_id": "PMC10726475:9:noralkoxy_basicity",
-    "parent_measurement_id": "m_bos_bcrabl_wt",
-    "child_measurement_id": "m_9_bcrabl_wt",
+    "comparison_id": "bos_3_9_rlm_cl_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_rlm_cl",
+    "child_measurement_id": "m_bos_9_rlm_cl",
     "higher_is_better": false,
-    "equivalence_margin": 0.2,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_hlm_cl_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_hlm_cl",
+    "child_measurement_id": "m_bos_9_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_rlm_t_half_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_rlm_t_half",
+    "child_measurement_id": "m_bos_9_rlm_t_half",
+    "higher_is_better": true,
+    "equivalence_margin": 0.1,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_logd_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_logd",
+    "child_measurement_id": "m_bos_9_logd",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "mechanistic_context"
+  },
+  {
+    "comparison_id": "bos_3_9_fu_rat_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_fu_rat",
+    "child_measurement_id": "m_bos_9_fu_rat",
+    "higher_is_better": true,
+    "equivalence_margin": 0.01,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_fu_human_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_fu_human",
+    "child_measurement_id": "m_bos_9_fu_human",
+    "higher_is_better": true,
+    "equivalence_margin": 0.01,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_efflux_aux_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_efflux_aux",
+    "child_measurement_id": "m_bos_9_efflux_aux",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "bos_3_9_bcrabl_wt_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_bcrabl_wt",
+    "child_measurement_id": "m_bos_9_bcrabl_wt",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
     "relation_to_stated_intent": "target_potency_retention"
   },
   {
-    "comparison_id": "bos_9_bcrabl_t315i",
+    "comparison_id": "bos_3_9_bcrabl_wt_retro",
     "reason_id": "PMC10726475:9:noralkoxy_basicity",
-    "parent_measurement_id": "m_bos_bcrabl_t315i",
-    "child_measurement_id": "m_9_bcrabl_t315i",
+    "parent_measurement_id": "m_bos_3_bcrabl_wt",
+    "child_measurement_id": "m_bos_9_bcrabl_wt",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_3_9_bcrabl_h396p_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_bcrabl_h396p",
+    "child_measurement_id": "m_bos_9_bcrabl_h396p",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_3_9_bcrabl_m351t_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_bcrabl_m351t",
+    "child_measurement_id": "m_bos_9_bcrabl_m351t",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_3_9_bcrabl_q252h_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_bcrabl_q252h",
+    "child_measurement_id": "m_bos_9_bcrabl_q252h",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_3_9_bcrabl_t315i_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_bcrabl_t315i",
+    "child_measurement_id": "m_bos_9_bcrabl_t315i",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_3_9_bcrabl_t315i_retro",
+    "reason_id": "PMC10726475:9:noralkoxy_basicity",
+    "parent_measurement_id": "m_bos_3_bcrabl_t315i",
+    "child_measurement_id": "m_bos_9_bcrabl_t315i",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_3_9_bcrabl_y253f_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_bcrabl_y253f",
+    "child_measurement_id": "m_bos_9_bcrabl_y253f",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_3_9_csrc_wt_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_csrc_wt",
+    "child_measurement_id": "m_bos_9_csrc_wt",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_3_9_sol_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_sol",
+    "child_measurement_id": "m_bos_9_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_hhep_cl_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_hhep_cl",
+    "child_measurement_id": "m_bos_9_hhep_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_rhep_cl_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_rhep_cl",
+    "child_measurement_id": "m_bos_9_rhep_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_hhep_t_half_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_hhep_t_half",
+    "child_measurement_id": "m_bos_9_hhep_t_half",
+    "higher_is_better": true,
+    "equivalence_margin": 0.1,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_rhep_t_half_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_rhep_t_half",
+    "child_measurement_id": "m_bos_9_rhep_t_half",
+    "higher_is_better": true,
+    "equivalence_margin": 0.1,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_caco_apbl_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_caco_apbl",
+    "child_measurement_id": "m_bos_9_caco_apbl",
+    "higher_is_better": true,
+    "equivalence_margin": 1,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_caco_blap_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_caco_blap",
+    "child_measurement_id": "m_bos_9_caco_blap",
+    "higher_is_better": false,
+    "equivalence_margin": 1,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_caco_efflux_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_caco_efflux",
+    "child_measurement_id": "m_bos_9_caco_efflux",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "bos_3_9_caco_efflux_retro",
+    "reason_id": "PMC10726475:9:noralkoxy_basicity",
+    "parent_measurement_id": "m_bos_3_caco_efflux",
+    "child_measurement_id": "m_bos_9_caco_efflux",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "bos_3_9_mdck_apbl_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_mdck_apbl",
+    "child_measurement_id": "m_bos_9_mdck_apbl",
+    "higher_is_better": true,
+    "equivalence_margin": 1,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_mdck_blap_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_mdck_blap",
+    "child_measurement_id": "m_bos_9_mdck_blap",
+    "higher_is_better": false,
+    "equivalence_margin": 1,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "ADME_profile_context"
+  },
+  {
+    "comparison_id": "bos_3_9_herg_ic50_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_herg_ic50",
+    "child_measurement_id": "m_bos_9_herg_ic50",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "bos_3_9_herg_ic50_retro",
+    "reason_id": "PMC10726475:9:noralkoxy_basicity",
+    "parent_measurement_id": "m_bos_3_herg_ic50",
+    "child_measurement_id": "m_bos_9_herg_ic50",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "bos_3_9_herg_1um_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_herg_1um",
+    "child_measurement_id": "m_bos_9_herg_1um",
     "higher_is_better": false,
     "equivalence_margin": 5,
-    "relation_to_stated_intent": "target_potency_retention"
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "bos_3_9_herg_10um_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_herg_10um",
+    "child_measurement_id": "m_bos_9_herg_10um",
+    "higher_is_better": false,
+    "equivalence_margin": 5,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "bos_3_9_ku812_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_ku812",
+    "child_measurement_id": "m_bos_9_ku812",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_relevant_cellular_potency"
+  },
+  {
+    "comparison_id": "bos_3_9_meg01_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_meg01",
+    "child_measurement_id": "m_bos_9_meg01",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_relevant_cellular_potency"
+  },
+  {
+    "comparison_id": "bos_3_9_supb15_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_supb15",
+    "child_measurement_id": "m_bos_9_supb15",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "target_relevant_cellular_potency"
+  },
+  {
+    "comparison_id": "bos_3_9_molt4_prospective",
+    "reason_id": "PMC10726475:9:prospective_bioisostere",
+    "parent_measurement_id": "m_bos_3_molt4",
+    "child_measurement_id": "m_bos_9_molt4",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "BCR_ABL_negative_cell_context"
+  },
+  {
+    "comparison_id": "bos_17_18_logd",
+    "reason_id": "PMC10726475:18:fragment_basicity_probe",
+    "parent_measurement_id": "m_bos_17_logd",
+    "child_measurement_id": "m_bos_18_logd",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "secondary_property_retention"
+  },
+  {
+    "comparison_id": "bos_17_18_sol",
+    "reason_id": "PMC10726475:18:fragment_basicity_probe",
+    "parent_measurement_id": "m_bos_17_sol",
+    "child_measurement_id": "m_bos_18_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 0.3,
+    "comparison_scale": "log10",
+    "relation_to_stated_intent": "secondary_property_retention"
+  },
+  {
+    "comparison_id": "bos_17_18_pka",
+    "reason_id": "PMC10726475:18:fragment_basicity_probe",
+    "parent_measurement_id": "m_bos_17_pka_terminal",
+    "child_measurement_id": "m_bos_18_pka_terminal",
+    "higher_is_better": false,
+    "equivalence_margin": 0.2,
+    "comparison_scale": "linear",
+    "relation_to_stated_intent": "direct_supporting_endpoint"
   }
 ]
