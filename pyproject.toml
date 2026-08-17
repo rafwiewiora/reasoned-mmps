@@ -1,0 +1,12 @@
+[project]
+name = "reasoned-mmp-atlas"
+version = "0.1.0"
+description = "Auditable pilot for medicinal-chemistry moves with reasons"
+requires-python = ">=3.11"
+dependencies = ["rdkit"]
+
+[project.scripts]
+reasoned-mmps = "reasoned_mmp.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

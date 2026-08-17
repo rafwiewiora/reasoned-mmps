@@ -1,0 +1,556 @@
+[
+  {
+    "confidence_components": {
+      "assay_comparability": 1.0,
+      "child_resolution": 1.0,
+      "evidence_entailment": 0.97,
+      "outcome_confidence": "not_calibrated",
+      "parent_inference": 0.92825
+    },
+    "layer_1_author_evidence": {
+      "access_quality": "full_text",
+      "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L132-L140",
+      "document_id": "PMC12225454",
+      "doi": "10.1021/acs.jmedchem.5c00792",
+      "entailment_status": "entailed",
+      "line_end": 140,
+      "line_start": 132,
+      "path": "/papers/PMC12225454/content.lines",
+      "verbatim_excerpt": "designed the chlorocyano-substituted compound 12e"
+    },
+    "layer_2_extracted_design_intent": {
+      "assertion_class": "explicit_feature_choice_with_sar_basis",
+      "beta2_affinity_or_efficacy_as_intent": "inferred_only",
+      "child_chembl_id": "CHEMBL6188669",
+      "child_paper_label": "12e",
+      "evidence": {
+        "access_quality": "full_text",
+        "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L132-L140",
+        "document_id": "PMC12225454",
+        "doi": "10.1021/acs.jmedchem.5c00792",
+        "entailment_status": "entailed",
+        "line_end": 140,
+        "line_start": 132,
+        "path": "/papers/PMC12225454/content.lines",
+        "verbatim_excerpt": "designed the chlorocyano-substituted compound 12e"
+      },
+      "explicit_parent_chembl_id": null,
+      "extraction_confidence": 0.97,
+      "intended_property": {
+        "direction": "increase",
+        "explicitness": "explicit",
+        "name": "bronchodilation_in_guinea_pigs"
+      },
+      "outcome_join_status": "direct_stated_property_not_measured_in_pilot",
+      "reason_id": "PMC12225454:12e:chlorocyano_sar",
+      "reason_statement": "The authors selected a chloro-cyano pattern for 12e from published clenbuterol SAR that reported stronger guinea-pig bronchodilation for chloro-cyano rather than dichloro substitution.",
+      "required_added_features": [
+        "cyano"
+      ],
+      "required_removed_features": [
+        "chloro"
+      ],
+      "stated_modification": "dichloro substitution pattern to chloro-cyano substitution pattern"
+    },
+    "layer_3_inferred_structural_comparison": {
+      "author_explicit_relationship": null,
+      "candidate_search_order_planned": [
+        "same_scheme_or_table",
+        "same_named_series",
+        "same_paper",
+        "cited_predecessor",
+        "same_chembl_document",
+        "global_chembl"
+      ],
+      "candidate_universe": "same_paper",
+      "historical_lineage_inferred": false,
+      "implemented_scope": "same_paper",
+      "score_status": "uncalibrated_heuristic",
+      "top1_top2_margin": 0.158102,
+      "top_candidates": [
+        {
+          "algorithm": "single_cut_rdkit_mmpa+h_v1",
+          "alignment_checks": [
+            {
+              "feature": "chloro",
+              "matched": true,
+              "side": "parent"
+            },
+            {
+              "feature": "cyano",
+              "matched": true,
+              "side": "child"
+            }
+          ],
+          "candidate_id": "cand_d05895cfdc49f2e0",
+          "child_chembl_id": "CHEMBL6188669",
+          "child_fragment": "N#C[*:1]",
+          "child_label": "12e; VUF26202",
+          "context": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c([*:1])c1",
+          "cut_count": 1,
+          "edge_semantics": "reason_constrained_mmp_comparator",
+          "historical_parent_claim": false,
+          "hydrogen_change": false,
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_fragment": "Cl[*:1]",
+          "parent_label": "trans-12b; VUF26034",
+          "parent_rank": 1,
+          "rank": 1,
+          "reason_id": "PMC12225454:12e:chlorocyano_sar",
+          "scores": {
+            "edit_compactness": 0.833333,
+            "ranking_score_uncalibrated": 0.92825,
+            "reason_transform_alignment": 1.0,
+            "retained_core_fraction": 0.92,
+            "same_numbered_series": 1.0,
+            "whole_molecule_tanimoto": 0.791667
+          },
+          "transformation": "Cl[*:1]>>N#C[*:1]",
+          "valid_single_cut_mmp": true
+        },
+        {
+          "algorithm": "single_cut_rdkit_mmpa+h_v1",
+          "alignment_checks": [
+            {
+              "feature": "chloro",
+              "matched": false,
+              "side": "parent"
+            },
+            {
+              "feature": "cyano",
+              "matched": true,
+              "side": "child"
+            }
+          ],
+          "candidate_id": "cand_5e31545cc220c7f1",
+          "child_chembl_id": "CHEMBL6188669",
+          "child_fragment": "N#C[*:1]",
+          "child_label": "12e; VUF26202",
+          "context": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c([*:1])c1",
+          "cut_count": 1,
+          "edge_semantics": "structure_only_mmp_comparator",
+          "historical_parent_claim": false,
+          "hydrogen_change": true,
+          "parent_chembl_id": "CHEMBL6188786",
+          "parent_fragment": "[*:1][H]",
+          "parent_label": "12c; VUF26125",
+          "parent_rank": 2,
+          "rank": 2,
+          "reason_id": "PMC12225454:12e:chlorocyano_sar",
+          "scores": {
+            "edit_compactness": 0.833333,
+            "ranking_score_uncalibrated": 0.770148,
+            "reason_transform_alignment": 0.5,
+            "retained_core_fraction": 0.92,
+            "same_numbered_series": 1.0,
+            "whole_molecule_tanimoto": 0.62963
+          },
+          "transformation": "[*:1][H]>>N#C[*:1]",
+          "valid_single_cut_mmp": true
+        }
+      ]
+    },
+    "layer_4_observed_outcomes": {
+      "classification_counts": {
+        "comparable": 1,
+        "indeterminate": 1,
+        "worsened": 3
+      },
+      "comparisons": [
+        {
+          "assay_comparability": "exact_context_match",
+          "censoring_preserved": true,
+          "child_chembl_id": "CHEMBL6188669",
+          "child_measurement_id": "m_12e_pki_trans",
+          "child_relation": "<",
+          "child_value": "5.0",
+          "classification": "indeterminate",
+          "comparison_id": "12b_12e_pki_trans",
+          "delta_lower": null,
+          "delta_orientation": "child_minus_parent; positive_is_better",
+          "delta_upper": null,
+          "endpoint": "pKi",
+          "equivalence_margin": 0.3,
+          "higher_is_better": true,
+          "mismatched_fields": [],
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_measurement_id": "m_12b_pki_trans",
+          "parent_relation": "<",
+          "parent_value": "5.0",
+          "reason_id": "PMC12225454:12e:chlorocyano_sar",
+          "relation_to_stated_intent": "mechanistic_proxy_not_the_stated_bronchodilation_endpoint",
+          "state": "trans",
+          "units": "pLog"
+        },
+        {
+          "assay_comparability": "exact_context_match",
+          "censoring_preserved": true,
+          "child_chembl_id": "CHEMBL6188669",
+          "child_measurement_id": "m_12e_pki_pss_cis",
+          "child_relation": "<",
+          "child_value": "5.0",
+          "classification": "worsened",
+          "comparison_id": "12b_12e_pki_pss_cis",
+          "delta_lower": null,
+          "delta_orientation": "child_minus_parent; positive_is_better",
+          "delta_upper": -1.4,
+          "endpoint": "pKi",
+          "equivalence_margin": 0.3,
+          "higher_is_better": true,
+          "mismatched_fields": [],
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_measurement_id": "m_12b_pki_pss_cis",
+          "parent_relation": "=",
+          "parent_value": "6.4",
+          "reason_id": "PMC12225454:12e:chlorocyano_sar",
+          "relation_to_stated_intent": "mechanistic_proxy_not_the_stated_bronchodilation_endpoint",
+          "state": "PSS-cis",
+          "units": "pLog"
+        },
+        {
+          "assay_comparability": "exact_context_match",
+          "censoring_preserved": false,
+          "child_chembl_id": "CHEMBL6188669",
+          "child_measurement_id": "m_12e_alpha_trans",
+          "child_relation": "=",
+          "child_value": "0.0",
+          "classification": "worsened",
+          "comparison_id": "12b_12e_alpha_trans",
+          "delta_lower": -0.5,
+          "delta_orientation": "child_minus_parent; positive_is_better",
+          "delta_upper": -0.5,
+          "endpoint": "intrinsic_activity_alpha",
+          "equivalence_margin": 0.1,
+          "higher_is_better": true,
+          "mismatched_fields": [],
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_measurement_id": "m_12b_alpha_trans",
+          "parent_relation": "=",
+          "parent_value": "0.5",
+          "reason_id": "PMC12225454:12e:chlorocyano_sar",
+          "relation_to_stated_intent": "mechanistic_proxy_not_the_stated_bronchodilation_endpoint",
+          "state": "trans",
+          "units": "fraction"
+        },
+        {
+          "assay_comparability": "exact_context_match",
+          "censoring_preserved": true,
+          "child_chembl_id": "CHEMBL6188669",
+          "child_measurement_id": "m_12e_pkb_trans",
+          "child_relation": "<",
+          "child_value": "5.0",
+          "classification": "worsened",
+          "comparison_id": "12b_12e_pkb_trans",
+          "delta_lower": null,
+          "delta_orientation": "child_minus_parent; positive_is_better",
+          "delta_upper": -1.5,
+          "endpoint": "pKb",
+          "equivalence_margin": 0.3,
+          "higher_is_better": true,
+          "mismatched_fields": [],
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_measurement_id": "m_12b_pkb_trans",
+          "parent_relation": "=",
+          "parent_value": "6.5",
+          "reason_id": "PMC12225454:12e:chlorocyano_sar",
+          "relation_to_stated_intent": "adjacent_pharmacology",
+          "state": "trans",
+          "units": "pLog"
+        },
+        {
+          "assay_comparability": "exact_context_match",
+          "censoring_preserved": false,
+          "child_chembl_id": "CHEMBL6188669",
+          "child_measurement_id": "m_12e_pkb_pss_cis",
+          "child_relation": "=",
+          "child_value": "6.8",
+          "classification": "comparable",
+          "comparison_id": "12b_12e_pkb_pss_cis",
+          "delta_lower": -0.1,
+          "delta_orientation": "child_minus_parent; positive_is_better",
+          "delta_upper": -0.1,
+          "endpoint": "pKb",
+          "equivalence_margin": 0.3,
+          "higher_is_better": true,
+          "mismatched_fields": [],
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_measurement_id": "m_12b_pkb_pss_cis",
+          "parent_relation": "=",
+          "parent_value": "6.9",
+          "reason_id": "PMC12225454:12e:chlorocyano_sar",
+          "relation_to_stated_intent": "adjacent_pharmacology",
+          "state": "PSS-cis",
+          "units": "pLog"
+        }
+      ],
+      "direct_supporting_endpoint_counts": {},
+      "stated_intent_outcome": "indeterminate_direct_endpoint_unavailable"
+    },
+    "reasoned_move_id": "move_6f25ab5c47167635"
+  },
+  {
+    "confidence_components": {
+      "assay_comparability": 1.0,
+      "child_resolution": 1.0,
+      "evidence_entailment": 0.94,
+      "outcome_confidence": "not_calibrated",
+      "parent_inference": 0.62825
+    },
+    "layer_1_author_evidence": {
+      "access_quality": "full_text",
+      "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L98-L119,L415-L418",
+      "document_id": "PMC12225454",
+      "doi": "10.1021/acs.jmedchem.5c00792",
+      "entailment_status": "entailed",
+      "line_end": 119,
+      "line_start": 98,
+      "path": "/papers/PMC12225454/content.lines",
+      "verbatim_excerpt": "azoextension of clenbuterol"
+    },
+    "layer_2_extracted_design_intent": {
+      "assertion_class": "explicit_series_rationale",
+      "child_chembl_id": "CHEMBL6188669",
+      "child_paper_label": "12e",
+      "evidence": {
+        "access_quality": "full_text",
+        "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L98-L119,L415-L418",
+        "document_id": "PMC12225454",
+        "doi": "10.1021/acs.jmedchem.5c00792",
+        "entailment_status": "entailed",
+        "line_end": 119,
+        "line_start": 98,
+        "path": "/papers/PMC12225454/content.lines",
+        "verbatim_excerpt": "azoextension of clenbuterol"
+      },
+      "explicit_parent_basis": "The discussion calls compound 18 the parent molecule of 12e.",
+      "explicit_parent_chembl_id": "CHEMBL6189525",
+      "extraction_confidence": 0.94,
+      "intended_property": {
+        "direction": "modulate",
+        "explicitness": "explicit",
+        "name": "light_dependent_beta2_receptor_modulation"
+      },
+      "outcome_join_status": "supporting_endpoints_available",
+      "reason_id": "PMC12225454:12e:azoextension",
+      "reason_statement": "The series was made by azoextending clenbuterol analogues to create photoresponsive ligands whose trans and cis forms could differ in receptor interactions.",
+      "required_added_features": [
+        "phenylazo"
+      ],
+      "required_removed_features": [
+        "amino"
+      ],
+      "stated_modification": "replace the aniline amino group with a phenylazo extension"
+    },
+    "layer_3_inferred_structural_comparison": {
+      "author_explicit_relationship": {
+        "basis": "The discussion calls compound 18 the parent molecule of 12e.",
+        "child_chembl_id": "CHEMBL6188669",
+        "edge_semantics": "author_explicit_scaffold_parent",
+        "historical_synthesis_lineage_claim": false,
+        "paper_uses_parent_term": true,
+        "parent_chembl_id": "CHEMBL6189525",
+        "relationship_id": "rel_a8ffbc3260a2bb38",
+        "sensitivity_rule_max_variable_fraction": 0.4,
+        "structural_witness": {
+          "algorithm": "single_cut_rdkit_mmpa+h_v1",
+          "alignment_checks": [
+            {
+              "feature": "amino",
+              "matched": true,
+              "side": "parent"
+            },
+            {
+              "feature": "phenylazo",
+              "matched": true,
+              "side": "child"
+            }
+          ],
+          "candidate_id": "cand_07ecfd781832e0c8",
+          "child_chembl_id": "CHEMBL6188669",
+          "child_fragment": "c1ccc(/N=N/[*:1])cc1",
+          "child_label": "12e; VUF26202",
+          "context": "CC(C)(C)NCC(O)c1cc(Cl)c([*:1])c(C#N)c1",
+          "cut_count": 1,
+          "edge_semantics": "reason_constrained_mmp_comparator",
+          "historical_parent_claim": false,
+          "hydrogen_change": false,
+          "parent_chembl_id": "CHEMBL6189525",
+          "parent_fragment": "N[*:1]",
+          "parent_label": "18; VUF26211",
+          "rank": 1,
+          "reason_id": "PMC12225454:12e:azoextension",
+          "scores": {
+            "edit_compactness": 0.333333,
+            "ranking_score_uncalibrated": 0.634855,
+            "reason_transform_alignment": 1.0,
+            "retained_core_fraction": 0.68,
+            "same_numbered_series": 0.0,
+            "whole_molecule_tanimoto": 0.603774
+          },
+          "transformation": "N[*:1]>>c1ccc(/N=N/[*:1])cc1",
+          "valid_single_cut_mmp": true
+        },
+        "valid_primary_mmp_rule": false,
+        "valid_single_cut_sensitivity_rule": true
+      },
+      "candidate_search_order_planned": [
+        "same_scheme_or_table",
+        "same_named_series",
+        "same_paper",
+        "cited_predecessor",
+        "same_chembl_document",
+        "global_chembl"
+      ],
+      "candidate_universe": "same_paper",
+      "historical_lineage_inferred": false,
+      "implemented_scope": "same_paper",
+      "score_status": "uncalibrated_heuristic",
+      "top1_top2_margin": 0.008102,
+      "top_candidates": [
+        {
+          "algorithm": "single_cut_rdkit_mmpa+h_v1",
+          "alignment_checks": [
+            {
+              "feature": "amino",
+              "matched": false,
+              "side": "parent"
+            },
+            {
+              "feature": "phenylazo",
+              "matched": false,
+              "side": "child"
+            }
+          ],
+          "candidate_id": "cand_b7204cbc6f2ee1cc",
+          "child_chembl_id": "CHEMBL6188669",
+          "child_fragment": "N#C[*:1]",
+          "child_label": "12e; VUF26202",
+          "context": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c([*:1])c1",
+          "cut_count": 1,
+          "edge_semantics": "structure_only_mmp_comparator",
+          "historical_parent_claim": false,
+          "hydrogen_change": false,
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_fragment": "Cl[*:1]",
+          "parent_label": "trans-12b; VUF26034",
+          "parent_rank": 1,
+          "rank": 1,
+          "reason_id": "PMC12225454:12e:azoextension",
+          "scores": {
+            "edit_compactness": 0.833333,
+            "ranking_score_uncalibrated": 0.62825,
+            "reason_transform_alignment": 0.0,
+            "retained_core_fraction": 0.92,
+            "same_numbered_series": 1.0,
+            "whole_molecule_tanimoto": 0.791667
+          },
+          "transformation": "Cl[*:1]>>N#C[*:1]",
+          "valid_single_cut_mmp": true
+        },
+        {
+          "algorithm": "single_cut_rdkit_mmpa+h_v1",
+          "alignment_checks": [
+            {
+              "feature": "amino",
+              "matched": false,
+              "side": "parent"
+            },
+            {
+              "feature": "phenylazo",
+              "matched": false,
+              "side": "child"
+            }
+          ],
+          "candidate_id": "cand_858d5dba17269ed6",
+          "child_chembl_id": "CHEMBL6188669",
+          "child_fragment": "N#C[*:1]",
+          "child_label": "12e; VUF26202",
+          "context": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c([*:1])c1",
+          "cut_count": 1,
+          "edge_semantics": "structure_only_mmp_comparator",
+          "historical_parent_claim": false,
+          "hydrogen_change": true,
+          "parent_chembl_id": "CHEMBL6188786",
+          "parent_fragment": "[*:1][H]",
+          "parent_label": "12c; VUF26125",
+          "parent_rank": 2,
+          "rank": 2,
+          "reason_id": "PMC12225454:12e:azoextension",
+          "scores": {
+            "edit_compactness": 0.833333,
+            "ranking_score_uncalibrated": 0.620148,
+            "reason_transform_alignment": 0.0,
+            "retained_core_fraction": 0.92,
+            "same_numbered_series": 1.0,
+            "whole_molecule_tanimoto": 0.62963
+          },
+          "transformation": "[*:1][H]>>N#C[*:1]",
+          "valid_single_cut_mmp": true
+        }
+      ]
+    },
+    "layer_4_observed_outcomes": {
+      "classification_counts": {
+        "improved": 1,
+        "worsened": 1
+      },
+      "comparisons": [
+        {
+          "assay_comparability": "exact_context_match",
+          "censoring_preserved": true,
+          "child_chembl_id": "CHEMBL6188669",
+          "child_measurement_id": "m_12e_delta_pkb",
+          "child_relation": ">",
+          "child_value": "1.8",
+          "classification": "improved",
+          "comparison_id": "12b_12e_photo_shift",
+          "delta_lower": 1.4,
+          "delta_orientation": "child_minus_parent; positive_is_better",
+          "delta_upper": null,
+          "endpoint": "photoinduced_delta_pKb",
+          "equivalence_margin": 0.3,
+          "higher_is_better": true,
+          "mismatched_fields": [],
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_measurement_id": "m_12b_delta_pkb",
+          "parent_relation": "=",
+          "parent_value": "0.4",
+          "reason_id": "PMC12225454:12e:azoextension",
+          "relation_to_stated_intent": "direct_supporting_endpoint",
+          "state": "trans_to_PSS-cis",
+          "units": "pLog"
+        },
+        {
+          "assay_comparability": "exact_context_match",
+          "censoring_preserved": false,
+          "child_chembl_id": "CHEMBL6188669",
+          "child_measurement_id": "m_12e_t_half",
+          "child_relation": "=",
+          "child_value": "264",
+          "classification": "worsened",
+          "comparison_id": "12b_12e_thermal_half_life",
+          "delta_lower": -2424.0,
+          "delta_orientation": "child_minus_parent; positive_is_better",
+          "delta_upper": -2424.0,
+          "endpoint": "thermal_relaxation_t_half",
+          "equivalence_margin": 24.0,
+          "higher_is_better": true,
+          "mismatched_fields": [],
+          "parent_chembl_id": "CHEMBL6190593",
+          "parent_measurement_id": "m_12b_t_half",
+          "parent_relation": "=",
+          "parent_value": "2688",
+          "reason_id": "PMC12225454:12e:azoextension",
+          "relation_to_stated_intent": "photochemical_tradeoff",
+          "state": "HBSS",
+          "units": "hr"
+        }
+      ],
+      "direct_supporting_endpoint_counts": {
+        "improved": 1
+      },
+      "stated_intent_outcome": "evaluate_per_endpoint"
+    },
+    "reasoned_move_id": "move_cfa54c7728c605ab"
+  }
+]

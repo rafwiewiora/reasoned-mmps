@@ -1,0 +1,62 @@
+[
+  {
+    "reason_id": "PMC12225454:12e:chlorocyano_sar",
+    "child_chembl_id": "CHEMBL6188669",
+    "child_paper_label": "12e",
+    "assertion_class": "explicit_feature_choice_with_sar_basis",
+    "reason_statement": "The authors selected a chloro-cyano pattern for 12e from published clenbuterol SAR that reported stronger guinea-pig bronchodilation for chloro-cyano rather than dichloro substitution.",
+    "stated_modification": "dichloro substitution pattern to chloro-cyano substitution pattern",
+    "required_removed_features": ["chloro"],
+    "required_added_features": ["cyano"],
+    "intended_property": {
+      "name": "bronchodilation_in_guinea_pigs",
+      "direction": "increase",
+      "explicitness": "explicit"
+    },
+    "beta2_affinity_or_efficacy_as_intent": "inferred_only",
+    "explicit_parent_chembl_id": null,
+    "evidence": {
+      "document_id": "PMC12225454",
+      "doi": "10.1021/acs.jmedchem.5c00792",
+      "path": "/papers/PMC12225454/content.lines",
+      "line_start": 132,
+      "line_end": 140,
+      "verbatim_excerpt": "designed the chlorocyano-substituted compound 12e",
+      "access_quality": "full_text",
+      "entailment_status": "entailed",
+      "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L132-L140"
+    },
+    "extraction_confidence": 0.97,
+    "outcome_join_status": "direct_stated_property_not_measured_in_pilot"
+  },
+  {
+    "reason_id": "PMC12225454:12e:azoextension",
+    "child_chembl_id": "CHEMBL6188669",
+    "child_paper_label": "12e",
+    "assertion_class": "explicit_series_rationale",
+    "reason_statement": "The series was made by azoextending clenbuterol analogues to create photoresponsive ligands whose trans and cis forms could differ in receptor interactions.",
+    "stated_modification": "replace the aniline amino group with a phenylazo extension",
+    "required_removed_features": ["amino"],
+    "required_added_features": ["phenylazo"],
+    "intended_property": {
+      "name": "light_dependent_beta2_receptor_modulation",
+      "direction": "modulate",
+      "explicitness": "explicit"
+    },
+    "explicit_parent_chembl_id": "CHEMBL6189525",
+    "explicit_parent_basis": "The discussion calls compound 18 the parent molecule of 12e.",
+    "evidence": {
+      "document_id": "PMC12225454",
+      "doi": "10.1021/acs.jmedchem.5c00792",
+      "path": "/papers/PMC12225454/content.lines",
+      "line_start": 98,
+      "line_end": 119,
+      "verbatim_excerpt": "azoextension of clenbuterol",
+      "access_quality": "full_text",
+      "entailment_status": "entailed",
+      "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L98-L119,L415-L418"
+    },
+    "extraction_confidence": 0.94,
+    "outcome_join_status": "supporting_endpoints_available"
+  }
+]

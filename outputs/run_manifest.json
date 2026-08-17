@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "compounds": 9,
+    "mmp_decompositions": 4,
+    "outcome_comparisons": 7,
+    "reason_assertions": 2,
+    "unique_reason_parent_candidates": 4
+  },
+  "guardrails": {
+    "bounds_preserved": true,
+    "hydrogen_changes_indexed": true,
+    "inferred_comparator_is_not_lineage": true,
+    "primary_max_variable_fraction": 0.3,
+    "reason_frozen_before_outcome_join": true
+  },
+  "input_sha256": {
+    "photo_clenbuterol_compounds.csv": "2b42badf96e280a3d1c8c060496e07412e5c631ee9724282bc832bf66a1b59d6",
+    "photo_clenbuterol_measurements.csv": "cb9dc0c65c1ec6e72dd472d82364d654d465c07c1dae13b9382463b0e099a6d1",
+    "photo_clenbuterol_outcome_specs.json": "3ba80b746789a0dca3d8b7b5663f0a07d63caa0a6f49381c6bd60047750bb62b",
+    "photo_clenbuterol_reasons.json": "784672be587f401fbb56397c1eb8e020bcf713c36fd060b642d20d0f02b29e23"
+  },
+  "pilot": "photo_clenbuterol",
+  "rdkit_version": "2026.03.4",
+  "schema_version": "0.1.0"
+}
