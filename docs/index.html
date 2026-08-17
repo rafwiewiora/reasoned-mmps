@@ -4,30 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Evidence viewer for medicinal-chemistry matched molecular pairs with author-stated reasons.">
-    <title>Reasoned MMP Atlas</title>
+    <title>Reasoned MMPs — evidence atlas</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="masthead">
       <div class="brand-row">
         <a class="brand" href="./" aria-label="Reasoned MMP Atlas home">
-          <span class="brand-mark">rMMP</span>
-          <span class="brand-name">Evidence atlas</span>
+          <span class="brand-name">Reasoned MMPs</span>
         </a>
-        <a class="github-link" href="https://github.com/rafwiewiora/reasoned-mmps">Source ↗</a>
-      </div>
-      <div class="hero">
-        <div>
-          <p class="eyebrow">Medicinal chemistry, without the hindsight leak</p>
-          <h1>Moves with reasons.</h1>
-          <p class="hero-copy">Trace what authors said, which comparator the chemistry supports, and what happened in matched assays.</p>
-        </div>
-        <div class="metrics" id="metrics" aria-label="Corpus summary"></div>
+        <nav class="site-links" aria-label="Related links">
+          <a href="https://rafwiewiora.github.io/">Portfolio</a>
+          <a href="https://github.com/rafwiewiora/reasoned-mmps">Source ↗</a>
+        </nav>
       </div>
     </header>
 
     <main>
+      <section class="hero">
+        <p class="eyebrow">Medicinal chemistry evidence atlas</p>
+        <h1>Moves with reasons</h1>
+        <p class="hero-copy">What authors said, which comparator the chemistry supports, and what happened in matched assays.</p>
+        <div class="metrics" id="metrics" aria-label="Corpus summary"></div>
+      </section>
+
       <section class="controls" aria-label="Filter rationale episodes">
         <label class="search-control">
           <span>Search</span>

@@ -35,10 +35,10 @@
     $("#metrics").innerHTML = [
       [counts.papers, "papers"],
       [counts.rationale_episodes, "evidence episodes"],
-      [counts.reason_bearing_compounds, "reason-bearing"],
-      [counts.resolved_structures, "resolved structures"],
-      [counts.unique_outcome_pairs, "unique assay pairs"],
-      [counts.outcome_comparisons, "episode links"],
+      [counts.reason_bearing_compounds, "compounds with reasons"],
+      [counts.resolved_structures, "structures"],
+      [counts.unique_outcome_pairs, "assay pairs"],
+      [counts.outcome_comparisons, "outcome links"],
     ].map(([value, label]) => `<div class="metric"><strong>${value}</strong><span>${label}</span></div>`).join("");
   }
 
