@@ -1,0 +1,47 @@
+[
+  {
+    "comparison_id": "am2_am5_solubility",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am2_sol",
+    "child_measurement_id": "m_am5_sol",
+    "higher_is_better": true,
+    "equivalence_margin": 5000,
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "am2_am5_growth_potency",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am2_gi50",
+    "child_measurement_id": "m_am5_gi50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "relation_to_stated_intent": "target_potency_tradeoff"
+  },
+  {
+    "comparison_id": "am2_am5_herg",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am2_herg",
+    "child_measurement_id": "m_am5_herg",
+    "higher_is_better": false,
+    "equivalence_margin": 5,
+    "relation_to_stated_intent": "beneficial_adjacent_outcome"
+  },
+  {
+    "comparison_id": "am2_am5_logd",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am2_logd",
+    "child_measurement_id": "m_am5_logd",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "relation_to_stated_intent": "mechanistic_supporting_endpoint"
+  },
+  {
+    "comparison_id": "am2_am5_microsomal_stability",
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "parent_measurement_id": "m_am2_mlm",
+    "child_measurement_id": "m_am5_mlm",
+    "higher_is_better": true,
+    "equivalence_margin": 5,
+    "relation_to_stated_intent": "metabolic_stability_tradeoff"
+  }
+]

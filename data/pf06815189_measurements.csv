@@ -1,0 +1,7 @@
+measurement_id,chembl_id,paper_label,endpoint,state,relation,value,error,units,assay_context,assay_id,assay_chembl_id,source_kind,source_ref
+m_pf1_pde2_ic50,CHEMBL4160171,1,IC50,not_applicable,=,0.6,,nM,human_PDE2A1_biochemical_inhibition,1729499,CHEMBL4144777,ChEMBL,activity_18376665
+m_pf2_pde2_ic50,CHEMBL4062397,2,IC50,not_applicable,=,0.4,,nM,human_PDE2A1_biochemical_inhibition,1729499,CHEMBL4144777,ChEMBL,activity_18376664
+m_pf1_hlm_cl,CHEMBL4160171,1,intrinsic_clearance,not_applicable,=,16.0,,mL.min-1.kg-1,human_liver_microsomes,1729500,CHEMBL4144778,ChEMBL,activity_18376669
+m_pf2_hlm_cl,CHEMBL4062397,2,intrinsic_clearance,not_applicable,<,8.0,,mL.min-1.kg-1,human_liver_microsomes,1729500,CHEMBL4144778,ChEMBL,activity_18376668
+m_pf1_hep_cl,CHEMBL4160171,1,intrinsic_clearance,not_applicable,=,18.0,,mL.min-1.kg-1,human_hepatocytes,1729501,CHEMBL4144779,ChEMBL,activity_18376673
+m_pf2_hep_cl,CHEMBL4062397,2,intrinsic_clearance,not_applicable,<,0.36,,mL.min-1.kg-1,human_hepatocytes,1729501,CHEMBL4144779,ChEMBL,activity_18376672

@@ -61,7 +61,9 @@ def _hydrogen_contexts(mol: Chem.Mol) -> Iterable[str]:
     """Yield contexts that let an implicit-H molecule match an H→R move."""
     seen: set[str] = set()
     for atom in mol.GetAtoms():
-        if atom.GetTotalNumHs() < 1:
+        # Explicit hydrogens (for example [nH] or stereochemical [C@H]) must
+        # not receive an extra dummy bond; only replace an implicit hydrogen.
+        if atom.GetNumImplicitHs() < 1:
             continue
         editable = Chem.RWMol(mol)
         dummy = Chem.Atom(0)
@@ -162,6 +164,10 @@ def _feature_present(fragment: str, feature: str) -> bool:
         "hydroxyl": "[OH]",
         "amino": "[NH2]",
         "phenylazo": "N=Nc1ccccc1",
+        "phenyl": "c1ccccc1",
+        "dimethylisoxazole": "Cc1noc(C)c1",
+        "aliphatic_carbon": "[C;!$(C=*)]",
+        "ether_oxygen": "[O;X2;H0]",
     }
     pattern = patterns.get(normalized)
     query = Chem.MolFromSmarts(pattern) if pattern else None
@@ -275,11 +281,15 @@ def infer_parent_candidates(
                     + 0.05 * similarity
                     + 0.30 * (alignment if alignment is not None else 0.0)
                 )
-                edge_semantics = (
-                    "reason_constrained_mmp_comparator"
-                    if alignment is not None and alignment == 1.0
-                    else "structure_only_mmp_comparator"
-                )
+                if alignment is not None and alignment == 1.0:
+                    edge_semantics = (
+                        "retrospective_reason_aligned_mmp_comparator"
+                        if reason.get("assertion_class")
+                        == "retrospective_explanation"
+                        else "reason_constrained_mmp_comparator"
+                    )
+                else:
+                    edge_semantics = "structure_only_mmp_comparator"
                 transformation = (
                     f"{parent_record.variable}>>{child_record.variable}"
                 )

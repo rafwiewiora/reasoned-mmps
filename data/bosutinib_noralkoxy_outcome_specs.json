@@ -1,0 +1,38 @@
+[
+  {
+    "comparison_id": "bos_9_efflux",
+    "reason_id": "PMC10726475:9:noralkoxy_basicity",
+    "parent_measurement_id": "m_bos_efflux",
+    "child_measurement_id": "m_9_efflux",
+    "higher_is_better": false,
+    "equivalence_margin": 1.0,
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "bos_9_herg",
+    "reason_id": "PMC10726475:9:noralkoxy_basicity",
+    "parent_measurement_id": "m_bos_herg",
+    "child_measurement_id": "m_9_herg",
+    "higher_is_better": true,
+    "equivalence_margin": 300,
+    "relation_to_stated_intent": "effect_explained_retrospectively"
+  },
+  {
+    "comparison_id": "bos_9_bcrabl_wt",
+    "reason_id": "PMC10726475:9:noralkoxy_basicity",
+    "parent_measurement_id": "m_bos_bcrabl_wt",
+    "child_measurement_id": "m_9_bcrabl_wt",
+    "higher_is_better": false,
+    "equivalence_margin": 0.2,
+    "relation_to_stated_intent": "target_potency_retention"
+  },
+  {
+    "comparison_id": "bos_9_bcrabl_t315i",
+    "reason_id": "PMC10726475:9:noralkoxy_basicity",
+    "parent_measurement_id": "m_bos_bcrabl_t315i",
+    "child_measurement_id": "m_9_bcrabl_t315i",
+    "higher_is_better": false,
+    "equivalence_margin": 5,
+    "relation_to_stated_intent": "target_potency_retention"
+  }
+]

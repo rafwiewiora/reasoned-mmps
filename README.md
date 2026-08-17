@@ -15,7 +15,24 @@ afterward, and then asks what happened in genuinely comparable assays.
 The central rule is simple: **an inferred parent is an analytic comparator, not
 a claim about synthetic or historical lineage**.
 
-## First pilot: photo-clenbuterol
+## Current extraction corpus
+
+The pilot now contains four papers, five rationale assertions, 17 resolved
+ChEMBL compounds, and 19 assay-matched outcome comparisons:
+
+| Paper | Reason-bearing move | Rationale class | Main readout |
+|---|---|---|---|
+| Photo-clenbuterol | `12b → 12e`, `Cl→CN` | Explicit feature choice from prior SAR | Binding worsened; exact stated bronchodilation outcome unavailable |
+| PF-06815189 | `1 → 2`, `C–H→C–OH` | Explicit prospective intent | Human microsomal and hepatocyte clearance improved |
+| DOS antimalarial | `2 → 5`, `phenyl→dimethylisoxazole` | Explicit prospective intent | Solubility and hERG improved; potency worsened |
+| Bosutinib analogue | `3 → 9`, `N-alkyl→N-noralkoxy` | Retrospective explanation | Efflux and hERG improved; kinase activity retained |
+
+The last row is intentionally not labeled prospective intent: the paper's MMP
+analysis explains the observed improvements through reduced piperazine
+basicity retrospectively. That distinction is part of the dataset, not a
+footnote.
+
+### Photo-clenbuterol example
 
 The frozen pilot uses the 2025 paper
 [Photo-clenbuterol](https://doi.org/10.1021/acs.jmedchem.5c00792). The authors
@@ -54,6 +71,20 @@ MMP rule. The two relationships remain separate.
 - Independent confidence fields for evidence, resolution, inference, assay
   comparability, and outcomes
 - Frozen inputs, outputs, hashes, tests, and a reproducible ChEMBL query
+- A framework-free static evidence viewer with RDKit-generated structures
+
+## Evidence viewer
+
+[`docs/index.html`](docs/index.html) is a zero-backend viewer over the committed
+outputs. It supports text, rationale-class, and outcome filters and keeps the
+four evidence layers visible together. It uses precomputed SVG depictions and
+a generated `data.js`, so it has no runtime chemistry or API dependency.
+
+After building, open `docs/index.html` directly or serve it locally:
+
+```bash
+python -m http.server --directory docs 8000
+```
 
 ## Quick start
 
@@ -96,8 +127,7 @@ and the extraction contract in
 ## Paperclip and ChEMBL roles
 
 Paperclip supplies evidence-addressable literature and the ChEMBL SQL surface.
-The query used for the pilot is preserved in
-[`queries/photo_clenbuterol_chembl.sql`](queries/photo_clenbuterol_chembl.sql).
+The paper-specific queries used for the corpus are preserved in [`queries/`](queries/).
 ChEMBL supplies structures, document linkage, assays, and measurements; it is
 not treated as a source of medicinal-chemistry intent.
 
@@ -108,7 +138,7 @@ the closest structure into a fictional historical parent.
 
 ## Current limits
 
-- One paper and two rationale assertions—not a benchmark yet
+- Four papers and five rationale assertions—not a benchmark yet
 - Candidate generation currently stops at the same-paper universe
 - Heuristic ranking scores are transparent but uncalibrated
 - No tautomer/salt standardization policy beyond deterministic RDKit parsing

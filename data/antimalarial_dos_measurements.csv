@@ -1,0 +1,11 @@
+measurement_id,chembl_id,paper_label,endpoint,state,relation,value,error,units,assay_context,assay_id,assay_chembl_id,source_kind,source_ref
+m_am2_gi50,CHEMBL1873309,2,GI50,not_applicable,=,0.54,,nM,plasmodium_falciparum_3D7_asexual_blood_stage_growth,1442137,,ChEMBL,activity_15123755
+m_am5_gi50,CHEMBL3343650,5,GI50,not_applicable,=,4.2,,nM,plasmodium_falciparum_3D7_asexual_blood_stage_growth,1442137,,ChEMBL,activity_15123758
+m_am2_sol,CHEMBL1873309,2,solubility,PBS,<,5000,,nM,pbs_kinetic_solubility,1442138,,ChEMBL,activity_15123792
+m_am5_sol,CHEMBL3343650,5,solubility,PBS,>,100000,,nM,pbs_kinetic_solubility,1442138,,ChEMBL,activity_15123795
+m_am2_herg,CHEMBL1873309,2,hERG_binding_inhibition,10_uM,=,95,,%,hERG_radioligand_displacement_at_10_uM,1442139,,ChEMBL,activity_15123829
+m_am5_herg,CHEMBL3343650,5,hERG_binding_inhibition,10_uM,=,13,,%,hERG_radioligand_displacement_at_10_uM,1442139,,ChEMBL,activity_15123832
+m_am2_logd,CHEMBL1873309,2,LogD,not_applicable,=,4.1,,log10,reported_logD,1442140,,ChEMBL,activity_15123841
+m_am5_logd,CHEMBL3343650,5,LogD,not_applicable,=,2.9,,log10,reported_logD,1442140,,ChEMBL,activity_15123844
+m_am2_mlm,CHEMBL1873309,2,microsomal_stability,mouse_1h,<,5,,%,mouse_liver_microsomes_percent_remaining_1h,1442141,,ChEMBL,activity_15123853
+m_am5_mlm,CHEMBL3343650,5,microsomal_stability,mouse_1h,=,8,,%,mouse_liver_microsomes_percent_remaining_1h,1442141,,ChEMBL,activity_15123856

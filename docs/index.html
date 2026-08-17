@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Evidence viewer for medicinal-chemistry matched molecular pairs with author-stated reasons.">
+    <title>Reasoned MMP Atlas</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="brand-row">
+        <a class="brand" href="./" aria-label="Reasoned MMP Atlas home">
+          <span class="brand-mark">rMMP</span>
+          <span class="brand-name">Evidence atlas</span>
+        </a>
+        <a class="github-link" href="https://github.com/rafwiewiora/reasoned-mmps">Source ↗</a>
+      </div>
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Medicinal chemistry, without the hindsight leak</p>
+          <h1>Moves with reasons.</h1>
+          <p class="hero-copy">Trace what authors said, which comparator the chemistry supports, and what happened in matched assays.</p>
+        </div>
+        <div class="metrics" id="metrics" aria-label="Corpus summary"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Filter rationale episodes">
+        <label class="search-control">
+          <span>Search</span>
+          <input id="search" type="search" placeholder="paper, compound, reason…">
+        </label>
+        <label>
+          <span>Reason class</span>
+          <select id="class-filter"><option value="all">All classes</option></select>
+        </label>
+        <label>
+          <span>Outcome</span>
+          <select id="outcome-filter">
+            <option value="all">All outcomes</option>
+            <option value="improved">Has improvement</option>
+            <option value="worsened">Has worsening</option>
+            <option value="comparable">Has comparable result</option>
+            <option value="indeterminate">Has indeterminate result</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="workspace">
+        <aside class="episode-column" aria-label="Rationale episodes">
+          <div class="section-heading">
+            <h2>Rationale episodes</h2>
+            <span id="result-count"></span>
+          </div>
+          <div id="episode-list" class="episode-list"></div>
+        </aside>
+        <article id="detail" class="detail" aria-live="polite"></article>
+      </section>
+    </main>
+
+    <footer>
+      <span>Evidence → intent → comparator → outcome</span>
+      <span>Heuristic ranks are uncalibrated. Bounds remain bounds.</span>
+    </footer>
+
+    <noscript>This viewer requires JavaScript to render the committed dataset.</noscript>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

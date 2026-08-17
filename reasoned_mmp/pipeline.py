@@ -8,7 +8,8 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from rdkit import rdBase
+from rdkit import Chem, rdBase
+from rdkit.Chem.Draw import rdMolDraw2D
 
 from .mmp import best_candidate_per_parent, infer_parent_candidates, stable_id
 from .outcomes import compare_measurements
@@ -17,6 +18,13 @@ from .outcomes import compare_measurements
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUTPUTS = ROOT / "outputs"
+DOCS = ROOT / "docs"
+DATASET_PREFIXES = (
+    "photo_clenbuterol",
+    "pf06815189",
+    "antimalarial_dos",
+    "bosutinib_noralkoxy",
+)
 
 
 def _read_csv(path: Path) -> list[dict]:
@@ -60,6 +68,38 @@ def _write_csv(path: Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
+def _write_depiction(compound: dict, path: Path) -> None:
+    mol = Chem.MolFromSmiles(compound["canonical_smiles"])
+    if mol is None:
+        return
+    drawer = rdMolDraw2D.MolDraw2DSVG(420, 260)
+    options = drawer.drawOptions()
+    options.clearBackground = False
+    options.padding = 0.08
+    rdMolDraw2D.PrepareAndDrawMolecule(drawer, mol)
+    drawer.FinishDrawing()
+    path.write_text(drawer.GetDrawingText())
+
+
+def _write_viewer_data(
+    manifest: dict, moves: list[dict], compounds: list[dict]
+) -> None:
+    molecule_dir = DOCS / "molecules"
+    molecule_dir.mkdir(parents=True, exist_ok=True)
+    for compound in compounds:
+        _write_depiction(compound, molecule_dir / f"{compound['chembl_id']}.svg")
+    payload = {
+        "manifest": manifest,
+        "moves": moves,
+        "compounds": compounds,
+    }
+    (DOCS / "data.js").write_text(
+        "window.REASONED_MMP_DATA = "
+        + json.dumps(payload, indent=2, sort_keys=True)
+        + ";\n"
+    )
+
+
 def _explicit_parent_edge(
     reason: dict, child: dict, compounds: list[dict]
 ) -> dict | None:
@@ -82,9 +122,13 @@ def _explicit_parent_edge(
         ),
         "parent_chembl_id": explicit_id,
         "child_chembl_id": child["chembl_id"],
-        "edge_semantics": "author_explicit_scaffold_parent",
+        "edge_semantics": reason.get(
+            "explicit_parent_edge_semantics", "author_explicit_scaffold_parent"
+        ),
         "paper_uses_parent_term": True,
-        "historical_synthesis_lineage_claim": False,
+        "historical_synthesis_lineage_claim": reason.get(
+            "explicit_historical_synthesis_lineage", False
+        ),
         "valid_primary_mmp_rule": any(
             row["parent_chembl_id"] == explicit_id
             for row in infer_parent_candidates(child, compounds, reason)
@@ -98,15 +142,33 @@ def _explicit_parent_edge(
 
 def build() -> dict:
     OUTPUTS.mkdir(exist_ok=True)
-    compound_path = DATA / "photo_clenbuterol_compounds.csv"
-    reason_path = DATA / "photo_clenbuterol_reasons.json"
-    measurement_path = DATA / "photo_clenbuterol_measurements.csv"
-    spec_path = DATA / "photo_clenbuterol_outcome_specs.json"
-
-    compounds = _read_csv(compound_path)
-    reasons = _read_json(reason_path)
-    measurements = _read_csv(measurement_path)
-    outcome_specs = _read_json(spec_path)
+    compounds: list[dict] = []
+    reasons: list[dict] = []
+    measurements: list[dict] = []
+    outcome_specs: list[dict] = []
+    input_paths: list[Path] = []
+    compounds_by_dataset: dict[str, list[dict]] = defaultdict(list)
+    for dataset_id in DATASET_PREFIXES:
+        compound_path = DATA / f"{dataset_id}_compounds.csv"
+        reason_path = DATA / f"{dataset_id}_reasons.json"
+        measurement_path = DATA / f"{dataset_id}_measurements.csv"
+        spec_path = DATA / f"{dataset_id}_outcome_specs.json"
+        input_paths.extend((compound_path, reason_path, measurement_path, spec_path))
+        dataset_compounds = _read_csv(compound_path)
+        dataset_reasons = _read_json(reason_path)
+        dataset_measurements = _read_csv(measurement_path)
+        dataset_specs = _read_json(spec_path)
+        for row in dataset_compounds:
+            row["dataset_id"] = dataset_id
+        for row in dataset_reasons:
+            row["dataset_id"] = dataset_id
+        for row in dataset_measurements:
+            row["dataset_id"] = dataset_id
+        compounds.extend(dataset_compounds)
+        reasons.extend(dataset_reasons)
+        measurements.extend(dataset_measurements)
+        outcome_specs.extend(dataset_specs)
+        compounds_by_dataset[dataset_id].extend(dataset_compounds)
     compounds_by_id = {row["chembl_id"]: row for row in compounds}
     measurements_by_id = {row["measurement_id"]: row for row in measurements}
 
@@ -142,7 +204,8 @@ def build() -> dict:
     reasoned_moves: list[dict] = []
     for reason in reasons:
         child = compounds_by_id[reason["child_chembl_id"]]
-        decompositions = infer_parent_candidates(child, compounds, reason)
+        candidate_compounds = compounds_by_dataset[reason["dataset_id"]]
+        decompositions = infer_parent_candidates(child, candidate_compounds, reason)
         best = best_candidate_per_parent(decompositions)
         all_decompositions.extend(decompositions)
         best_candidates.extend(best)
@@ -164,6 +227,7 @@ def build() -> dict:
         direct_counts = Counter(row["classification"] for row in direct)
         move = {
             "reasoned_move_id": stable_id("move", reason["reason_id"]),
+            "entities": {"child": child},
             "layer_1_author_evidence": reason["evidence"],
             "layer_2_extracted_design_intent": reason,
             "layer_3_inferred_structural_comparison": {
@@ -182,7 +246,7 @@ def build() -> dict:
                 "score_status": "uncalibrated_heuristic",
                 "historical_lineage_inferred": False,
                 "author_explicit_relationship": _explicit_parent_edge(
-                    reason, child, compounds
+                    reason, child, candidate_compounds
                 ),
             },
             "layer_4_observed_outcomes": {
@@ -193,6 +257,9 @@ def build() -> dict:
                     "indeterminate_direct_endpoint_unavailable"
                     if reason["outcome_join_status"]
                     == "direct_stated_property_not_measured_in_pilot"
+                    else "not_applicable_retrospective_explanation"
+                    if reason["outcome_join_status"]
+                    == "retrospective_explanation_no_prospective_success_label"
                     else "evaluate_per_endpoint"
                 ),
             },
@@ -229,14 +296,16 @@ def build() -> dict:
     _write_csv(OUTPUTS / "outcome_comparisons.csv", outcome_rows)
 
     manifest = {
-        "pilot": "photo_clenbuterol",
-        "schema_version": "0.1.0",
+        "corpus": "reasoned_mmp_pilot_corpus",
+        "schema_version": "0.2.0",
         "rdkit_version": rdBase.rdkitVersion,
         "input_sha256": {
-            path.name: _sha256(path)
-            for path in (compound_path, reason_path, measurement_path, spec_path)
+            path.name: _sha256(path) for path in input_paths
         },
         "counts": {
+            "papers": len(
+                {reason["evidence"]["document_id"] for reason in reasons}
+            ),
             "compounds": len(compounds),
             "reason_assertions": len(reasons),
             "mmp_decompositions": len(all_decompositions),
@@ -254,4 +323,5 @@ def build() -> dict:
     (OUTPUTS / "run_manifest.json").write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n"
     )
+    _write_viewer_data(manifest, reasoned_moves, compounds)
     return manifest

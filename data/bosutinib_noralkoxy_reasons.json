@@ -1,0 +1,38 @@
+[
+  {
+    "reason_id": "PMC10726475:9:noralkoxy_basicity",
+    "child_chembl_id": "CHEMBL5435819",
+    "child_paper_label": "9",
+    "source_title": "Atypical N-Alkyl to N-Noralkoxy Switch in a Dual cSRC/BCR-ABL1 Kinase Inhibitor",
+    "assertion_class": "retrospective_explanation",
+    "reason_statement": "The paper's retrospective MMP analysis attributes the improved efflux and hERG behavior of the N-alkyl to N-noralkoxy switch to reduced piperazine basicity.",
+    "stated_modification": "replace an N-alkyl linker carbon with an N-noralkoxy oxygen",
+    "required_removed_features": ["aliphatic_carbon"],
+    "required_added_features": ["ether_oxygen"],
+    "intended_property": {
+      "name": "efflux_and_hERG_effect_explanation",
+      "direction": "modulate",
+      "explicitness": "explicit"
+    },
+    "stated_mechanistic_basis": ["reduce_piperazine_basicity"],
+    "explicit_parent_chembl_id": "CHEMBL288441",
+    "explicit_parent_edge_semantics": "author_explicit_design_parent",
+    "explicit_historical_synthesis_lineage": false,
+    "explicit_parent_basis": "Compound 9 is described as the hydroxylamine bioisostere incorporated into bosutinib.",
+    "evidence": {
+      "document_id": "PMC10726475",
+      "publication_year": 2023,
+      "doi": "10.1021/acsmedchemlett.3c00479",
+      "path": "/papers/PMC10726475/content.lines",
+      "section": "abstract",
+      "line_start": 14,
+      "line_end": 28,
+      "verbatim_excerpt": "arises from a reduction in basicity",
+      "access_quality": "full_text",
+      "entailment_status": "entailed",
+      "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC10726475#L14-L28"
+    },
+    "extraction_confidence": 0.98,
+    "outcome_join_status": "retrospective_explanation_no_prospective_success_label"
+  }
+]

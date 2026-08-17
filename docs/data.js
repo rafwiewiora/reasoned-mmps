@@ -1,0 +1,1724 @@
+window.REASONED_MMP_DATA = {
+  "compounds": [
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)(C)NCC(O)c1ccc(/N=N/c2ccccc2)cc1",
+      "chembl_id": "CHEMBL6189882",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "12a; VUF26044",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "MCAHLDLHOQEYMA-QZQOTICOSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c(Cl)c1",
+      "chembl_id": "CHEMBL6190593",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "trans-12b; VUF26034",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "BKBQAPKNQMIKDI-GHVJWSGMSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)(C)NCC(O)c1ccc(/N=N/c2ccccc2)c(Cl)c1",
+      "chembl_id": "CHEMBL6188786",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "12c; VUF26125",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "OBFPFIZMHQMOFW-QURGRASLSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2c(Cl)cccc2Cl)c(Cl)c1",
+      "chembl_id": "CHEMBL6189087",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "12d; VUF26175",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "FXPXGKCWEUQLCR-OCOZRVBESA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c(C#N)c1",
+      "chembl_id": "CHEMBL6188669",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "12e; VUF26202",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "ZFKNBBCZWLFZAR-WCWDXBQESA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)(C)NCC(O)c1cc(Cl)c(N)c(C#N)c1",
+      "chembl_id": "CHEMBL6189525",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "18; VUF26211",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "CGCHJJMCSJZEGH-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)(C)NCC(O)c1cc(Cl)c(N)c(Cl)c1",
+      "chembl_id": "CHEMBL49080",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "Clenbuterol",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "STJMRWALKKWQGH-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)NCC(O)c1ccc(O)c(O)c1",
+      "chembl_id": "CHEMBL434",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "Isoprenaline",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "JWZZKOKVBUJMES-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "CC(C)NCC(O)COc1cccc2ccccc12",
+      "chembl_id": "CHEMBL27",
+      "dataset_id": "photo_clenbuterol",
+      "paper_label": "Propranolol",
+      "source_document_id": "PMC12225454",
+      "standard_inchi_key": "AQHHHDLHHXJYJD-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "Cc1nn2c(-c3c(C)nn(C)c3-c3ccc(C(F)(F)F)cc3)nc(C)c2c(=O)[nH]1",
+      "chembl_id": "CHEMBL4160171",
+      "dataset_id": "pf06815189",
+      "paper_label": "1",
+      "source_document_id": "PMC5807869",
+      "standard_inchi_key": "AWLUMUGHLSXLNA-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "Cc1nn2c(-c3c(C)nn(C)c3-c3ccc(C(F)(F)F)cc3)nc(CO)c2c(=O)[nH]1",
+      "chembl_id": "CHEMBL4062397",
+      "dataset_id": "pf06815189",
+      "paper_label": "2; PF-06815189",
+      "source_document_id": "PMC5807869",
+      "standard_inchi_key": "XLTUOMBYHVTYOT-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "Cc1nn2c(-c3c(CO)nn(C)c3-c3ccc(C(F)(F)F)cc3)nc(C)c2c(=O)[nH]1",
+      "chembl_id": "CHEMBL4171712",
+      "dataset_id": "pf06815189",
+      "paper_label": "5",
+      "source_document_id": "PMC5807869",
+      "standard_inchi_key": "OUYXLAKOIQZOCV-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "Cc1nn2c(-c3c(CO)nn(C)c3-c3ccc(C(F)(F)F)cc3)nc(CO)c2c(=O)[nH]1",
+      "chembl_id": "CHEMBL4088142",
+      "dataset_id": "pf06815189",
+      "paper_label": "6",
+      "source_document_id": "PMC5807869",
+      "standard_inchi_key": "LHTCLCPZDIGMJX-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper_subset",
+      "canonical_smiles": "C[C@@H]1CN([C@@H](C)CN(C)C)C(=O)c2cc(NC(=O)Nc3ccccc3)ccc2O[C@@H](C)CCCCO[C@H]1CN(C)S(=O)(=O)c1ccc(F)cc1",
+      "chembl_id": "CHEMBL1873309",
+      "dataset_id": "antimalarial_dos",
+      "paper_label": "2",
+      "source_document_id": "PMC4207553",
+      "standard_inchi_key": "BKTXRPJVVXUPPO-PNCWTNKOSA-N"
+    },
+    {
+      "candidate_scope": "same_paper_subset",
+      "canonical_smiles": "Cc1noc(C)c1NC(=O)Nc1ccc2c(c1)C(=O)N([C@@H](C)CN(C)C)C[C@@H](C)[C@H](CN(C)S(=O)(=O)c1ccc(F)cc1)OCCCC[C@H](C)O2",
+      "chembl_id": "CHEMBL3343650",
+      "dataset_id": "antimalarial_dos",
+      "paper_label": "5",
+      "source_document_id": "PMC4207553",
+      "standard_inchi_key": "YZWMPMDITONCIO-DWYUEALBSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "COc1cc(Nc2c(C#N)cnc3cc(OCCCN4CCN(C)CC4)c(OC)cc23)c(Cl)cc1Cl",
+      "chembl_id": "CHEMBL288441",
+      "dataset_id": "bosutinib_noralkoxy",
+      "paper_label": "3; Bosutinib",
+      "source_document_id": "PMC10726475",
+      "standard_inchi_key": "UBPYILGKFZZVDX-UHFFFAOYSA-N"
+    },
+    {
+      "candidate_scope": "same_paper",
+      "canonical_smiles": "COc1cc(Nc2c(C#N)cnc3cc(OCCON4CCN(C)CC4)c(OC)cc23)c(Cl)cc1Cl",
+      "chembl_id": "CHEMBL5435819",
+      "dataset_id": "bosutinib_noralkoxy",
+      "paper_label": "9",
+      "source_document_id": "PMC10726475",
+      "standard_inchi_key": "HFGUPJNHEPCEHX-UHFFFAOYSA-N"
+    }
+  ],
+  "manifest": {
+    "corpus": "reasoned_mmp_pilot_corpus",
+    "counts": {
+      "compounds": 17,
+      "mmp_decompositions": 13,
+      "outcome_comparisons": 19,
+      "papers": 4,
+      "reason_assertions": 5,
+      "unique_reason_parent_candidates": 8
+    },
+    "guardrails": {
+      "bounds_preserved": true,
+      "hydrogen_changes_indexed": true,
+      "inferred_comparator_is_not_lineage": true,
+      "primary_max_variable_fraction": 0.3,
+      "reason_frozen_before_outcome_join": true
+    },
+    "input_sha256": {
+      "antimalarial_dos_compounds.csv": "db2aeff376dc01daed82c355df2252a5412f459d27b1805214bef4b804d943d3",
+      "antimalarial_dos_measurements.csv": "d0e2c7d687a3b2d09f3ceeecdaca5060fcae25604141e65b4cd7ba480c04b2a7",
+      "antimalarial_dos_outcome_specs.json": "06e1ad518e305b951c9a99ead815d53f557ee4a9aca257d52ee169df60fe7a41",
+      "antimalarial_dos_reasons.json": "4052aa0c911be1fa855c483c055bcff6af640eb0e358e8843332a6a1b0408e46",
+      "bosutinib_noralkoxy_compounds.csv": "422a45386b0f15c5c095a6b6dadec852f48951091e001a669dc6f1af70de215c",
+      "bosutinib_noralkoxy_measurements.csv": "7a3cf0e644d8eeb40e639f4edcd71d2e0894621ecc945db96e47c2e5baadeca6",
+      "bosutinib_noralkoxy_outcome_specs.json": "a7d7a28a8bf686178fac052981c003ce71cdae94e5977a05126f2676c4934f8e",
+      "bosutinib_noralkoxy_reasons.json": "1e89aca19490768991113bfb56156492ff11c80fc51694e20092645486e634cf",
+      "pf06815189_compounds.csv": "85bcf5c3061ba6ad39ad4c42d768f50b3fd25c86c8af54cc47560bfa7423f7f5",
+      "pf06815189_measurements.csv": "8769ba4c6447f4ead53d20589f5ee5d044882e8e5213f1dfae59faa02e92c5a2",
+      "pf06815189_outcome_specs.json": "6919704c8ab1b596ec03c27077dcbb1a98feebedc1ea2eedcbd05e816db952cb",
+      "pf06815189_reasons.json": "466249af5376bc8aaab492dddf21164a5c8af4c9f3adfd8b6324c43902377d9f",
+      "photo_clenbuterol_compounds.csv": "2b42badf96e280a3d1c8c060496e07412e5c631ee9724282bc832bf66a1b59d6",
+      "photo_clenbuterol_measurements.csv": "cb9dc0c65c1ec6e72dd472d82364d654d465c07c1dae13b9382463b0e099a6d1",
+      "photo_clenbuterol_outcome_specs.json": "3ba80b746789a0dca3d8b7b5663f0a07d63caa0a6f49381c6bd60047750bb62b",
+      "photo_clenbuterol_reasons.json": "ab99b5609d66abe6d943d8eb45d9a8a19d251f087c0d2d195c8bdf9a5b042eb3"
+    },
+    "rdkit_version": "2026.03.4",
+    "schema_version": "0.2.0"
+  },
+  "moves": [
+    {
+      "confidence_components": {
+        "assay_comparability": 1.0,
+        "child_resolution": 1.0,
+        "evidence_entailment": 0.97,
+        "outcome_confidence": "not_calibrated",
+        "parent_inference": 0.92825
+      },
+      "entities": {
+        "child": {
+          "candidate_scope": "same_paper",
+          "canonical_smiles": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c(C#N)c1",
+          "chembl_id": "CHEMBL6188669",
+          "dataset_id": "photo_clenbuterol",
+          "paper_label": "12e; VUF26202",
+          "source_document_id": "PMC12225454",
+          "standard_inchi_key": "ZFKNBBCZWLFZAR-WCWDXBQESA-N"
+        }
+      },
+      "layer_1_author_evidence": {
+        "access_quality": "full_text",
+        "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L132-L140",
+        "document_id": "PMC12225454",
+        "doi": "10.1021/acs.jmedchem.5c00792",
+        "entailment_status": "entailed",
+        "line_end": 140,
+        "line_start": 132,
+        "path": "/papers/PMC12225454/content.lines",
+        "publication_year": 2025,
+        "section": "main_text_design_strategy",
+        "verbatim_excerpt": "designed the chlorocyano-substituted compound 12e"
+      },
+      "layer_2_extracted_design_intent": {
+        "assertion_class": "explicit_feature_choice_with_sar_basis",
+        "beta2_affinity_or_efficacy_as_intent": "inferred_only",
+        "child_chembl_id": "CHEMBL6188669",
+        "child_paper_label": "12e",
+        "dataset_id": "photo_clenbuterol",
+        "evidence": {
+          "access_quality": "full_text",
+          "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L132-L140",
+          "document_id": "PMC12225454",
+          "doi": "10.1021/acs.jmedchem.5c00792",
+          "entailment_status": "entailed",
+          "line_end": 140,
+          "line_start": 132,
+          "path": "/papers/PMC12225454/content.lines",
+          "publication_year": 2025,
+          "section": "main_text_design_strategy",
+          "verbatim_excerpt": "designed the chlorocyano-substituted compound 12e"
+        },
+        "explicit_parent_chembl_id": null,
+        "extraction_confidence": 0.97,
+        "intended_property": {
+          "direction": "increase",
+          "explicitness": "explicit",
+          "name": "bronchodilation_in_guinea_pigs"
+        },
+        "outcome_join_status": "direct_stated_property_not_measured_in_pilot",
+        "reason_id": "PMC12225454:12e:chlorocyano_sar",
+        "reason_statement": "The authors selected a chloro-cyano pattern for 12e from published clenbuterol SAR that reported stronger guinea-pig bronchodilation for chloro-cyano rather than dichloro substitution.",
+        "required_added_features": [
+          "cyano"
+        ],
+        "required_removed_features": [
+          "chloro"
+        ],
+        "source_title": "Photo-clenbuterol: Optical Control of beta2-Adrenergic Receptor Signaling by Photoswitchable Ligand Efficacy",
+        "stated_modification": "dichloro substitution pattern to chloro-cyano substitution pattern"
+      },
+      "layer_3_inferred_structural_comparison": {
+        "author_explicit_relationship": null,
+        "candidate_search_order_planned": [
+          "same_scheme_or_table",
+          "same_named_series",
+          "same_paper",
+          "cited_predecessor",
+          "same_chembl_document",
+          "global_chembl"
+        ],
+        "candidate_universe": "same_paper",
+        "historical_lineage_inferred": false,
+        "implemented_scope": "same_paper",
+        "score_status": "uncalibrated_heuristic",
+        "top1_top2_margin": 0.158102,
+        "top_candidates": [
+          {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "chloro",
+                "matched": true,
+                "side": "parent"
+              },
+              {
+                "feature": "cyano",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_d05895cfdc49f2e0",
+            "child_chembl_id": "CHEMBL6188669",
+            "child_fragment": "N#C[*:1]",
+            "child_label": "12e; VUF26202",
+            "context": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c([*:1])c1",
+            "cut_count": 1,
+            "edge_semantics": "reason_constrained_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": false,
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_fragment": "Cl[*:1]",
+            "parent_label": "trans-12b; VUF26034",
+            "parent_rank": 1,
+            "rank": 1,
+            "reason_id": "PMC12225454:12e:chlorocyano_sar",
+            "scores": {
+              "edit_compactness": 0.833333,
+              "ranking_score_uncalibrated": 0.92825,
+              "reason_transform_alignment": 1.0,
+              "retained_core_fraction": 0.92,
+              "same_numbered_series": 1.0,
+              "whole_molecule_tanimoto": 0.791667
+            },
+            "transformation": "Cl[*:1]>>N#C[*:1]",
+            "valid_single_cut_mmp": true
+          },
+          {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "chloro",
+                "matched": false,
+                "side": "parent"
+              },
+              {
+                "feature": "cyano",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_5e31545cc220c7f1",
+            "child_chembl_id": "CHEMBL6188669",
+            "child_fragment": "N#C[*:1]",
+            "child_label": "12e; VUF26202",
+            "context": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c([*:1])c1",
+            "cut_count": 1,
+            "edge_semantics": "structure_only_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": true,
+            "parent_chembl_id": "CHEMBL6188786",
+            "parent_fragment": "[*:1][H]",
+            "parent_label": "12c; VUF26125",
+            "parent_rank": 2,
+            "rank": 2,
+            "reason_id": "PMC12225454:12e:chlorocyano_sar",
+            "scores": {
+              "edit_compactness": 0.833333,
+              "ranking_score_uncalibrated": 0.770148,
+              "reason_transform_alignment": 0.5,
+              "retained_core_fraction": 0.92,
+              "same_numbered_series": 1.0,
+              "whole_molecule_tanimoto": 0.62963
+            },
+            "transformation": "[*:1][H]>>N#C[*:1]",
+            "valid_single_cut_mmp": true
+          }
+        ]
+      },
+      "layer_4_observed_outcomes": {
+        "classification_counts": {
+          "comparable": 1,
+          "indeterminate": 1,
+          "worsened": 3
+        },
+        "comparisons": [
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL6188669",
+            "child_measurement_id": "m_12e_pki_trans",
+            "child_relation": "<",
+            "child_value": "5.0",
+            "classification": "indeterminate",
+            "comparison_id": "12b_12e_pki_trans",
+            "delta_lower": null,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": null,
+            "endpoint": "pKi",
+            "equivalence_margin": 0.3,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_measurement_id": "m_12b_pki_trans",
+            "parent_relation": "<",
+            "parent_value": "5.0",
+            "reason_id": "PMC12225454:12e:chlorocyano_sar",
+            "relation_to_stated_intent": "mechanistic_proxy_not_the_stated_bronchodilation_endpoint",
+            "state": "trans",
+            "units": "pLog"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL6188669",
+            "child_measurement_id": "m_12e_pki_pss_cis",
+            "child_relation": "<",
+            "child_value": "5.0",
+            "classification": "worsened",
+            "comparison_id": "12b_12e_pki_pss_cis",
+            "delta_lower": null,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": -1.4,
+            "endpoint": "pKi",
+            "equivalence_margin": 0.3,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_measurement_id": "m_12b_pki_pss_cis",
+            "parent_relation": "=",
+            "parent_value": "6.4",
+            "reason_id": "PMC12225454:12e:chlorocyano_sar",
+            "relation_to_stated_intent": "mechanistic_proxy_not_the_stated_bronchodilation_endpoint",
+            "state": "PSS-cis",
+            "units": "pLog"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL6188669",
+            "child_measurement_id": "m_12e_alpha_trans",
+            "child_relation": "=",
+            "child_value": "0.0",
+            "classification": "worsened",
+            "comparison_id": "12b_12e_alpha_trans",
+            "delta_lower": -0.5,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": -0.5,
+            "endpoint": "intrinsic_activity_alpha",
+            "equivalence_margin": 0.1,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_measurement_id": "m_12b_alpha_trans",
+            "parent_relation": "=",
+            "parent_value": "0.5",
+            "reason_id": "PMC12225454:12e:chlorocyano_sar",
+            "relation_to_stated_intent": "mechanistic_proxy_not_the_stated_bronchodilation_endpoint",
+            "state": "trans",
+            "units": "fraction"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL6188669",
+            "child_measurement_id": "m_12e_pkb_trans",
+            "child_relation": "<",
+            "child_value": "5.0",
+            "classification": "worsened",
+            "comparison_id": "12b_12e_pkb_trans",
+            "delta_lower": null,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": -1.5,
+            "endpoint": "pKb",
+            "equivalence_margin": 0.3,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_measurement_id": "m_12b_pkb_trans",
+            "parent_relation": "=",
+            "parent_value": "6.5",
+            "reason_id": "PMC12225454:12e:chlorocyano_sar",
+            "relation_to_stated_intent": "adjacent_pharmacology",
+            "state": "trans",
+            "units": "pLog"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL6188669",
+            "child_measurement_id": "m_12e_pkb_pss_cis",
+            "child_relation": "=",
+            "child_value": "6.8",
+            "classification": "comparable",
+            "comparison_id": "12b_12e_pkb_pss_cis",
+            "delta_lower": -0.1,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": -0.1,
+            "endpoint": "pKb",
+            "equivalence_margin": 0.3,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_measurement_id": "m_12b_pkb_pss_cis",
+            "parent_relation": "=",
+            "parent_value": "6.9",
+            "reason_id": "PMC12225454:12e:chlorocyano_sar",
+            "relation_to_stated_intent": "adjacent_pharmacology",
+            "state": "PSS-cis",
+            "units": "pLog"
+          }
+        ],
+        "direct_supporting_endpoint_counts": {},
+        "stated_intent_outcome": "indeterminate_direct_endpoint_unavailable"
+      },
+      "reasoned_move_id": "move_6f25ab5c47167635"
+    },
+    {
+      "confidence_components": {
+        "assay_comparability": 1.0,
+        "child_resolution": 1.0,
+        "evidence_entailment": 0.94,
+        "outcome_confidence": "not_calibrated",
+        "parent_inference": 0.62825
+      },
+      "entities": {
+        "child": {
+          "candidate_scope": "same_paper",
+          "canonical_smiles": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c(C#N)c1",
+          "chembl_id": "CHEMBL6188669",
+          "dataset_id": "photo_clenbuterol",
+          "paper_label": "12e; VUF26202",
+          "source_document_id": "PMC12225454",
+          "standard_inchi_key": "ZFKNBBCZWLFZAR-WCWDXBQESA-N"
+        }
+      },
+      "layer_1_author_evidence": {
+        "access_quality": "full_text",
+        "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L98-L119,L415-L418",
+        "document_id": "PMC12225454",
+        "doi": "10.1021/acs.jmedchem.5c00792",
+        "entailment_status": "entailed",
+        "line_end": 119,
+        "line_start": 98,
+        "path": "/papers/PMC12225454/content.lines",
+        "publication_year": 2025,
+        "section": "main_text_design_strategy_and_discussion",
+        "verbatim_excerpt": "azoextension of clenbuterol"
+      },
+      "layer_2_extracted_design_intent": {
+        "assertion_class": "explicit_series_rationale",
+        "child_chembl_id": "CHEMBL6188669",
+        "child_paper_label": "12e",
+        "dataset_id": "photo_clenbuterol",
+        "evidence": {
+          "access_quality": "full_text",
+          "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC12225454#L98-L119,L415-L418",
+          "document_id": "PMC12225454",
+          "doi": "10.1021/acs.jmedchem.5c00792",
+          "entailment_status": "entailed",
+          "line_end": 119,
+          "line_start": 98,
+          "path": "/papers/PMC12225454/content.lines",
+          "publication_year": 2025,
+          "section": "main_text_design_strategy_and_discussion",
+          "verbatim_excerpt": "azoextension of clenbuterol"
+        },
+        "explicit_parent_basis": "The discussion calls compound 18 the parent molecule of 12e.",
+        "explicit_parent_chembl_id": "CHEMBL6189525",
+        "extraction_confidence": 0.94,
+        "intended_property": {
+          "direction": "modulate",
+          "explicitness": "explicit",
+          "name": "light_dependent_beta2_receptor_modulation"
+        },
+        "outcome_join_status": "supporting_endpoints_available",
+        "reason_id": "PMC12225454:12e:azoextension",
+        "reason_statement": "The series was made by azoextending clenbuterol analogues to create photoresponsive ligands whose trans and cis forms could differ in receptor interactions.",
+        "required_added_features": [
+          "phenylazo"
+        ],
+        "required_removed_features": [
+          "amino"
+        ],
+        "source_title": "Photo-clenbuterol: Optical Control of beta2-Adrenergic Receptor Signaling by Photoswitchable Ligand Efficacy",
+        "stated_modification": "replace the aniline amino group with a phenylazo extension"
+      },
+      "layer_3_inferred_structural_comparison": {
+        "author_explicit_relationship": {
+          "basis": "The discussion calls compound 18 the parent molecule of 12e.",
+          "child_chembl_id": "CHEMBL6188669",
+          "edge_semantics": "author_explicit_scaffold_parent",
+          "historical_synthesis_lineage_claim": false,
+          "paper_uses_parent_term": true,
+          "parent_chembl_id": "CHEMBL6189525",
+          "relationship_id": "rel_a8ffbc3260a2bb38",
+          "sensitivity_rule_max_variable_fraction": 0.4,
+          "structural_witness": {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "amino",
+                "matched": true,
+                "side": "parent"
+              },
+              {
+                "feature": "phenylazo",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_07ecfd781832e0c8",
+            "child_chembl_id": "CHEMBL6188669",
+            "child_fragment": "c1ccc(/N=N/[*:1])cc1",
+            "child_label": "12e; VUF26202",
+            "context": "CC(C)(C)NCC(O)c1cc(Cl)c([*:1])c(C#N)c1",
+            "cut_count": 1,
+            "edge_semantics": "reason_constrained_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": false,
+            "parent_chembl_id": "CHEMBL6189525",
+            "parent_fragment": "N[*:1]",
+            "parent_label": "18; VUF26211",
+            "rank": 1,
+            "reason_id": "PMC12225454:12e:azoextension",
+            "scores": {
+              "edit_compactness": 0.333333,
+              "ranking_score_uncalibrated": 0.634855,
+              "reason_transform_alignment": 1.0,
+              "retained_core_fraction": 0.68,
+              "same_numbered_series": 0.0,
+              "whole_molecule_tanimoto": 0.603774
+            },
+            "transformation": "N[*:1]>>c1ccc(/N=N/[*:1])cc1",
+            "valid_single_cut_mmp": true
+          },
+          "valid_primary_mmp_rule": false,
+          "valid_single_cut_sensitivity_rule": true
+        },
+        "candidate_search_order_planned": [
+          "same_scheme_or_table",
+          "same_named_series",
+          "same_paper",
+          "cited_predecessor",
+          "same_chembl_document",
+          "global_chembl"
+        ],
+        "candidate_universe": "same_paper",
+        "historical_lineage_inferred": false,
+        "implemented_scope": "same_paper",
+        "score_status": "uncalibrated_heuristic",
+        "top1_top2_margin": 0.008102,
+        "top_candidates": [
+          {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "amino",
+                "matched": false,
+                "side": "parent"
+              },
+              {
+                "feature": "phenylazo",
+                "matched": false,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_b7204cbc6f2ee1cc",
+            "child_chembl_id": "CHEMBL6188669",
+            "child_fragment": "N#C[*:1]",
+            "child_label": "12e; VUF26202",
+            "context": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c([*:1])c1",
+            "cut_count": 1,
+            "edge_semantics": "structure_only_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": false,
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_fragment": "Cl[*:1]",
+            "parent_label": "trans-12b; VUF26034",
+            "parent_rank": 1,
+            "rank": 1,
+            "reason_id": "PMC12225454:12e:azoextension",
+            "scores": {
+              "edit_compactness": 0.833333,
+              "ranking_score_uncalibrated": 0.62825,
+              "reason_transform_alignment": 0.0,
+              "retained_core_fraction": 0.92,
+              "same_numbered_series": 1.0,
+              "whole_molecule_tanimoto": 0.791667
+            },
+            "transformation": "Cl[*:1]>>N#C[*:1]",
+            "valid_single_cut_mmp": true
+          },
+          {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "amino",
+                "matched": false,
+                "side": "parent"
+              },
+              {
+                "feature": "phenylazo",
+                "matched": false,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_858d5dba17269ed6",
+            "child_chembl_id": "CHEMBL6188669",
+            "child_fragment": "N#C[*:1]",
+            "child_label": "12e; VUF26202",
+            "context": "CC(C)(C)NCC(O)c1cc(Cl)c(/N=N/c2ccccc2)c([*:1])c1",
+            "cut_count": 1,
+            "edge_semantics": "structure_only_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": true,
+            "parent_chembl_id": "CHEMBL6188786",
+            "parent_fragment": "[*:1][H]",
+            "parent_label": "12c; VUF26125",
+            "parent_rank": 2,
+            "rank": 2,
+            "reason_id": "PMC12225454:12e:azoextension",
+            "scores": {
+              "edit_compactness": 0.833333,
+              "ranking_score_uncalibrated": 0.620148,
+              "reason_transform_alignment": 0.0,
+              "retained_core_fraction": 0.92,
+              "same_numbered_series": 1.0,
+              "whole_molecule_tanimoto": 0.62963
+            },
+            "transformation": "[*:1][H]>>N#C[*:1]",
+            "valid_single_cut_mmp": true
+          }
+        ]
+      },
+      "layer_4_observed_outcomes": {
+        "classification_counts": {
+          "improved": 1,
+          "worsened": 1
+        },
+        "comparisons": [
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL6188669",
+            "child_measurement_id": "m_12e_delta_pkb",
+            "child_relation": ">",
+            "child_value": "1.8",
+            "classification": "improved",
+            "comparison_id": "12b_12e_photo_shift",
+            "delta_lower": 1.4,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": null,
+            "endpoint": "photoinduced_delta_pKb",
+            "equivalence_margin": 0.3,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_measurement_id": "m_12b_delta_pkb",
+            "parent_relation": "=",
+            "parent_value": "0.4",
+            "reason_id": "PMC12225454:12e:azoextension",
+            "relation_to_stated_intent": "direct_supporting_endpoint",
+            "state": "trans_to_PSS-cis",
+            "units": "pLog"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL6188669",
+            "child_measurement_id": "m_12e_t_half",
+            "child_relation": "=",
+            "child_value": "264",
+            "classification": "worsened",
+            "comparison_id": "12b_12e_thermal_half_life",
+            "delta_lower": -2424.0,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": -2424.0,
+            "endpoint": "thermal_relaxation_t_half",
+            "equivalence_margin": 24.0,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL6190593",
+            "parent_measurement_id": "m_12b_t_half",
+            "parent_relation": "=",
+            "parent_value": "2688",
+            "reason_id": "PMC12225454:12e:azoextension",
+            "relation_to_stated_intent": "photochemical_tradeoff",
+            "state": "HBSS",
+            "units": "hr"
+          }
+        ],
+        "direct_supporting_endpoint_counts": {
+          "improved": 1
+        },
+        "stated_intent_outcome": "evaluate_per_endpoint"
+      },
+      "reasoned_move_id": "move_cfa54c7728c605ab"
+    },
+    {
+      "confidence_components": {
+        "assay_comparability": 1.0,
+        "child_resolution": 1.0,
+        "evidence_entailment": 0.99,
+        "outcome_confidence": "not_calibrated",
+        "parent_inference": 0.860952
+      },
+      "entities": {
+        "child": {
+          "candidate_scope": "same_paper",
+          "canonical_smiles": "Cc1nn2c(-c3c(C)nn(C)c3-c3ccc(C(F)(F)F)cc3)nc(CO)c2c(=O)[nH]1",
+          "chembl_id": "CHEMBL4062397",
+          "dataset_id": "pf06815189",
+          "paper_label": "2; PF-06815189",
+          "source_document_id": "PMC5807869",
+          "standard_inchi_key": "XLTUOMBYHVTYOT-UHFFFAOYSA-N"
+        }
+      },
+      "layer_1_author_evidence": {
+        "access_quality": "full_text",
+        "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC5807869#L11-L16",
+        "document_id": "PMC5807869",
+        "doi": "10.1021/acsmedchemlett.7b00343",
+        "entailment_status": "entailed",
+        "line_end": 16,
+        "line_start": 11,
+        "path": "/papers/PMC5807869/content.lines",
+        "publication_year": 2018,
+        "section": "abstract",
+        "verbatim_excerpt": "reduce its clearance by cytochrome P450 enzymes"
+      },
+      "layer_2_extracted_design_intent": {
+        "assertion_class": "explicit_prospective_intent",
+        "child_chembl_id": "CHEMBL4062397",
+        "child_paper_label": "2; PF-06815189",
+        "dataset_id": "pf06815189",
+        "evidence": {
+          "access_quality": "full_text",
+          "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC5807869#L11-L16",
+          "document_id": "PMC5807869",
+          "doi": "10.1021/acsmedchemlett.7b00343",
+          "entailment_status": "entailed",
+          "line_end": 16,
+          "line_start": 11,
+          "path": "/papers/PMC5807869/content.lines",
+          "publication_year": 2018,
+          "section": "abstract",
+          "verbatim_excerpt": "reduce its clearance by cytochrome P450 enzymes"
+        },
+        "explicit_historical_synthesis_lineage": true,
+        "explicit_parent_basis": "The source states that inhibitor 1 was subjected to late-stage oxidation to yield compound 2.",
+        "explicit_parent_chembl_id": "CHEMBL4160171",
+        "explicit_parent_edge_semantics": "author_explicit_starting_compound",
+        "extraction_confidence": 0.99,
+        "intended_property": {
+          "direction": "decrease",
+          "explicitness": "explicit",
+          "name": "cyp_mediated_clearance"
+        },
+        "outcome_join_status": "direct_supporting_endpoints_available",
+        "reason_id": "PMC5807869:2:late_stage_oxidation",
+        "reason_statement": "The authors applied late-stage microsomal oxidation to PDE2 inhibitor 1 to reduce CYP-mediated clearance, introduce renal clearance, and reduce victim drug-drug-interaction risk, yielding compound 2.",
+        "required_added_features": [
+          "hydroxyl"
+        ],
+        "required_removed_features": [
+          "hydrogen"
+        ],
+        "secondary_intended_properties": [
+          {
+            "direction": "increase",
+            "name": "renal_clearance_fraction"
+          },
+          {
+            "direction": "decrease",
+            "name": "victim_drug_drug_interaction_risk"
+          }
+        ],
+        "source_title": "Late-Stage Microsomal Oxidation Reduces Drug-Drug Interaction and Identifies PDE2A Inhibitor PF-06815189",
+        "stated_modification": "oxidize a core methyl C-H to a hydroxymethyl group"
+      },
+      "layer_3_inferred_structural_comparison": {
+        "author_explicit_relationship": {
+          "basis": "The source states that inhibitor 1 was subjected to late-stage oxidation to yield compound 2.",
+          "child_chembl_id": "CHEMBL4062397",
+          "edge_semantics": "author_explicit_starting_compound",
+          "historical_synthesis_lineage_claim": true,
+          "paper_uses_parent_term": true,
+          "parent_chembl_id": "CHEMBL4160171",
+          "relationship_id": "rel_f649ae05bb5c64c2",
+          "sensitivity_rule_max_variable_fraction": 0.4,
+          "structural_witness": {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "hydrogen",
+                "matched": true,
+                "side": "parent"
+              },
+              {
+                "feature": "hydroxyl",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_0405614786f0b931",
+            "child_chembl_id": "CHEMBL4062397",
+            "child_fragment": "O[*:1]",
+            "child_label": "2; PF-06815189",
+            "context": "Cc1nn2c(-c3c(C)nn(C)c3-c3ccc(C(F)(F)F)cc3)nc(C[*:1])c2c(=O)[nH]1",
+            "cut_count": 1,
+            "edge_semantics": "reason_constrained_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": true,
+            "parent_chembl_id": "CHEMBL4160171",
+            "parent_fragment": "[*:1][H]",
+            "parent_label": "1",
+            "rank": 1,
+            "reason_id": "PMC5807869:2:late_stage_oxidation",
+            "scores": {
+              "edit_compactness": 0.916667,
+              "ranking_score_uncalibrated": 0.860952,
+              "reason_transform_alignment": 1.0,
+              "retained_core_fraction": 0.966667,
+              "same_numbered_series": 0.0,
+              "whole_molecule_tanimoto": 0.785714
+            },
+            "transformation": "[*:1][H]>>O[*:1]",
+            "valid_single_cut_mmp": true
+          },
+          "valid_primary_mmp_rule": true,
+          "valid_single_cut_sensitivity_rule": true
+        },
+        "candidate_search_order_planned": [
+          "same_scheme_or_table",
+          "same_named_series",
+          "same_paper",
+          "cited_predecessor",
+          "same_chembl_document",
+          "global_chembl"
+        ],
+        "candidate_universe": "same_paper",
+        "historical_lineage_inferred": false,
+        "implemented_scope": "same_paper",
+        "score_status": "uncalibrated_heuristic",
+        "top1_top2_margin": 0.295159,
+        "top_candidates": [
+          {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "hydrogen",
+                "matched": true,
+                "side": "parent"
+              },
+              {
+                "feature": "hydroxyl",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_0405614786f0b931",
+            "child_chembl_id": "CHEMBL4062397",
+            "child_fragment": "O[*:1]",
+            "child_label": "2; PF-06815189",
+            "context": "Cc1nn2c(-c3c(C)nn(C)c3-c3ccc(C(F)(F)F)cc3)nc(C[*:1])c2c(=O)[nH]1",
+            "cut_count": 1,
+            "edge_semantics": "reason_constrained_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": true,
+            "parent_chembl_id": "CHEMBL4160171",
+            "parent_fragment": "[*:1][H]",
+            "parent_label": "1",
+            "parent_rank": 1,
+            "rank": 1,
+            "reason_id": "PMC5807869:2:late_stage_oxidation",
+            "scores": {
+              "edit_compactness": 0.916667,
+              "ranking_score_uncalibrated": 0.860952,
+              "reason_transform_alignment": 1.0,
+              "retained_core_fraction": 0.966667,
+              "same_numbered_series": 0.0,
+              "whole_molecule_tanimoto": 0.785714
+            },
+            "transformation": "[*:1][H]>>O[*:1]",
+            "valid_single_cut_mmp": true
+          },
+          {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "hydrogen",
+                "matched": false,
+                "side": "parent"
+              },
+              {
+                "feature": "hydroxyl",
+                "matched": false,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_a7750b46b45f23ea",
+            "child_chembl_id": "CHEMBL4062397",
+            "child_fragment": "[*:1][H]",
+            "child_label": "2; PF-06815189",
+            "context": "Cc1nn2c(-c3c(C[*:1])nn(C)c3-c3ccc(C(F)(F)F)cc3)nc(CO)c2c(=O)[nH]1",
+            "cut_count": 1,
+            "edge_semantics": "structure_only_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": true,
+            "parent_chembl_id": "CHEMBL4088142",
+            "parent_fragment": "O[*:1]",
+            "parent_label": "6",
+            "parent_rank": 2,
+            "rank": 3,
+            "reason_id": "PMC5807869:2:late_stage_oxidation",
+            "scores": {
+              "edit_compactness": 0.916667,
+              "ranking_score_uncalibrated": 0.565793,
+              "reason_transform_alignment": 0.0,
+              "retained_core_fraction": 0.967742,
+              "same_numbered_series": 0.0,
+              "whole_molecule_tanimoto": 0.875
+            },
+            "transformation": "O[*:1]>>[*:1][H]",
+            "valid_single_cut_mmp": true
+          }
+        ]
+      },
+      "layer_4_observed_outcomes": {
+        "classification_counts": {
+          "comparable": 1,
+          "improved": 2
+        },
+        "comparisons": [
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL4062397",
+            "child_measurement_id": "m_pf2_hlm_cl",
+            "child_relation": "<",
+            "child_value": "8.0",
+            "classification": "improved",
+            "comparison_id": "pf1_pf2_hlm_clearance",
+            "delta_lower": 8.0,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": null,
+            "endpoint": "intrinsic_clearance",
+            "equivalence_margin": 1.0,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL4160171",
+            "parent_measurement_id": "m_pf1_hlm_cl",
+            "parent_relation": "=",
+            "parent_value": "16.0",
+            "reason_id": "PMC5807869:2:late_stage_oxidation",
+            "relation_to_stated_intent": "direct_supporting_endpoint",
+            "state": "not_applicable",
+            "units": "mL.min-1.kg-1"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL4062397",
+            "child_measurement_id": "m_pf2_hep_cl",
+            "child_relation": "<",
+            "child_value": "0.36",
+            "classification": "improved",
+            "comparison_id": "pf1_pf2_hepatocyte_clearance",
+            "delta_lower": 17.64,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": null,
+            "endpoint": "intrinsic_clearance",
+            "equivalence_margin": 1.0,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL4160171",
+            "parent_measurement_id": "m_pf1_hep_cl",
+            "parent_relation": "=",
+            "parent_value": "18.0",
+            "reason_id": "PMC5807869:2:late_stage_oxidation",
+            "relation_to_stated_intent": "direct_supporting_endpoint",
+            "state": "not_applicable",
+            "units": "mL.min-1.kg-1"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL4062397",
+            "child_measurement_id": "m_pf2_pde2_ic50",
+            "child_relation": "=",
+            "child_value": "0.4",
+            "classification": "comparable",
+            "comparison_id": "pf1_pf2_pde2_potency",
+            "delta_lower": 0.2,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": 0.2,
+            "endpoint": "IC50",
+            "equivalence_margin": 0.3,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL4160171",
+            "parent_measurement_id": "m_pf1_pde2_ic50",
+            "parent_relation": "=",
+            "parent_value": "0.6",
+            "reason_id": "PMC5807869:2:late_stage_oxidation",
+            "relation_to_stated_intent": "target_potency_tradeoff",
+            "state": "not_applicable",
+            "units": "nM"
+          }
+        ],
+        "direct_supporting_endpoint_counts": {
+          "improved": 2
+        },
+        "stated_intent_outcome": "evaluate_per_endpoint"
+      },
+      "reasoned_move_id": "move_0b64e32a2fb20e0e"
+    },
+    {
+      "confidence_components": {
+        "assay_comparability": 1.0,
+        "child_resolution": 1.0,
+        "evidence_entailment": 0.99,
+        "outcome_confidence": "not_calibrated",
+        "parent_inference": 0.725919
+      },
+      "entities": {
+        "child": {
+          "candidate_scope": "same_paper_subset",
+          "canonical_smiles": "Cc1noc(C)c1NC(=O)Nc1ccc2c(c1)C(=O)N([C@@H](C)CN(C)C)C[C@@H](C)[C@H](CN(C)S(=O)(=O)c1ccc(F)cc1)OCCCC[C@H](C)O2",
+          "chembl_id": "CHEMBL3343650",
+          "dataset_id": "antimalarial_dos",
+          "paper_label": "5",
+          "source_document_id": "PMC4207553",
+          "standard_inchi_key": "YZWMPMDITONCIO-DWYUEALBSA-N"
+        }
+      },
+      "layer_1_author_evidence": {
+        "access_quality": "full_text",
+        "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC4207553#L96-L108",
+        "document_id": "PMC4207553",
+        "doi": "10.1021/jm500994n",
+        "entailment_status": "entailed",
+        "line_end": 108,
+        "line_start": 96,
+        "path": "/papers/PMC4207553/content.lines",
+        "publication_year": 2015,
+        "section": "main_text_appendage_SAR",
+        "verbatim_excerpt": "improve solubility through the introduction of heteroatoms"
+      },
+      "layer_2_extracted_design_intent": {
+        "assertion_class": "explicit_prospective_intent",
+        "child_chembl_id": "CHEMBL3343650",
+        "child_paper_label": "5",
+        "dataset_id": "antimalarial_dos",
+        "evidence": {
+          "access_quality": "full_text",
+          "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC4207553#L96-L108",
+          "document_id": "PMC4207553",
+          "doi": "10.1021/jm500994n",
+          "entailment_status": "entailed",
+          "line_end": 108,
+          "line_start": 96,
+          "path": "/papers/PMC4207553/content.lines",
+          "publication_year": 2015,
+          "section": "main_text_appendage_SAR",
+          "verbatim_excerpt": "improve solubility through the introduction of heteroatoms"
+        },
+        "explicit_historical_synthesis_lineage": false,
+        "explicit_parent_basis": "The source identifies compound 2 as the parent and describes the phenyl-urea replacement that afforded 5.",
+        "explicit_parent_chembl_id": "CHEMBL1873309",
+        "explicit_parent_edge_semantics": "author_explicit_design_parent",
+        "extraction_confidence": 0.99,
+        "intended_property": {
+          "direction": "increase",
+          "explicitness": "explicit",
+          "name": "pbs_solubility"
+        },
+        "outcome_join_status": "direct_supporting_endpoints_available",
+        "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+        "reason_statement": "The authors replaced the phenyl urea of lead 2 with a 3,5-dimethylisoxazole urea to improve solubility by adding heteroatoms and disrupting planarity.",
+        "required_added_features": [
+          "dimethylisoxazole"
+        ],
+        "required_removed_features": [
+          "phenyl"
+        ],
+        "source_title": "Diversity-Oriented Synthesis-Facilitated Medicinal Chemistry: Novel Antimalarial Agents",
+        "stated_mechanistic_basis": [
+          "introduce_heteroatoms",
+          "disrupt_planarity"
+        ],
+        "stated_modification": "phenyl to 3,5-dimethylisoxazole at the urea substituent"
+      },
+      "layer_3_inferred_structural_comparison": {
+        "author_explicit_relationship": {
+          "basis": "The source identifies compound 2 as the parent and describes the phenyl-urea replacement that afforded 5.",
+          "child_chembl_id": "CHEMBL3343650",
+          "edge_semantics": "author_explicit_design_parent",
+          "historical_synthesis_lineage_claim": false,
+          "paper_uses_parent_term": true,
+          "parent_chembl_id": "CHEMBL1873309",
+          "relationship_id": "rel_0465544437b2cba6",
+          "sensitivity_rule_max_variable_fraction": 0.4,
+          "structural_witness": {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "phenyl",
+                "matched": true,
+                "side": "parent"
+              },
+              {
+                "feature": "dimethylisoxazole",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_293519ba3ca30197",
+            "child_chembl_id": "CHEMBL3343650",
+            "child_fragment": "Cc1noc(C)c1[*:1]",
+            "child_label": "5",
+            "context": "C[C@@H]1CN([C@@H](C)CN(C)C)C(=O)c2cc(NC(=O)N[*:1])ccc2O[C@@H](C)CCCCO[C@H]1CN(C)S(=O)(=O)c1ccc(F)cc1",
+            "cut_count": 1,
+            "edge_semantics": "reason_constrained_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": false,
+            "parent_chembl_id": "CHEMBL1873309",
+            "parent_fragment": "c1ccc([*:1])cc1",
+            "parent_label": "2",
+            "rank": 1,
+            "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+            "scores": {
+              "edit_compactness": 0.416667,
+              "ranking_score_uncalibrated": 0.725919,
+              "reason_transform_alignment": 1.0,
+              "retained_core_fraction": 0.862745,
+              "same_numbered_series": 0.0,
+              "whole_molecule_tanimoto": 0.8125
+            },
+            "transformation": "c1ccc([*:1])cc1>>Cc1noc(C)c1[*:1]",
+            "valid_single_cut_mmp": true
+          },
+          "valid_primary_mmp_rule": true,
+          "valid_single_cut_sensitivity_rule": true
+        },
+        "candidate_search_order_planned": [
+          "same_scheme_or_table",
+          "same_named_series",
+          "same_paper",
+          "cited_predecessor",
+          "same_chembl_document",
+          "global_chembl"
+        ],
+        "candidate_universe": "same_paper",
+        "historical_lineage_inferred": false,
+        "implemented_scope": "same_paper",
+        "score_status": "uncalibrated_heuristic",
+        "top1_top2_margin": null,
+        "top_candidates": [
+          {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "phenyl",
+                "matched": true,
+                "side": "parent"
+              },
+              {
+                "feature": "dimethylisoxazole",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_293519ba3ca30197",
+            "child_chembl_id": "CHEMBL3343650",
+            "child_fragment": "Cc1noc(C)c1[*:1]",
+            "child_label": "5",
+            "context": "C[C@@H]1CN([C@@H](C)CN(C)C)C(=O)c2cc(NC(=O)N[*:1])ccc2O[C@@H](C)CCCCO[C@H]1CN(C)S(=O)(=O)c1ccc(F)cc1",
+            "cut_count": 1,
+            "edge_semantics": "reason_constrained_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": false,
+            "parent_chembl_id": "CHEMBL1873309",
+            "parent_fragment": "c1ccc([*:1])cc1",
+            "parent_label": "2",
+            "parent_rank": 1,
+            "rank": 1,
+            "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+            "scores": {
+              "edit_compactness": 0.416667,
+              "ranking_score_uncalibrated": 0.725919,
+              "reason_transform_alignment": 1.0,
+              "retained_core_fraction": 0.862745,
+              "same_numbered_series": 0.0,
+              "whole_molecule_tanimoto": 0.8125
+            },
+            "transformation": "c1ccc([*:1])cc1>>Cc1noc(C)c1[*:1]",
+            "valid_single_cut_mmp": true
+          }
+        ]
+      },
+      "layer_4_observed_outcomes": {
+        "classification_counts": {
+          "improved": 3,
+          "indeterminate": 1,
+          "worsened": 1
+        },
+        "comparisons": [
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL3343650",
+            "child_measurement_id": "m_am5_sol",
+            "child_relation": ">",
+            "child_value": "100000",
+            "classification": "improved",
+            "comparison_id": "am2_am5_solubility",
+            "delta_lower": 95000.0,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": null,
+            "endpoint": "solubility",
+            "equivalence_margin": 5000,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL1873309",
+            "parent_measurement_id": "m_am2_sol",
+            "parent_relation": "<",
+            "parent_value": "5000",
+            "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+            "relation_to_stated_intent": "direct_supporting_endpoint",
+            "state": "PBS",
+            "units": "nM"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL3343650",
+            "child_measurement_id": "m_am5_gi50",
+            "child_relation": "=",
+            "child_value": "4.2",
+            "classification": "worsened",
+            "comparison_id": "am2_am5_growth_potency",
+            "delta_lower": -3.66,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": -3.66,
+            "endpoint": "GI50",
+            "equivalence_margin": 0.3,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL1873309",
+            "parent_measurement_id": "m_am2_gi50",
+            "parent_relation": "=",
+            "parent_value": "0.54",
+            "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+            "relation_to_stated_intent": "target_potency_tradeoff",
+            "state": "not_applicable",
+            "units": "nM"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL3343650",
+            "child_measurement_id": "m_am5_herg",
+            "child_relation": "=",
+            "child_value": "13",
+            "classification": "improved",
+            "comparison_id": "am2_am5_herg",
+            "delta_lower": 82.0,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": 82.0,
+            "endpoint": "hERG_binding_inhibition",
+            "equivalence_margin": 5,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL1873309",
+            "parent_measurement_id": "m_am2_herg",
+            "parent_relation": "=",
+            "parent_value": "95",
+            "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+            "relation_to_stated_intent": "beneficial_adjacent_outcome",
+            "state": "10_uM",
+            "units": "%"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL3343650",
+            "child_measurement_id": "m_am5_logd",
+            "child_relation": "=",
+            "child_value": "2.9",
+            "classification": "improved",
+            "comparison_id": "am2_am5_logd",
+            "delta_lower": 1.2,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": 1.2,
+            "endpoint": "LogD",
+            "equivalence_margin": 0.3,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL1873309",
+            "parent_measurement_id": "m_am2_logd",
+            "parent_relation": "=",
+            "parent_value": "4.1",
+            "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+            "relation_to_stated_intent": "mechanistic_supporting_endpoint",
+            "state": "not_applicable",
+            "units": "log10"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL3343650",
+            "child_measurement_id": "m_am5_mlm",
+            "child_relation": "=",
+            "child_value": "8",
+            "classification": "indeterminate",
+            "comparison_id": "am2_am5_microsomal_stability",
+            "delta_lower": 3.0,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": null,
+            "endpoint": "microsomal_stability",
+            "equivalence_margin": 5,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL1873309",
+            "parent_measurement_id": "m_am2_mlm",
+            "parent_relation": "<",
+            "parent_value": "5",
+            "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+            "relation_to_stated_intent": "metabolic_stability_tradeoff",
+            "state": "mouse_1h",
+            "units": "%"
+          }
+        ],
+        "direct_supporting_endpoint_counts": {
+          "improved": 1
+        },
+        "stated_intent_outcome": "evaluate_per_endpoint"
+      },
+      "reasoned_move_id": "move_b42cb3bb16ac41ef"
+    },
+    {
+      "confidence_components": {
+        "assay_comparability": 1.0,
+        "child_resolution": 1.0,
+        "evidence_entailment": 0.98,
+        "outcome_confidence": "not_calibrated",
+        "parent_inference": 0.679187
+      },
+      "entities": {
+        "child": {
+          "candidate_scope": "same_paper",
+          "canonical_smiles": "COc1cc(Nc2c(C#N)cnc3cc(OCCON4CCN(C)CC4)c(OC)cc23)c(Cl)cc1Cl",
+          "chembl_id": "CHEMBL5435819",
+          "dataset_id": "bosutinib_noralkoxy",
+          "paper_label": "9",
+          "source_document_id": "PMC10726475",
+          "standard_inchi_key": "HFGUPJNHEPCEHX-UHFFFAOYSA-N"
+        }
+      },
+      "layer_1_author_evidence": {
+        "access_quality": "full_text",
+        "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC10726475#L14-L28",
+        "document_id": "PMC10726475",
+        "doi": "10.1021/acsmedchemlett.3c00479",
+        "entailment_status": "entailed",
+        "line_end": 28,
+        "line_start": 14,
+        "path": "/papers/PMC10726475/content.lines",
+        "publication_year": 2023,
+        "section": "abstract",
+        "verbatim_excerpt": "arises from a reduction in basicity"
+      },
+      "layer_2_extracted_design_intent": {
+        "assertion_class": "retrospective_explanation",
+        "child_chembl_id": "CHEMBL5435819",
+        "child_paper_label": "9",
+        "dataset_id": "bosutinib_noralkoxy",
+        "evidence": {
+          "access_quality": "full_text",
+          "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC10726475#L14-L28",
+          "document_id": "PMC10726475",
+          "doi": "10.1021/acsmedchemlett.3c00479",
+          "entailment_status": "entailed",
+          "line_end": 28,
+          "line_start": 14,
+          "path": "/papers/PMC10726475/content.lines",
+          "publication_year": 2023,
+          "section": "abstract",
+          "verbatim_excerpt": "arises from a reduction in basicity"
+        },
+        "explicit_historical_synthesis_lineage": false,
+        "explicit_parent_basis": "Compound 9 is described as the hydroxylamine bioisostere incorporated into bosutinib.",
+        "explicit_parent_chembl_id": "CHEMBL288441",
+        "explicit_parent_edge_semantics": "author_explicit_design_parent",
+        "extraction_confidence": 0.98,
+        "intended_property": {
+          "direction": "modulate",
+          "explicitness": "explicit",
+          "name": "efflux_and_hERG_effect_explanation"
+        },
+        "outcome_join_status": "retrospective_explanation_no_prospective_success_label",
+        "reason_id": "PMC10726475:9:noralkoxy_basicity",
+        "reason_statement": "The paper's retrospective MMP analysis attributes the improved efflux and hERG behavior of the N-alkyl to N-noralkoxy switch to reduced piperazine basicity.",
+        "required_added_features": [
+          "ether_oxygen"
+        ],
+        "required_removed_features": [
+          "aliphatic_carbon"
+        ],
+        "source_title": "Atypical N-Alkyl to N-Noralkoxy Switch in a Dual cSRC/BCR-ABL1 Kinase Inhibitor",
+        "stated_mechanistic_basis": [
+          "reduce_piperazine_basicity"
+        ],
+        "stated_modification": "replace an N-alkyl linker carbon with an N-noralkoxy oxygen"
+      },
+      "layer_3_inferred_structural_comparison": {
+        "author_explicit_relationship": {
+          "basis": "Compound 9 is described as the hydroxylamine bioisostere incorporated into bosutinib.",
+          "child_chembl_id": "CHEMBL5435819",
+          "edge_semantics": "author_explicit_design_parent",
+          "historical_synthesis_lineage_claim": false,
+          "paper_uses_parent_term": true,
+          "parent_chembl_id": "CHEMBL288441",
+          "relationship_id": "rel_1d720cc5946f7e18",
+          "sensitivity_rule_max_variable_fraction": 0.4,
+          "structural_witness": {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "aliphatic_carbon",
+                "matched": true,
+                "side": "parent"
+              },
+              {
+                "feature": "ether_oxygen",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_7520dcdaea77ca92",
+            "child_chembl_id": "CHEMBL5435819",
+            "child_fragment": "CN1CCN(O[*:1])CC1",
+            "child_label": "9",
+            "context": "COc1cc(Nc2c(C#N)cnc3cc(OCC[*:1])c(OC)cc23)c(Cl)cc1Cl",
+            "cut_count": 1,
+            "edge_semantics": "retrospective_reason_aligned_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": false,
+            "parent_chembl_id": "CHEMBL288441",
+            "parent_fragment": "CN1CCN(C[*:1])CC1",
+            "parent_label": "3; Bosutinib",
+            "rank": 1,
+            "reason_id": "PMC10726475:9:noralkoxy_basicity",
+            "scores": {
+              "edit_compactness": 0.333333,
+              "ranking_score_uncalibrated": 0.679187,
+              "reason_transform_alignment": 1.0,
+              "retained_core_fraction": 0.777778,
+              "same_numbered_series": 0.0,
+              "whole_molecule_tanimoto": 0.80597
+            },
+            "transformation": "CN1CCN(C[*:1])CC1>>CN1CCN(O[*:1])CC1",
+            "valid_single_cut_mmp": true
+          },
+          "valid_primary_mmp_rule": true,
+          "valid_single_cut_sensitivity_rule": true
+        },
+        "candidate_search_order_planned": [
+          "same_scheme_or_table",
+          "same_named_series",
+          "same_paper",
+          "cited_predecessor",
+          "same_chembl_document",
+          "global_chembl"
+        ],
+        "candidate_universe": "same_paper",
+        "historical_lineage_inferred": false,
+        "implemented_scope": "same_paper",
+        "score_status": "uncalibrated_heuristic",
+        "top1_top2_margin": null,
+        "top_candidates": [
+          {
+            "algorithm": "single_cut_rdkit_mmpa+h_v1",
+            "alignment_checks": [
+              {
+                "feature": "aliphatic_carbon",
+                "matched": true,
+                "side": "parent"
+              },
+              {
+                "feature": "ether_oxygen",
+                "matched": true,
+                "side": "child"
+              }
+            ],
+            "candidate_id": "cand_7520dcdaea77ca92",
+            "child_chembl_id": "CHEMBL5435819",
+            "child_fragment": "CN1CCN(O[*:1])CC1",
+            "child_label": "9",
+            "context": "COc1cc(Nc2c(C#N)cnc3cc(OCC[*:1])c(OC)cc23)c(Cl)cc1Cl",
+            "cut_count": 1,
+            "edge_semantics": "retrospective_reason_aligned_mmp_comparator",
+            "historical_parent_claim": false,
+            "hydrogen_change": false,
+            "parent_chembl_id": "CHEMBL288441",
+            "parent_fragment": "CN1CCN(C[*:1])CC1",
+            "parent_label": "3; Bosutinib",
+            "parent_rank": 1,
+            "rank": 1,
+            "reason_id": "PMC10726475:9:noralkoxy_basicity",
+            "scores": {
+              "edit_compactness": 0.333333,
+              "ranking_score_uncalibrated": 0.679187,
+              "reason_transform_alignment": 1.0,
+              "retained_core_fraction": 0.777778,
+              "same_numbered_series": 0.0,
+              "whole_molecule_tanimoto": 0.80597
+            },
+            "transformation": "CN1CCN(C[*:1])CC1>>CN1CCN(O[*:1])CC1",
+            "valid_single_cut_mmp": true
+          }
+        ]
+      },
+      "layer_4_observed_outcomes": {
+        "classification_counts": {
+          "comparable": 1,
+          "improved": 2,
+          "indeterminate": 1
+        },
+        "comparisons": [
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL5435819",
+            "child_measurement_id": "m_9_efflux",
+            "child_relation": "=",
+            "child_value": "3.6",
+            "classification": "improved",
+            "comparison_id": "bos_9_efflux",
+            "delta_lower": 8.5,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": 8.5,
+            "endpoint": "efflux_ratio",
+            "equivalence_margin": 1.0,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL288441",
+            "parent_measurement_id": "m_bos_efflux",
+            "parent_relation": "=",
+            "parent_value": "12.1",
+            "reason_id": "PMC10726475:9:noralkoxy_basicity",
+            "relation_to_stated_intent": "effect_explained_retrospectively",
+            "state": "Caco2",
+            "units": "ratio"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL5435819",
+            "child_measurement_id": "m_9_herg",
+            "child_relation": "=",
+            "child_value": "3410",
+            "classification": "improved",
+            "comparison_id": "bos_9_herg",
+            "delta_lower": 2400.0,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": 2400.0,
+            "endpoint": "hERG_IC50",
+            "equivalence_margin": 300,
+            "higher_is_better": true,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL288441",
+            "parent_measurement_id": "m_bos_herg",
+            "parent_relation": "=",
+            "parent_value": "1010",
+            "reason_id": "PMC10726475:9:noralkoxy_basicity",
+            "relation_to_stated_intent": "effect_explained_retrospectively",
+            "state": "not_applicable",
+            "units": "nM"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": true,
+            "child_chembl_id": "CHEMBL5435819",
+            "child_measurement_id": "m_9_bcrabl_wt",
+            "child_relation": "<",
+            "child_value": "1.0",
+            "classification": "indeterminate",
+            "comparison_id": "bos_9_bcrabl_wt",
+            "delta_lower": null,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": null,
+            "endpoint": "IC50",
+            "equivalence_margin": 0.2,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL288441",
+            "parent_measurement_id": "m_bos_bcrabl_wt",
+            "parent_relation": "<",
+            "parent_value": "1.0",
+            "reason_id": "PMC10726475:9:noralkoxy_basicity",
+            "relation_to_stated_intent": "target_potency_retention",
+            "state": "wild_type",
+            "units": "nM"
+          },
+          {
+            "assay_comparability": "exact_context_match",
+            "censoring_preserved": false,
+            "child_chembl_id": "CHEMBL5435819",
+            "child_measurement_id": "m_9_bcrabl_t315i",
+            "child_relation": "=",
+            "child_value": "47",
+            "classification": "comparable",
+            "comparison_id": "bos_9_bcrabl_t315i",
+            "delta_lower": -3.0,
+            "delta_orientation": "child_minus_parent; positive_is_better",
+            "delta_upper": -3.0,
+            "endpoint": "IC50",
+            "equivalence_margin": 5,
+            "higher_is_better": false,
+            "mismatched_fields": [],
+            "parent_chembl_id": "CHEMBL288441",
+            "parent_measurement_id": "m_bos_bcrabl_t315i",
+            "parent_relation": "=",
+            "parent_value": "44",
+            "reason_id": "PMC10726475:9:noralkoxy_basicity",
+            "relation_to_stated_intent": "target_potency_retention",
+            "state": "T315I",
+            "units": "nM"
+          }
+        ],
+        "direct_supporting_endpoint_counts": {},
+        "stated_intent_outcome": "not_applicable_retrospective_explanation"
+      },
+      "reasoned_move_id": "move_ea78d12a667b2ab2"
+    }
+  ]
+};

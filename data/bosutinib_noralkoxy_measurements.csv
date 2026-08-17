@@ -1,0 +1,9 @@
+measurement_id,chembl_id,paper_label,endpoint,state,relation,value,error,units,assay_context,assay_id,assay_chembl_id,source_kind,source_ref
+m_bos_efflux,CHEMBL288441,3,efflux_ratio,Caco2,=,12.1,,ratio,human_Caco2_BL_to_AP_over_AP_to_BL,2364283,CHEMBL5375736,ChEMBL,activity_25669014
+m_9_efflux,CHEMBL5435819,9,efflux_ratio,Caco2,=,3.6,,ratio,human_Caco2_BL_to_AP_over_AP_to_BL,2364283,CHEMBL5375736,ChEMBL,activity_25669015
+m_bos_herg,CHEMBL288441,3,hERG_IC50,not_applicable,=,1010,,nM,human_hERG_HEK293_patch_clamp,2364286,CHEMBL5375739,ChEMBL,activity_25669020
+m_9_herg,CHEMBL5435819,9,hERG_IC50,not_applicable,=,3410,,nM,human_hERG_HEK293_patch_clamp,2364286,CHEMBL5375739,ChEMBL,activity_25669021
+m_bos_bcrabl_wt,CHEMBL288441,3,IC50,wild_type,<,1.0,,nM,human_BCR_ABL1_radiometric,2364267,CHEMBL5375720,ChEMBL,activity_25668981
+m_9_bcrabl_wt,CHEMBL5435819,9,IC50,wild_type,<,1.0,,nM,human_BCR_ABL1_radiometric,2364267,CHEMBL5375720,ChEMBL,activity_25668982
+m_bos_bcrabl_t315i,CHEMBL288441,3,IC50,T315I,=,44,,nM,human_BCR_ABL1_radiometric,2364271,CHEMBL5375724,ChEMBL,activity_25668989
+m_9_bcrabl_t315i,CHEMBL5435819,9,IC50,T315I,=,47,,nM,human_BCR_ABL1_radiometric,2364271,CHEMBL5375724,ChEMBL,activity_25668990

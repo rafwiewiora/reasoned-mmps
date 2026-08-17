@@ -1,0 +1,41 @@
+[
+  {
+    "reason_id": "PMC5807869:2:late_stage_oxidation",
+    "child_chembl_id": "CHEMBL4062397",
+    "child_paper_label": "2; PF-06815189",
+    "source_title": "Late-Stage Microsomal Oxidation Reduces Drug-Drug Interaction and Identifies PDE2A Inhibitor PF-06815189",
+    "assertion_class": "explicit_prospective_intent",
+    "reason_statement": "The authors applied late-stage microsomal oxidation to PDE2 inhibitor 1 to reduce CYP-mediated clearance, introduce renal clearance, and reduce victim drug-drug-interaction risk, yielding compound 2.",
+    "stated_modification": "oxidize a core methyl C-H to a hydroxymethyl group",
+    "required_removed_features": ["hydrogen"],
+    "required_added_features": ["hydroxyl"],
+    "intended_property": {
+      "name": "cyp_mediated_clearance",
+      "direction": "decrease",
+      "explicitness": "explicit"
+    },
+    "secondary_intended_properties": [
+      {"name": "renal_clearance_fraction", "direction": "increase"},
+      {"name": "victim_drug_drug_interaction_risk", "direction": "decrease"}
+    ],
+    "explicit_parent_chembl_id": "CHEMBL4160171",
+    "explicit_parent_edge_semantics": "author_explicit_starting_compound",
+    "explicit_historical_synthesis_lineage": true,
+    "explicit_parent_basis": "The source states that inhibitor 1 was subjected to late-stage oxidation to yield compound 2.",
+    "evidence": {
+      "document_id": "PMC5807869",
+      "publication_year": 2018,
+      "doi": "10.1021/acsmedchemlett.7b00343",
+      "path": "/papers/PMC5807869/content.lines",
+      "section": "abstract",
+      "line_start": 11,
+      "line_end": 16,
+      "verbatim_excerpt": "reduce its clearance by cytochrome P450 enzymes",
+      "access_quality": "full_text",
+      "entailment_status": "entailed",
+      "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC5807869#L11-L16"
+    },
+    "extraction_confidence": 0.99,
+    "outcome_join_status": "direct_supporting_endpoints_available"
+  }
+]

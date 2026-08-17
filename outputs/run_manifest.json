@@ -1,10 +1,12 @@
 {
+  "corpus": "reasoned_mmp_pilot_corpus",
   "counts": {
-    "compounds": 9,
-    "mmp_decompositions": 4,
-    "outcome_comparisons": 7,
-    "reason_assertions": 2,
-    "unique_reason_parent_candidates": 4
+    "compounds": 17,
+    "mmp_decompositions": 13,
+    "outcome_comparisons": 19,
+    "papers": 4,
+    "reason_assertions": 5,
+    "unique_reason_parent_candidates": 8
   },
   "guardrails": {
     "bounds_preserved": true,
@@ -14,12 +16,23 @@
     "reason_frozen_before_outcome_join": true
   },
   "input_sha256": {
+    "antimalarial_dos_compounds.csv": "db2aeff376dc01daed82c355df2252a5412f459d27b1805214bef4b804d943d3",
+    "antimalarial_dos_measurements.csv": "d0e2c7d687a3b2d09f3ceeecdaca5060fcae25604141e65b4cd7ba480c04b2a7",
+    "antimalarial_dos_outcome_specs.json": "06e1ad518e305b951c9a99ead815d53f557ee4a9aca257d52ee169df60fe7a41",
+    "antimalarial_dos_reasons.json": "4052aa0c911be1fa855c483c055bcff6af640eb0e358e8843332a6a1b0408e46",
+    "bosutinib_noralkoxy_compounds.csv": "422a45386b0f15c5c095a6b6dadec852f48951091e001a669dc6f1af70de215c",
+    "bosutinib_noralkoxy_measurements.csv": "7a3cf0e644d8eeb40e639f4edcd71d2e0894621ecc945db96e47c2e5baadeca6",
+    "bosutinib_noralkoxy_outcome_specs.json": "a7d7a28a8bf686178fac052981c003ce71cdae94e5977a05126f2676c4934f8e",
+    "bosutinib_noralkoxy_reasons.json": "1e89aca19490768991113bfb56156492ff11c80fc51694e20092645486e634cf",
+    "pf06815189_compounds.csv": "85bcf5c3061ba6ad39ad4c42d768f50b3fd25c86c8af54cc47560bfa7423f7f5",
+    "pf06815189_measurements.csv": "8769ba4c6447f4ead53d20589f5ee5d044882e8e5213f1dfae59faa02e92c5a2",
+    "pf06815189_outcome_specs.json": "6919704c8ab1b596ec03c27077dcbb1a98feebedc1ea2eedcbd05e816db952cb",
+    "pf06815189_reasons.json": "466249af5376bc8aaab492dddf21164a5c8af4c9f3adfd8b6324c43902377d9f",
     "photo_clenbuterol_compounds.csv": "2b42badf96e280a3d1c8c060496e07412e5c631ee9724282bc832bf66a1b59d6",
     "photo_clenbuterol_measurements.csv": "cb9dc0c65c1ec6e72dd472d82364d654d465c07c1dae13b9382463b0e099a6d1",
     "photo_clenbuterol_outcome_specs.json": "3ba80b746789a0dca3d8b7b5663f0a07d63caa0a6f49381c6bd60047750bb62b",
-    "photo_clenbuterol_reasons.json": "784672be587f401fbb56397c1eb8e020bcf713c36fd060b642d20d0f02b29e23"
+    "photo_clenbuterol_reasons.json": "ab99b5609d66abe6d943d8eb45d9a8a19d251f087c0d2d195c8bdf9a5b042eb3"
   },
-  "pilot": "photo_clenbuterol",
   "rdkit_version": "2026.03.4",
-  "schema_version": "0.1.0"
+  "schema_version": "0.2.0"
 }

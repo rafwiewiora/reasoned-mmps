@@ -1,0 +1,38 @@
+[
+  {
+    "reason_id": "PMC4207553:5:dimethylisoxazole_solubility",
+    "child_chembl_id": "CHEMBL3343650",
+    "child_paper_label": "5",
+    "source_title": "Diversity-Oriented Synthesis-Facilitated Medicinal Chemistry: Novel Antimalarial Agents",
+    "assertion_class": "explicit_prospective_intent",
+    "reason_statement": "The authors replaced the phenyl urea of lead 2 with a 3,5-dimethylisoxazole urea to improve solubility by adding heteroatoms and disrupting planarity.",
+    "stated_modification": "phenyl to 3,5-dimethylisoxazole at the urea substituent",
+    "required_removed_features": ["phenyl"],
+    "required_added_features": ["dimethylisoxazole"],
+    "intended_property": {
+      "name": "pbs_solubility",
+      "direction": "increase",
+      "explicitness": "explicit"
+    },
+    "stated_mechanistic_basis": ["introduce_heteroatoms", "disrupt_planarity"],
+    "explicit_parent_chembl_id": "CHEMBL1873309",
+    "explicit_parent_edge_semantics": "author_explicit_design_parent",
+    "explicit_historical_synthesis_lineage": false,
+    "explicit_parent_basis": "The source identifies compound 2 as the parent and describes the phenyl-urea replacement that afforded 5.",
+    "evidence": {
+      "document_id": "PMC4207553",
+      "publication_year": 2015,
+      "doi": "10.1021/jm500994n",
+      "path": "/papers/PMC4207553/content.lines",
+      "section": "main_text_appendage_SAR",
+      "line_start": 96,
+      "line_end": 108,
+      "verbatim_excerpt": "improve solubility through the introduction of heteroatoms",
+      "access_quality": "full_text",
+      "entailment_status": "entailed",
+      "citation_url": "https://paperclip.gxl.ai/citations/papers/PMC4207553#L96-L108"
+    },
+    "extraction_confidence": 0.99,
+    "outcome_join_status": "direct_supporting_endpoints_available"
+  }
+]

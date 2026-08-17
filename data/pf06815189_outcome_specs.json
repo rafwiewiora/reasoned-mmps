@@ -1,0 +1,29 @@
+[
+  {
+    "comparison_id": "pf1_pf2_hlm_clearance",
+    "reason_id": "PMC5807869:2:late_stage_oxidation",
+    "parent_measurement_id": "m_pf1_hlm_cl",
+    "child_measurement_id": "m_pf2_hlm_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 1.0,
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "pf1_pf2_hepatocyte_clearance",
+    "reason_id": "PMC5807869:2:late_stage_oxidation",
+    "parent_measurement_id": "m_pf1_hep_cl",
+    "child_measurement_id": "m_pf2_hep_cl",
+    "higher_is_better": false,
+    "equivalence_margin": 1.0,
+    "relation_to_stated_intent": "direct_supporting_endpoint"
+  },
+  {
+    "comparison_id": "pf1_pf2_pde2_potency",
+    "reason_id": "PMC5807869:2:late_stage_oxidation",
+    "parent_measurement_id": "m_pf1_pde2_ic50",
+    "child_measurement_id": "m_pf2_pde2_ic50",
+    "higher_is_better": false,
+    "equivalence_margin": 0.3,
+    "relation_to_stated_intent": "target_potency_tradeoff"
+  }
+]
